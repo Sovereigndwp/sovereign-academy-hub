@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Academy | Master Money. Master Bitcoin. Master Life.</title>
+    <meta name="description" content="Choose your learning path: Universal financial literacy or Bitcoin mastery. Interactive, personalized, 100% free.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a1f1a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container { max-width: 1400px; width: 100%; }
+        
+        /* Hero */
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            background: linear-gradient(135deg, #10b981, #f7931a, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: #9ca3af;
+            max-width: 700px;
+            margin: 0 auto 0.5rem;
+        }
+        
+        .hero-tagline {
+            font-size: 0.95rem;
+            color: #6ee7b7;
+            margin-top: 1rem;
+        }
+        
+        /* Academy Cards */
+        .academies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .academy-card {
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            border: 3px solid;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .academy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            opacity: 0.8;
+        }
+        
+        /* Financial Academy Styling */
+        .academy-card.financial {
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+        
+        .academy-card.financial::before {
+            background: linear-gradient(90deg, #10b981, #34d399);
+        }
+        
+        .academy-card.financial:hover {
+            border-color: #10b981;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+        }
+        
+        /* Bitcoin Academy Styling */
+        .academy-card.bitcoin {
+            border-color: rgba(247, 147, 26, 0.4);
+        }
+        
+        .academy-card.bitcoin::before {
+            background: linear-gradient(90deg, #f7931a, #ffb347);
+        }
+        
+        .academy-card.bitcoin:hover {
+            border-color: #f7931a;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(247, 147, 26, 0.3);
+        }
+        
+        .academy-header {
+            margin-bottom: 2rem;
+        }
+        
+        .academy-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .academy-title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .financial .academy-title { color: #10b981; }
+        .bitcoin .academy-title { color: #f7931a; }
+        
+        .academy-tagline {
+            font-size: 1.1rem;
+            color: #9ca3af;
+            font-style: italic;
+        }
+        
+        .academy-desc {
+            color: #e0e0e0;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+        
+        .academy-highlights {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .academy-highlights li {
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #d1d5db;
+        }
+        
+        .academy-highlights li::before {
+            content: '✓';
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .financial .academy-highlights li::before { color: #10b981; }
+        .bitcoin .academy-highlights li::before { color: #f7931a; }
+        
+        .academy-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+        
+        .financial .stat-value { color: #10b981; }
+        .bitcoin .stat-value { color: #f7931a; }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+        
+        .cta-btn {
+            width: 100%;
+            padding: 1.25rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .financial .cta-btn {
+            background: linear-gradient(135deg, #10b981, #34d399);
+            color: white;
+        }
+        
+        .bitcoin .cta-btn {
+            background: linear-gradient(135deg, #f7931a, #ffb347);
+            color: white;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .secondary-link {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            color: #9ca3af;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .secondary-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Journey Path */
+        .journey-path {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2rem;
+            background: rgba(26, 26, 46, 0.5);
+            border-radius: 1rem;
+        }
+        
+        .journey-path h3 {
+            font-size: 1.5rem;
+            color: #10b981;
+            margin-bottom: 1.5rem;
+        }
+        
+        .journey-flow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            color: #9ca3af;
+            font-size: 1.1rem;
+        }
+        
+        .journey-step {
+            background: rgba(16, 185, 129, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            border: 2px solid rgba(16, 185, 129, 0.3);
+        }
+        
+        .journey-step.bitcoin-step {
+            background: rgba(247, 147, 26, 0.1);
+            border-color: rgba(247, 147, 26, 0.3);
+        }
+        
+        .journey-arrow { font-size: 1.5rem; }
+        
+        @media (max-width: 900px) {
+            .academies { grid-template-columns: 1fr; }
+            .journey-flow { flex-direction: column; }
+            .journey-arrow { transform: rotate(90deg); }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <div class="hero">
+            <h1>Sovereign Academy</h1>
+            <p class="hero-subtitle">
+                Master your financial future. Choose your path.
+            </p>
+            <p class="hero-tagline">✨ 100% free. No signup. No credit card.</p>
+        </div>
+        
+        <!-- Academy Cards -->
+        <div class="academies">
+            <!-- Financial Academy -->
+            <div class="academy-card financial">
+                <div class="academy-header">
+                    <div class="academy-icon">💰</div>
+                    <h2 class="academy-title">Financially Sovereign</h2>
+                    <p class="academy-tagline">Master Money. Master Life.</p>
+                </div>
+                
+                <p class="academy-desc">
+                    Learn universal financial literacy. Budgeting, saving, investing, taxes, debt strategy, and building true wealth. For everyone.
+                </p>
+                
+                <ul class="academy-highlights">
+                    <li>10 core modules (4-6 hours total)</li>
+                    <li>Interactive calculators & simulations</li>
+                    <li>Real-world scenarios, not theory</li>
+                    <li>Personalized learning path</li>
+                </ul>
+                
+                <div class="academy-stats">
+                    <div class="stat-box">
+                        <div class="stat-value">10</div>
+                        <div class="stat-label">Modules</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">15+</div>
+                        <div class="stat-label">Calculators</div>
+                    </div>
+                </div>
+                
+                <a href="https://financiallysovereign.academy" class="cta-btn">
+                    Start Learning Money →
+                </a>
+                <a href="https://financiallysovereign.academy" class="secondary-link">
+                    Explore all modules
+                </a>
+            </div>
+            
+            <!-- Bitcoin Academy -->
+            <div class="academy-card bitcoin">
+                <div class="academy-header">
+                    <div class="academy-icon">₿</div>
+                    <h2 class="academy-title">Bitcoin Sovereign</h2>
+                    <p class="academy-tagline">Not just understanding. Mastering.</p>
+                </div>
+                
+                <p class="academy-desc">
+                    Deep Bitcoin mastery. Technical fundamentals, self-custody, privacy, security, and becoming truly sovereign with Bitcoin.
+                </p>
+                
+                <ul class="academy-highlights">
+                    <li>5 learning personas (your style)</li>
+                    <li>25+ interactive demos</li>
+                    <li>Zero-risk practice environments</li>
+                    <li>From beginner to sovereign</li>
+                </ul>
+                
+                <div class="academy-stats">
+                    <div class="stat-box">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Personas</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-value">25+</div>
+                        <div class="stat-label">Demos</div>
+                    </div>
+                </div>
+                
+                <a href="https://bitcoinsovereign.academy" class="cta-btn">
+                    Start Learning Bitcoin →
+                </a>
+                <a href="https://bitcoinsovereign.academy" class="secondary-link">
+                    Explore learning paths
+                </a>
+            </div>
+        </div>
+        
+        <!-- Journey Path -->
+        <div class="journey-path">
+            <h3>💡 Recommended Journey</h3>
+            <div class="journey-flow">
+                <span class="journey-step">Master Financial Literacy</span>
+                <span class="journey-arrow">→</span>
+                <span class="journey-step">Discover Bitcoin Organically</span>
+                <span class="journey-arrow">→</span>
+                <span class="journey-step bitcoin-step">Deep Dive Bitcoin Mastery</span>
+            </div>
+            <p style="color: #9ca3af; margin-top: 1.5rem; font-size: 0.95rem;">
+                Or jump straight to Bitcoin if you're ready. No prerequisites.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
