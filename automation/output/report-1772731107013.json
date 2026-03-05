@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-05T17:18:27.013Z",
+  "source": "/Users/dalia/projects/financially-sovereign-academy/modules/emergency-funds-saving.html",
+  "topic": "Bitcoin",
+  "contentType": "bitcoin_content",
+  "generated": {
+    "answerPages": 3,
+    "authorityArticle": "Bitcoin — Complete Guide",
+    "socialPlatforms": [
+      "linkedin",
+      "twitter",
+      "substack",
+      "nostr"
+    ],
+    "outreachTargets": 3,
+    "visualAssets": [
+      "diagram",
+      "checklist"
+    ]
+  },
+  "weeklyTargets": {
+    "authorityArticles": 1,
+    "answerPages": 3,
+    "outreachAttempts": 5,
+    "socialPosts": 4,
+    "visualAssets": 1
+  },
+  "outputFiles": {
+    "answerPages": [
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-happens-to-my-choices-when-an-emergency-hits-and-i-have.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/why-emergency-funds-matter-the-problem-nobody-talks-about-yo.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/how-much-do-you-need.html"
+    ],
+    "article": "/Users/dalia/projects/bitcoin-sovereign-academy/articles/bitcoin-complete-guide.html",
+    "socialDrafts": "see output/social/",
+    "outreach": "see output/outreach/",
+    "visuals": [
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-diagram.md",
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-checklist.md"
+    ]
+  }
+}

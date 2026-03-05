@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-05T15:44:24.096Z",
+  "source": "/Users/dalia/projects/bitcoin-sovereign-academy/paths/curious/stage-1/module-1.html",
+  "topic": "Bitcoin",
+  "contentType": "bitcoin_content",
+  "generated": {
+    "answerPages": 3,
+    "authorityArticle": "Bitcoin — Complete Guide",
+    "socialPlatforms": [
+      "linkedin",
+      "twitter",
+      "substack",
+      "nostr"
+    ],
+    "outreachTargets": 3,
+    "visualAssets": [
+      "diagram",
+      "checklist"
+    ]
+  },
+  "weeklyTargets": {
+    "authorityArticles": 1,
+    "answerPages": 3,
+    "outreachAttempts": 5,
+    "socialPosts": 4,
+    "visualAssets": 1
+  },
+  "outputFiles": {
+    "answerPages": [
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/how-does-she-eat-during-those-29-days-when-nobody-needs-her.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-worked-simple-and-direct-when-wants-align-no-middleman.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-worked-useful-beyond-being-money-eat-the-grain-use-the.html"
+    ],
+    "article": "/Users/dalia/projects/bitcoin-sovereign-academy/articles/bitcoin-complete-guide.html",
+    "socialDrafts": "see output/social/",
+    "outreach": "see output/outreach/",
+    "visuals": [
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-diagram.md",
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-checklist.md"
+    ]
+  }
+}

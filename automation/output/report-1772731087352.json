@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-05T17:18:07.352Z",
+  "source": "/Users/dalia/projects/bitcoin-sovereign-academy/interactive-demos/multisig-setup-wizard/index.html",
+  "topic": "Bitcoin",
+  "contentType": "bitcoin_content",
+  "generated": {
+    "answerPages": 3,
+    "authorityArticle": "Bitcoin — Complete Guide",
+    "socialPlatforms": [
+      "linkedin",
+      "twitter",
+      "substack",
+      "nostr"
+    ],
+    "outreachTargets": 3,
+    "visualAssets": [
+      "diagram",
+      "checklist"
+    ]
+  },
+  "weeklyTargets": {
+    "authorityArticles": 1,
+    "answerPages": 3,
+    "outreachAttempts": 5,
+    "socialPosts": 4,
+    "visualAssets": 1
+  },
+  "outputFiles": {
+    "answerPages": [
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-went-wrong-single-signature-control-ceo-only-no-success.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-went-wrong-automated-cosigning-without-verification-tru.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-saved-the-funds-2of3-multisig-configuration-one-key-at.html"
+    ],
+    "article": "/Users/dalia/projects/bitcoin-sovereign-academy/articles/bitcoin-complete-guide.html",
+    "socialDrafts": "see output/social/",
+    "outreach": "see output/outreach/",
+    "visuals": [
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-diagram.md",
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-checklist.md"
+    ]
+  }
+}

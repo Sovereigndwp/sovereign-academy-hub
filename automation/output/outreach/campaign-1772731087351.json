@@ -1,0 +1,84 @@
+{
+  "generatedAt": "2026-03-05T17:18:07.351Z",
+  "topic": "Bitcoin",
+  "contentType": "bitcoin_content",
+  "targets": [
+    {
+      "name": "Bitcoin Magazine",
+      "type": "publication",
+      "focus": "bitcoin_news",
+      "contact_info": {
+        "website": "https://bitcoinmagazine.com",
+        "editor_email": "editor@bitcoinmagazine.com",
+        "pitch_format": "guest_article"
+      },
+      "authority_score": 95,
+      "topics_interested": [
+        "bitcoin_education",
+        "self_custody",
+        "lightning_network"
+      ],
+      "last_contacted": null,
+      "success_rate": "high"
+    },
+    {
+      "name": "CoinDesk",
+      "type": "publication",
+      "focus": "crypto_news",
+      "contact_info": {
+        "website": "https://coindesk.com",
+        "editor_email": "editorial@coindesk.com",
+        "pitch_format": "data_story"
+      },
+      "authority_score": 90,
+      "topics_interested": [
+        "bitcoin_adoption",
+        "custody_solutions",
+        "financial_literacy"
+      ],
+      "last_contacted": null,
+      "success_rate": "medium"
+    },
+    {
+      "name": "The Bitcoin Times",
+      "type": "newsletter",
+      "focus": "bitcoin_education",
+      "contact_info": {
+        "website": "https://thebitcointimes.com",
+        "editor_email": "alex@thebitcointimes.com",
+        "pitch_format": "educational_content"
+      },
+      "authority_score": 75,
+      "topics_interested": [
+        "bitcoin_basics",
+        "self_custody",
+        "inheritance_planning"
+      ],
+      "last_contacted": null,
+      "success_rate": "high"
+    }
+  ],
+  "messages": [
+    {
+      "to": "editor@bitcoinmagazine.com",
+      "subject": "Guest contribution: Bitcoin for Bitcoin Magazine",
+      "body": "Hi,\n\nI'm Dalia Platt, founder of The Sovereign Academy. I've created a comprehensive guide on Bitcoin that I believe would be valuable for your audience.\n\nThe guide covers:\n• Bitcoin\n• hardware wallet\n• seed phrase\n\nWould you be open to a guest contribution or linking to the resource? I'm happy to customise the content for your audience.\n\nBest,\nDalia Platt\ndalia@thebitcoinadviser.com\nThe Sovereign Academy"
+    },
+    {
+      "to": "editorial@coindesk.com",
+      "subject": "Guest contribution: Bitcoin for CoinDesk",
+      "body": "Hi,\n\nI'm Dalia Platt, founder of The Sovereign Academy. I've created a comprehensive guide on Bitcoin that I believe would be valuable for your audience.\n\nThe guide covers:\n• Bitcoin\n• hardware wallet\n• seed phrase\n\nWould you be open to a guest contribution or linking to the resource? I'm happy to customise the content for your audience.\n\nBest,\nDalia Platt\ndalia@thebitcoinadviser.com\nThe Sovereign Academy"
+    },
+    {
+      "to": "alex@thebitcointimes.com",
+      "subject": "Guest contribution: Bitcoin for The Bitcoin Times",
+      "body": "Hi,\n\nI'm Dalia Platt, founder of The Sovereign Academy. I've created a comprehensive guide on Bitcoin that I believe would be valuable for your audience.\n\nThe guide covers:\n• Bitcoin\n• hardware wallet\n• seed phrase\n\nWould you be open to a guest contribution or linking to the resource? I'm happy to customise the content for your audience.\n\nBest,\nDalia Platt\ndalia@thebitcoinadviser.com\nThe Sovereign Academy"
+    }
+  ],
+  "tracking": {
+    "sent": 0,
+    "opened": 0,
+    "replied": 0,
+    "linked": 0
+  }
+}

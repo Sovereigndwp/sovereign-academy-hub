@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-05T17:18:27.049Z",
+  "source": "/Users/dalia/projects/financially-sovereign-academy/modules/credit-scores.html",
+  "topic": "credit score",
+  "contentType": "financial_content",
+  "generated": {
+    "answerPages": 3,
+    "authorityArticle": "credit score — Complete Guide",
+    "socialPlatforms": [
+      "linkedin",
+      "twitter",
+      "substack",
+      "nostr"
+    ],
+    "outreachTargets": 2,
+    "visualAssets": [
+      "diagram",
+      "checklist"
+    ]
+  },
+  "weeklyTargets": {
+    "authorityArticles": 1,
+    "answerPages": 3,
+    "outreachAttempts": 5,
+    "socialPosts": 4,
+    "visualAssets": 1
+  },
+  "outputFiles": {
+    "answerPages": [
+      "/Users/dalia/projects/financially-sovereign-academy/answers/what-is-a-credit-score.html",
+      "/Users/dalia/projects/financially-sovereign-academy/answers/why-it-matters-getting-approved-for-credit-cards-car-loans-m.html",
+      "/Users/dalia/projects/financially-sovereign-academy/answers/how-credit-scores-are-calculated-the-5-factors-fico-score-35.html"
+    ],
+    "article": "/Users/dalia/projects/financially-sovereign-academy/articles/credit-score-complete-guide.html",
+    "socialDrafts": "see output/social/",
+    "outreach": "see output/outreach/",
+    "visuals": [
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/credit-score-diagram.md",
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/credit-score-checklist.md"
+    ]
+  }
+}

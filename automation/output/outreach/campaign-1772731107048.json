@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-03-05T17:18:27.048Z",
+  "topic": "credit score",
+  "contentType": "financial_content",
+  "targets": [
+    {
+      "name": "Financial Planning Magazine",
+      "type": "publication",
+      "focus": "financial_planning",
+      "contact_info": {
+        "website": "https://www.financial-planning.com",
+        "editor_email": "editorial@financial-planning.com",
+        "pitch_format": "expert_commentary"
+      },
+      "authority_score": 85,
+      "topics_interested": [
+        "emergency_funds",
+        "retirement_planning",
+        "investment_basics"
+      ],
+      "last_contacted": null,
+      "success_rate": "medium"
+    },
+    {
+      "name": "Investopedia",
+      "type": "educational_platform",
+      "focus": "financial_education",
+      "contact_info": {
+        "website": "https://investopedia.com",
+        "editor_email": "editors@investopedia.com",
+        "pitch_format": "educational_article"
+      },
+      "authority_score": 95,
+      "topics_interested": [
+        "financial_literacy",
+        "budgeting",
+        "compound_interest"
+      ],
+      "last_contacted": null,
+      "success_rate": "low"
+    }
+  ],
+  "messages": [
+    {
+      "to": "editorial@financial-planning.com",
+      "subject": "Guest contribution: credit score for Financial Planning Magazine",
+      "body": "Hi,\n\nI'm Dalia Platt, founder of The Sovereign Academy. I've created a comprehensive guide on credit score that I believe would be valuable for your audience.\n\nThe guide covers:\n• credit score\n• debt\n\nWould you be open to a guest contribution or linking to the resource? I'm happy to customise the content for your audience.\n\nBest,\nDalia Platt\ndalia@thebitcoinadviser.com\nThe Sovereign Academy"
+    },
+    {
+      "to": "editors@investopedia.com",
+      "subject": "Guest contribution: credit score for Investopedia",
+      "body": "Hi,\n\nI'm Dalia Platt, founder of The Sovereign Academy. I've created a comprehensive guide on credit score that I believe would be valuable for your audience.\n\nThe guide covers:\n• credit score\n• debt\n\nWould you be open to a guest contribution or linking to the resource? I'm happy to customise the content for your audience.\n\nBest,\nDalia Platt\ndalia@thebitcoinadviser.com\nThe Sovereign Academy"
+    }
+  ],
+  "tracking": {
+    "sent": 0,
+    "opened": 0,
+    "replied": 0,
+    "linked": 0
+  }
+}

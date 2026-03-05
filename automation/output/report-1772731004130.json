@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-05T17:16:44.130Z",
+  "source": "/Users/dalia/projects/bitcoin-sovereign-academy/deep-dives/austrian-economics/sound-money-theory.html",
+  "topic": "Bitcoin",
+  "contentType": "bitcoin_content",
+  "generated": {
+    "answerPages": 3,
+    "authorityArticle": "Bitcoin — Complete Guide",
+    "socialPlatforms": [
+      "linkedin",
+      "twitter",
+      "substack",
+      "nostr"
+    ],
+    "outreachTargets": 3,
+    "visualAssets": [
+      "diagram",
+      "checklist"
+    ]
+  },
+  "weeklyTargets": {
+    "authorityArticles": 1,
+    "answerPages": 3,
+    "outreachAttempts": 5,
+    "socialPosts": 4,
+    "visualAssets": 1
+  },
+  "outputFiles": {
+    "answerPages": [
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-separates-sound-money-from-failed-experiments.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/when-money-is-stable-prices-convey-accurate-information-abou.html",
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/when-states-control-money-they-print-to-fund-wars-expand-pow.html"
+    ],
+    "article": "/Users/dalia/projects/bitcoin-sovereign-academy/articles/bitcoin-complete-guide.html",
+    "socialDrafts": "see output/social/",
+    "outreach": "see output/outreach/",
+    "visuals": [
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-diagram.md",
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-checklist.md"
+    ]
+  }
+}

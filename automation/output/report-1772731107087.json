@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-05T17:18:27.086Z",
+  "source": "/Users/dalia/projects/financially-sovereign-academy/modules/debt-strategy.html",
+  "topic": "emergency fund",
+  "contentType": "financial_content",
+  "generated": {
+    "answerPages": 3,
+    "authorityArticle": "emergency fund — Complete Guide",
+    "socialPlatforms": [
+      "linkedin",
+      "twitter",
+      "substack",
+      "nostr"
+    ],
+    "outreachTargets": 2,
+    "visualAssets": [
+      "diagram",
+      "checklist"
+    ]
+  },
+  "weeklyTargets": {
+    "authorityArticles": 1,
+    "answerPages": 3,
+    "outreachAttempts": 5,
+    "socialPosts": 4,
+    "visualAssets": 1
+  },
+  "outputFiles": {
+    "answerPages": [
+      "/Users/dalia/projects/financially-sovereign-academy/answers/who-wins-when-i-only-pay-the-minimum.html",
+      "/Users/dalia/projects/financially-sovereign-academy/answers/when-it-helps-you-can-get-a-significantly-lower-interest-rat.html",
+      "/Users/dalia/projects/financially-sovereign-academy/answers/which-debt-payoff-method-saves-the-most-money-in-interest.html"
+    ],
+    "article": "/Users/dalia/projects/financially-sovereign-academy/articles/emergency-fund-complete-guide.html",
+    "socialDrafts": "see output/social/",
+    "outreach": "see output/outreach/",
+    "visuals": [
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/emergency-fund-diagram.md",
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/emergency-fund-checklist.md"
+    ]
+  }
+}
