@@ -148,10 +148,25 @@ class ContentMultiplier {
 
     _detectContentType(text) {
         const l = text.toLowerCase();
-        if (l.includes('bitcoin') || l.includes('custody') || l.includes('wallet')) return 'bitcoin_content';
-        if (l.includes('emergency fund') || l.includes('compound interest') ||
-            l.includes('budget') || l.includes('financial')) return 'financial_content';
-        return 'general_content';
+
+        const bitcoinTerms   = ['bitcoin', 'self-custody', 'custody', 'hardware wallet', 'wallet',
+                                'seed phrase', 'private key', 'lightning', 'multisig', 'satoshi',
+                                'blockchain', 'mining', 'cold storage'];
+        const financialTerms = ['emergency fund', 'compound interest', 'credit score', 'budget',
+                                'debt', 'savings', 'investment', 'inflation', 'financial planning',
+                                'income', 'expense', 'net worth', 'interest rate', 'loan'];
+
+        // Count how many times each category's terms appear in the text
+        const countHits = terms => terms.reduce((sum, t) => {
+            const re = new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+            return sum + (l.match(re) || []).length;
+        }, 0);
+
+        const bitcoinScore   = countHits(bitcoinTerms);
+        const financialScore = countHits(financialTerms);
+
+        if (bitcoinScore === 0 && financialScore === 0) return 'general_content';
+        return bitcoinScore >= financialScore ? 'bitcoin_content' : 'financial_content';
     }
 
     _detectMonetizationOpportunity(contentType) {
