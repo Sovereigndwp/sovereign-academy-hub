@@ -1,0 +1,65 @@
+{
+  "site": "The Sovereign Academy",
+  "url": "https://thesovereign.academy",
+  "description": "Central hub for financial sovereignty education connecting Bitcoin and financial literacy academies",
+  "founder": "Dalia Platt",
+  "founded": "2024",
+  "type": "EducationalOrganization",
+  "network": {
+    "properties": [
+      {
+        "name": "Bitcoin Sovereign Academy",
+        "url": "https://bitcoinsovereign.academy",
+        "focus": "Bitcoin education, self-custody, Lightning Network",
+        "courses": 6,
+        "demos": 44
+      },
+      {
+        "name": "Financially Sovereign Academy",
+        "url": "https://financiallysovereign.academy",
+        "focus": "Financial literacy, budgeting, investing, debt management",
+        "modules": 10,
+        "calculators": 15
+      }
+    ]
+  },
+  "primary_topics": [
+    "financial sovereignty",
+    "Bitcoin education",
+    "financial literacy",
+    "self-custody",
+    "money management",
+    "personal finance",
+    "cryptocurrency education",
+    "Lightning Network"
+  ],
+  "learning_paths": [
+    {
+      "name": "Financial Literacy First",
+      "description": "Start with traditional finance fundamentals, then explore Bitcoin",
+      "url": "https://financiallysovereign.academy/assessment.html",
+      "duration": "4-6 hours",
+      "level": "Beginner"
+    },
+    {
+      "name": "Bitcoin Deep Dive",
+      "description": "Comprehensive Bitcoin education from basics to sovereignty",
+      "url": "https://bitcoinsovereign.academy/start/",
+      "duration": "8-15 hours",
+      "level": "All levels"
+    }
+  ],
+  "authority_signals": [
+    "44 interactive Bitcoin demos",
+    "10 financial literacy modules",
+    "Original Bitcoin custody frameworks",
+    "Educational content cited across Bitcoin communities",
+    "Consistent publishing since 2024"
+  ],
+  "contact": {
+    "email": "dalia@thebitcoinadviser.com",
+    "website": "https://thebitcoinadviser.com",
+    "twitter": "@BTCSovereignEdu",
+    "newsletter": "https://sovereigndwp.substack.com/"
+  }
+}
