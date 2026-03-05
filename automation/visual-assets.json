@@ -1,0 +1,488 @@
+{
+  "asset_templates": {
+    "diagrams": {
+      "bitcoin_custody_flow": {
+        "title": "Bitcoin Self-Custody Decision Tree",
+        "type": "flowchart",
+        "style": "clean_professional",
+        "elements": [
+          {
+            "type": "decision_diamond",
+            "text": "Do you want to control your Bitcoin?",
+            "position": "top_center"
+          },
+          {
+            "type": "process_box",
+            "text": "Keep on Exchange\n(Not your keys, not your Bitcoin)",
+            "position": "left_branch",
+            "color": "red"
+          },
+          {
+            "type": "process_box",
+            "text": "Self-Custody\n(You control the keys)",
+            "position": "right_branch",
+            "color": "green"
+          },
+          {
+            "type": "sub_decision",
+            "text": "Amount < $1000?",
+            "position": "right_sub"
+          },
+          {
+            "type": "process_box",
+            "text": "Mobile Wallet\n(Blue Wallet, Phoenix)",
+            "position": "small_amount",
+            "color": "orange"
+          },
+          {
+            "type": "process_box",
+            "text": "Hardware Wallet\n(Coldcard, Trezor)",
+            "position": "large_amount",
+            "color": "dark_green"
+          }
+        ],
+        "dimensions": "1080x1080",
+        "brand_colors": ["#F7931A", "#000000", "#FFFFFF"]
+      },
+      "emergency_fund_steps": {
+        "title": "Emergency Fund Building Process",
+        "type": "step_diagram",
+        "style": "modern_infographic",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Calculate Monthly Expenses",
+            "description": "Track spending for 30 days",
+            "icon": "calculator"
+          },
+          {
+            "number": 2,
+            "title": "Set 3-Month Goal",
+            "description": "Expenses × 3 = Target amount",
+            "icon": "target"
+          },
+          {
+            "number": 3,
+            "title": "Automate Savings",
+            "description": "Set up automatic transfers",
+            "icon": "automation"
+          },
+          {
+            "number": 4,
+            "title": "High-Yield Savings",
+            "description": "Park funds in accessible account",
+            "icon": "bank"
+          },
+          {
+            "number": 5,
+            "title": "Don't Touch It",
+            "description": "Only for true emergencies",
+            "icon": "lock"
+          }
+        ],
+        "dimensions": "1200x800",
+        "color_scheme": "financial_trust"
+      }
+    },
+    "frameworks": {
+      "bitcoin_education_pyramid": {
+        "title": "The Bitcoin Learning Pyramid",
+        "type": "pyramid_diagram",
+        "levels": [
+          {
+            "level": "foundation",
+            "title": "Why Bitcoin Exists",
+            "content": "Money problems • Inflation • Central banking",
+            "width": "100%",
+            "color": "#8B4513"
+          },
+          {
+            "level": "understanding",
+            "title": "How Bitcoin Works",
+            "content": "Decentralization • Proof of Work • Limited Supply",
+            "width": "75%",
+            "color": "#F7931A"
+          },
+          {
+            "level": "practical",
+            "title": "Using Bitcoin",
+            "content": "Wallets • Transactions • Custody",
+            "width": "50%",
+            "color": "#FFD700"
+          },
+          {
+            "level": "advanced",
+            "title": "Bitcoin Mastery",
+            "content": "Lightning • Privacy • Development",
+            "width": "25%",
+            "color": "#FF6347"
+          }
+        ],
+        "dimensions": "1080x1080"
+      },
+      "sovereignty_spectrum": {
+        "title": "Financial Sovereignty Spectrum",
+        "type": "horizontal_spectrum",
+        "scale": [
+          {
+            "position": 0,
+            "label": "Fully Dependent",
+            "description": "All money in banks\nNo emergency fund\nNo financial education",
+            "color": "#FF4444"
+          },
+          {
+            "position": 25,
+            "label": "Basic Prepared",
+            "description": "Emergency fund\nDiversified investments\nBasic financial literacy",
+            "color": "#FF8844"
+          },
+          {
+            "position": 50,
+            "label": "Partially Sovereign",
+            "description": "Some Bitcoin\nMultiple income streams\nGood financial knowledge",
+            "color": "#FFAA44"
+          },
+          {
+            "position": 75,
+            "label": "Mostly Sovereign",
+            "description": "Significant Bitcoin stack\nSelf-custody knowledge\nPassive income sources",
+            "color": "#88AA44"
+          },
+          {
+            "position": 100,
+            "label": "Fully Sovereign",
+            "description": "Bitcoin-first savings\nComplete self-custody\nFinancial independence",
+            "color": "#44AA44"
+          }
+        ],
+        "dimensions": "1400x600"
+      }
+    },
+    "checklists": {
+      "bitcoin_custody_checklist": {
+        "title": "Bitcoin Self-Custody Security Checklist",
+        "type": "interactive_checklist",
+        "sections": [
+          {
+            "section_title": "Before You Start",
+            "items": [
+              "✓ Understand what you're doing (take our course)",
+              "✓ Practice with small amounts first ($20-100)",
+              "✓ Have 2-3 hours of uninterrupted time",
+              "✓ Choose your wallet type (hardware recommended)",
+              "✓ Prepare secure storage for seed phrase"
+            ]
+          },
+          {
+            "section_title": "Setting Up Your Wallet",
+            "items": [
+              "✓ Buy wallet from official manufacturer",
+              "✓ Verify authenticity/tamper seals",
+              "✓ Update firmware to latest version",
+              "✓ Generate new seed phrase (don't use pre-generated)",
+              "✓ Write seed phrase on paper (never digital)"
+            ]
+          },
+          {
+            "section_title": "Securing Your Seed",
+            "items": [
+              "✓ Write clearly and double-check spelling",
+              "✓ Create 2-3 physical copies",
+              "✓ Store copies in different secure locations",
+              "✓ Consider metal backup for long-term storage",
+              "✓ Never photograph or type seed phrase"
+            ]
+          },
+          {
+            "section_title": "Testing Your Setup",
+            "items": [
+              "✓ Send small test amount to wallet",
+              "✓ Verify transaction appears in wallet",
+              "✓ Practice sending Bitcoin back out",
+              "✓ Test wallet recovery with seed phrase",
+              "✓ Only add larger amounts after successful tests"
+            ]
+          }
+        ],
+        "dimensions": "800x1200",
+        "style": "clean_professional",
+        "branding": "sovereign_academy"
+      },
+      "emergency_fund_checklist": {
+        "title": "Emergency Fund Action Plan",
+        "type": "progress_checklist",
+        "phases": [
+          {
+            "phase": "Week 1: Assessment",
+            "tasks": [
+              "✓ Track all expenses for 7 days",
+              "✓ Calculate true monthly costs",
+              "✓ Identify largest expense categories",
+              "✓ Set emergency fund target (3x monthly expenses)"
+            ]
+          },
+          {
+            "phase": "Week 2: Setup",
+            "tasks": [
+              "✓ Open high-yield savings account",
+              "✓ Set up automatic transfer",
+              "✓ Cut one unnecessary expense",
+              "✓ Make first emergency fund deposit"
+            ]
+          },
+          {
+            "phase": "Month 1-3: Building",
+            "tasks": [
+              "✓ Maintain automatic contributions",
+              "✓ Add windfalls (tax refunds, bonuses)",
+              "✓ Resist temptation to use fund",
+              "✓ Celebrate small milestones"
+            ]
+          },
+          {
+            "phase": "Ongoing: Maintenance",
+            "tasks": [
+              "✓ Review fund size annually",
+              "✓ Adjust for lifestyle changes",
+              "✓ Keep funds easily accessible",
+              "✓ Only use for true emergencies"
+            ]
+          }
+        ],
+        "dimensions": "800x1000"
+      }
+    },
+    "infographics": {
+      "bitcoin_vs_traditional_money": {
+        "title": "Bitcoin vs Traditional Money",
+        "type": "comparison_infographic",
+        "layout": "split_screen",
+        "left_side": {
+          "title": "Traditional Money",
+          "color": "#CC0000",
+          "points": [
+            {
+              "icon": "bank",
+              "text": "Controlled by central banks",
+              "detail": "Decisions made by small groups"
+            },
+            {
+              "icon": "printer",
+              "text": "Can be printed infinitely",
+              "detail": "Your savings lose value over time"
+            },
+            {
+              "icon": "middleman",
+              "text": "Requires intermediaries",
+              "detail": "Banks, payment processors, governments"
+            },
+            {
+              "icon": "closed",
+              "text": "Not accessible to everyone",
+              "detail": "2 billion people are unbanked"
+            }
+          ]
+        },
+        "right_side": {
+          "title": "Bitcoin",
+          "color": "#F7931A",
+          "points": [
+            {
+              "icon": "network",
+              "text": "Controlled by network consensus",
+              "detail": "No single point of control"
+            },
+            {
+              "icon": "cap",
+              "text": "Fixed supply of 21 million",
+              "detail": "Your Bitcoin maintains scarcity"
+            },
+            {
+              "icon": "direct",
+              "text": "Peer-to-peer transactions",
+              "detail": "Send directly to anyone, anywhere"
+            },
+            {
+              "icon": "open",
+              "text": "Open to everyone",
+              "detail": "Just need internet connection"
+            }
+          ]
+        },
+        "dimensions": "1200x800"
+      },
+      "compound_interest_visualization": {
+        "title": "The Power of Compound Interest",
+        "type": "growth_chart_infographic",
+        "data": {
+          "starting_amount": 1000,
+          "monthly_contribution": 500,
+          "interest_rate": 7,
+          "time_periods": [1, 5, 10, 20, 30],
+          "scenarios": [
+            {
+              "name": "No Compound Interest",
+              "color": "#FF6B6B",
+              "values": [6000, 30000, 60000, 120000, 180000]
+            },
+            {
+              "name": "With Compound Interest (7%)",
+              "color": "#4ECDC4",
+              "values": [6340, 35975, 87730, 263058, 614325]
+            }
+          ]
+        },
+        "callouts": [
+          {
+            "year": 10,
+            "text": "$27K difference",
+            "highlight": true
+          },
+          {
+            "year": 30,
+            "text": "$434K difference!",
+            "highlight": true
+          }
+        ],
+        "dimensions": "1400x800"
+      }
+    }
+  },
+  "generation_tools": {
+    "canva_templates": {
+      "integration": "Canva Pro API",
+      "brand_kit": {
+        "colors": ["#F7931A", "#000000", "#FFFFFF", "#333333", "#4ECDC4"],
+        "fonts": ["Inter", "Roboto", "Open Sans"],
+        "logos": ["sovereign_academy_logo.png", "bitcoin_icon.svg"]
+      },
+      "automation_workflow": [
+        "1. Content analysis identifies visual opportunities",
+        "2. Template selection based on content type",
+        "3. Auto-populate with extracted data/text",
+        "4. Generate multiple size variations",
+        "5. Add consistent branding elements",
+        "6. Export for different platforms"
+      ]
+    },
+    "figma_templates": {
+      "integration": "Figma API for complex diagrams",
+      "use_cases": ["Complex flowcharts", "Technical diagrams", "Interactive prototypes"],
+      "template_library": "/automation/figma-templates/"
+    },
+    "mermaid_diagrams": {
+      "integration": "Mermaid CLI for code-generated diagrams",
+      "use_cases": ["Flowcharts", "Process flows", "Decision trees"],
+      "export_formats": ["SVG", "PNG", "PDF"],
+      "example_syntax": {
+        "bitcoin_flow": "graph TD\nA[Buy Bitcoin] --> B{Self Custody?}\nB -->|Yes| C[Hardware Wallet]\nB -->|No| D[Exchange Custody]\nC --> E[Secure Seed Phrase]\nD --> F[Trust Third Party]"
+      }
+    }
+  },
+  "platform_optimization": {
+    "linkedin": {
+      "image_specs": {
+        "single_image": "1080x1080",
+        "carousel": "1080x1080 per slide, max 10 slides"
+      },
+      "best_practices": [
+        "High contrast text for mobile viewing",
+        "Logo placement in bottom right",
+        "Keep text large and readable",
+        "Use consistent brand colors"
+      ]
+    },
+    "twitter": {
+      "image_specs": {
+        "single_image": "1200x675",
+        "thread_images": "1080x1080"
+      },
+      "optimization": [
+        "Eye-catching thumbnails",
+        "Quotable text overlays",
+        "Charts and data visualizations perform well"
+      ]
+    },
+    "substack": {
+      "image_specs": {
+        "header_image": "1456x728",
+        "inline_images": "800x600"
+      },
+      "usage": [
+        "Detailed infographics",
+        "Step-by-step visual guides",
+        "Data-heavy charts and comparisons"
+      ]
+    },
+    "website_integration": {
+      "image_specs": {
+        "hero_images": "1920x1080",
+        "content_images": "800x600",
+        "thumbnails": "400x300"
+      },
+      "seo_optimization": [
+        "Alt text with target keywords",
+        "Descriptive file names",
+        "Optimized file sizes for speed",
+        "Schema markup for images"
+      ]
+    }
+  },
+  "automation_triggers": {
+    "content_based": {
+      "new_article": {
+        "auto_generate": [
+          "Key concept diagram",
+          "Summary infographic",
+          "Social media quote cards",
+          "Process checklist if applicable"
+        ]
+      },
+      "bitcoin_content": {
+        "auto_generate": [
+          "Custody flowchart",
+          "Security checklist",
+          "Comparison chart",
+          "Twitter thread graphics"
+        ]
+      },
+      "financial_content": {
+        "auto_generate": [
+          "Process diagram",
+          "Progress tracker",
+          "Comparison infographic",
+          "Action checklist"
+        ]
+      }
+    },
+    "platform_specific": {
+      "linkedin_post": ["Quote card", "Data visualization"],
+      "twitter_thread": ["Thread graphics", "Summary cards"],
+      "newsletter": ["Header image", "Section dividers"],
+      "website_page": ["Hero graphic", "Supporting diagrams"]
+    }
+  },
+  "quality_standards": {
+    "design_principles": [
+      "Clear hierarchy and readability",
+      "Consistent brand colors and fonts",
+      "High contrast for accessibility",
+      "Mobile-first responsive design",
+      "Minimal text, maximum impact"
+    ],
+    "content_requirements": [
+      "Factually accurate information",
+      "Clear call-to-action when appropriate",
+      "Source attribution for data",
+      "Sovereign Academy branding",
+      "Link back to full content"
+    ],
+    "technical_specs": [
+      "Optimized file sizes",
+      "High resolution for print/web",
+      "Multiple format exports",
+      "SEO-friendly file names",
+      "Alt text for accessibility"
+    ]
+  }
+}

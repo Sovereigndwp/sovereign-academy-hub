@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-03-05T15:38:26.707Z",
+  "source": "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-is-bitcoin-self-custody.html",
+  "topic": "Bitcoin",
+  "contentType": "bitcoin_content",
+  "generated": {
+    "answerPages": 1,
+    "authorityArticle": "Bitcoin — Complete Guide",
+    "socialPlatforms": [
+      "linkedin",
+      "twitter",
+      "substack",
+      "nostr"
+    ],
+    "outreachTargets": 3,
+    "visualAssets": [
+      "diagram",
+      "checklist"
+    ]
+  },
+  "weeklyTargets": {
+    "authorityArticles": 1,
+    "answerPages": 3,
+    "outreachAttempts": 5,
+    "socialPosts": 4,
+    "visualAssets": 1
+  },
+  "outputFiles": {
+    "answerPages": [
+      "/Users/dalia/projects/bitcoin-sovereign-academy/answers/what-is-bitcoin-self-custody-the-sovereign-academy-context-h.html"
+    ],
+    "article": "/Users/dalia/projects/bitcoin-sovereign-academy/articles/bitcoin-complete-guide.html",
+    "socialDrafts": "see output/social/",
+    "outreach": "see output/outreach/",
+    "visuals": [
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-diagram.md",
+      "/Users/dalia/projects/sovereign-academy-hub/automation/output/visuals/bitcoin-checklist.md"
+    ]
+  }
+}

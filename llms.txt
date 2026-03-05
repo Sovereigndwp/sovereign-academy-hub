@@ -101,3 +101,7 @@ All educational content. Not financial advice.
 - Twitter: @BTCSovereignEdu
 - Newsletter: https://sovereigndwp.substack.com/
 - GitHub: https://github.com/Sovereigndwp
+
+## New Content — 2026-03-05
+- https://bitcoinsovereign.academy/answers/what-is-bitcoin-self-custody-the-sovereign-academy-context-h.html
+- https://bitcoinsovereign.academy/articles/bitcoin-complete-guide.html

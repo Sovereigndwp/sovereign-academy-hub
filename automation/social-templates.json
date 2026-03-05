@@ -1,0 +1,148 @@
+{
+  "platform_templates": {
+    "linkedin": {
+      "post_structure": {
+        "hook": "Attention-grabbing first line (under 125 chars)",
+        "body": "Educational content with personal story or insight",
+        "call_to_action": "Engagement question or link to full content",
+        "hashtags": "Max 3 relevant hashtags",
+        "max_length": 1300
+      },
+      "templates": {
+        "educational_post": {
+          "format": "{{HOOK}}\n\n{{PROBLEM_STATEMENT}}\n\n{{SOLUTION_PREVIEW}}\n\n{{PERSONAL_INSIGHT}}\n\n{{CALL_TO_ACTION}}\n\n{{HASHTAGS}}",
+          "example": "Most people think Bitcoin is too complicated to understand.\n\nBut here's what I learned teaching 10,000+ students:\n\nThe problem isn't Bitcoin's complexity—it's how it's explained.\n\n• Technical jargon instead of plain English\n• Abstract concepts without real examples\n• Theory without hands-on practice\n\nAt The Sovereign Academy, we flipped this:\n\n✅ Interactive demos you can touch\n✅ Real scenarios, zero financial risk\n✅ Step-by-step guidance\n\nResult? Students go from confused to confident in hours, not months.\n\nThe best education feels like play, not work.\n\nWhat's the most confusing financial concept you've encountered? 👇\n\n#BitcoinEducation #FinancialLiteracy #LearningDesign"
+        },
+        "story_post": {
+          "format": "{{PERSONAL_STORY_HOOK}}\n\n{{STORY_DEVELOPMENT}}\n\n{{LESSON_LEARNED}}\n\n{{BROADER_APPLICATION}}\n\n{{ENGAGEMENT_QUESTION}}\n\n{{HASHTAGS}}",
+          "example": "I once lost $500 trying to be my own bank.\n\nHere's what went wrong—and what it taught me about Bitcoin education:\n\nIn 2019, I thought I understood Bitcoin custody. I'd read the articles, watched the videos, even taught others about private keys.\n\nThen I tried to set up my first hardware wallet.\n\nConfused by the interface, I sent a test transaction to the wrong address format. $500 gone forever.\n\nThat failure became my mission:\n\nReal Bitcoin education needs:\n• Safe practice environments\n• Hands-on experience\n• Multiple chances to fail safely\n\nNow, 44 interactive demos later, our students practice with ZERO real money at risk.\n\nThey make mistakes, learn from them, and build real confidence.\n\nThe best teachers are often the best students of failure.\n\nWhat's a \"costly lesson\" that made you better at what you do? 💭\n\n#Bitcoin #Education #FailurelessLearning"
+        },
+        "data_insight": {
+          "format": "{{SURPRISING_DATA_POINT}}\n\n{{CONTEXT_WHY_SURPRISING}}\n\n{{DATA_BREAKDOWN}}\n\n{{IMPLICATIONS}}\n\n{{ACTIONABLE_TAKEAWAY}}\n\n{{LINK_TO_FULL_ANALYSIS}}\n\n{{HASHTAGS}}",
+          "example": "83% of our students can't define \"compound interest\"—but 97% understand it after one interactive demo.\n\nThis gap reveals something important about financial education:\n\nThe problem isn't intelligence. It's methodology.\n\nTraditional approach:\n📚 Read definition: \"Interest earned on interest\"\n📊 See formula: A = P(1 + r)^t\n📈 Look at charts\n\nOur approach:\n🎮 Interactive compound growth simulator\n💡 Watch $100 become $1,627 over 30 years\n⚡ Adjust variables in real-time\n\nThe difference? Students SEE their money growing, don't just read about it.\n\nAbstract becomes concrete.\nTheory becomes practice.\nConfusion becomes confidence.\n\nFull analysis and demo: [link]\n\n#FinancialLiteracy #CompoundInterest #InteractiveLearning"
+        }
+      }
+    },
+    "twitter": {
+      "thread_structure": {
+        "tweet_1": "Hook tweet with thread indicator (1/n)",
+        "tweet_2_n": "Main content broken into digestible tweets",
+        "final_tweet": "Call to action with link",
+        "max_tweets": 10,
+        "chars_per_tweet": 280
+      },
+      "templates": {
+        "educational_thread": {
+          "format": [
+            "{{HOOK_STATEMENT}} 🧵 (1/{{THREAD_LENGTH}})",
+            "{{MAIN_POINT_1}} (2/{{THREAD_LENGTH}})",
+            "{{MAIN_POINT_2}} (3/{{THREAD_LENGTH}})",
+            "{{MAIN_POINT_3}} (4/{{THREAD_LENGTH}})",
+            "{{CONCLUSION_AND_CTA}} ({{THREAD_LENGTH}}/{{THREAD_LENGTH}})"
+          ],
+          "example": [
+            "Bitcoin custody isn't rocket science—but it's taught like it is. Here's how to actually understand it: 🧵 (1/7)",
+            "First, forget everything you've heard about \"private keys\" and \"seed phrases.\" Let's start simple. (2/7)",
+            "Think of Bitcoin like a safety deposit box. The \"private key\" is literally just the key that opens your box. (3/7)",
+            "Your \"seed phrase\" is a backup key. If you lose the main key, you can use these 12-24 words to make a new one. (4/7)",
+            "\"Self custody\" just means YOU hold the keys. Not a bank, not an exchange. You. (5/7)",
+            "Most people get confused because they try to understand the technology first. Wrong approach. (6/7)",
+            "Start with the PURPOSE, then learn the tools. Full step-by-step guide (with zero-risk practice): [link] (7/7)"
+          ]
+        },
+        "quick_insight": {
+          "format": "{{INSIGHT}} {{CONTEXT}} {{CTA}}",
+          "example": "The average person spends more time choosing a Netflix show than researching their financial advisor. 🤔 Maybe that's why 70% of people can't afford a $400 emergency. Time to flip those priorities? 👇 [link]"
+        }
+      }
+    },
+    "substack": {
+      "newsletter_structure": {
+        "subject_line": "Compelling subject under 50 chars",
+        "opening": "Personal hook or current event tie-in",
+        "main_content": "Condensed version of full article",
+        "insights": "3-5 key takeaways in bullet form",
+        "action_items": "What readers can do immediately",
+        "closer": "Personal sign-off with link to full content"
+      },
+      "templates": {
+        "weekly_insights": {
+          "subject": "{{TOPIC}}: What I learned this week",
+          "format": "Hi {{READER_NAME}},\n\n{{PERSONAL_OPENING}}\n\nThis week I've been thinking about {{MAIN_TOPIC}}.\n\n{{CONDENSED_INSIGHTS}}\n\nKey takeaways:\n• {{TAKEAWAY_1}}\n• {{TAKEAWAY_2}}\n• {{TAKEAWAY_3}}\n\n{{PRACTICAL_APPLICATION}}\n\nWhat you can do right now:\n1. {{ACTION_ITEM_1}}\n2. {{ACTION_ITEM_2}}\n3. {{ACTION_ITEM_3}}\n\n{{PERSONAL_CLOSER}}\n\nFull deep-dive (with interactive demos): {{LINK}}\n\nStay sovereign,\nDalia\n\nP.S. {{POSTSCRIPT}}"
+        },
+        "educational_series": {
+          "subject": "{{SERIES_NAME}} #{{EPISODE_NUMBER}}: {{TOPIC}}",
+          "format": "{{SERIES_INTRODUCTION}}\n\n{{EPISODE_HOOK}}\n\n{{MAIN_EDUCATIONAL_CONTENT}}\n\n{{REAL_WORLD_EXAMPLE}}\n\n{{COMMON_MISTAKES_SECTION}}\n\n{{NEXT_STEPS_FOR_READERS}}\n\n{{TEASER_FOR_NEXT_EPISODE}}\n\n{{SIGNATURE_AND_LINKS}}"
+        }
+      }
+    },
+    "nostr": {
+      "note_structure": {
+        "max_length": "Unlimited but aim for under 500 chars for better engagement",
+        "hashtags": "Use hashtags for discoverability",
+        "mentions": "Tag relevant Bitcoin educators/builders",
+        "zaps_enabled": "Enable zaps for monetization"
+      },
+      "templates": {
+        "bitcoin_education": {
+          "format": "{{BITCOIN_INSIGHT}}\n\n{{EDUCATIONAL_CONTENT}}\n\n{{CALL_TO_ACTION}}\n\n{{HASHTAGS}} {{MENTIONS}}",
+          "example": "The biggest Bitcoin custody mistake I see: \n\nSkipping the \"practice round.\"\n\nPeople buy a hardware wallet, load it with their life savings, THEN try to figure out how it works.\n\nDo this instead:\n1. Practice with $20 first\n2. Send it back and forth\n3. Restore from seed phrase\n4. THEN add more funds\n\nPractice makes permanent. Get it right when the stakes are low.\n\nFree practice environment: [link]\n\n#Bitcoin #SelfCustody #BitcoinEducation nostr:npub1sovereignacademy"
+        },
+        "value_for_value": {
+          "format": "{{VALUABLE_CONTENT}}\n\n{{EDUCATION_OR_INSIGHT}}\n\n{{VALUE_PROPOSITION}}\n\n#Value4Value #Bitcoin",
+          "example": "Built 44 Bitcoin education demos. All free. No ads. No tracking.\n\nWhy? Because financial sovereignty should be accessible to everyone.\n\nIf you got value from our content, consider zapping this note or sharing with someone who needs it.\n\nValue for value. The Bitcoin way. ⚡\n\n#Value4Value #Bitcoin #Education"
+        }
+      }
+    }
+  },
+  "automation_settings": {
+    "posting_schedule": {
+      "linkedin": {
+        "frequency": "3x per week",
+        "best_times": ["Tuesday 9AM", "Thursday 2PM", "Friday 10AM"],
+        "content_mix": {
+          "educational": 0.5,
+          "story": 0.3,
+          "data_insight": 0.2
+        }
+      },
+      "twitter": {
+        "frequency": "Daily",
+        "thread_frequency": "2x per week",
+        "engagement_windows": ["7AM-9AM", "12PM-2PM", "7PM-9PM"]
+      },
+      "substack": {
+        "frequency": "Weekly",
+        "send_time": "Tuesday 8AM EST",
+        "content_type": "weekly_insights"
+      },
+      "nostr": {
+        "frequency": "Daily",
+        "focus": "Bitcoin education and value-for-value content"
+      }
+    },
+    "cross_platform_promotion": {
+      "content_flow": "Article → LinkedIn post → Twitter thread → Substack condensed → Nostr discussion",
+      "link_back_strategy": "Always include link to full content on original domain",
+      "engagement_tracking": "Monitor which platforms drive most traffic back to main sites"
+    }
+  },
+  "visual_content_integration": {
+    "linkedin": {
+      "image_types": ["infographics", "quote_cards", "data_visualizations"],
+      "video_content": "Short educational clips (under 3 minutes)"
+    },
+    "twitter": {
+      "image_types": ["charts", "frameworks", "memes"],
+      "gif_integration": "Educational animations"
+    },
+    "substack": {
+      "image_types": ["detailed_infographics", "step_by_step_guides"],
+      "embedded_content": "Interactive demos and calculators"
+    },
+    "nostr": {
+      "image_types": ["simple_graphics", "bitcoin_charts"],
+      "focus": "Text-first with occasional visual support"
+    }
+  }
+}

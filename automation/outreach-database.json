@@ -1,0 +1,181 @@
+{
+  "outreach_targets": {
+    "bitcoin_publications": [
+      {
+        "name": "Bitcoin Magazine",
+        "type": "publication",
+        "focus": "bitcoin_news",
+        "contact_info": {
+          "website": "https://bitcoinmagazine.com",
+          "editor_email": "editor@bitcoinmagazine.com",
+          "pitch_format": "guest_article"
+        },
+        "authority_score": 95,
+        "topics_interested": ["bitcoin_education", "self_custody", "lightning_network"],
+        "last_contacted": null,
+        "success_rate": "high"
+      },
+      {
+        "name": "CoinDesk",
+        "type": "publication",
+        "focus": "crypto_news",
+        "contact_info": {
+          "website": "https://coindesk.com",
+          "editor_email": "editorial@coindesk.com",
+          "pitch_format": "data_story"
+        },
+        "authority_score": 90,
+        "topics_interested": ["bitcoin_adoption", "custody_solutions", "financial_literacy"],
+        "last_contacted": null,
+        "success_rate": "medium"
+      },
+      {
+        "name": "The Bitcoin Times",
+        "type": "newsletter",
+        "focus": "bitcoin_education",
+        "contact_info": {
+          "website": "https://thebitcointimes.com",
+          "editor_email": "alex@thebitcointimes.com",
+          "pitch_format": "educational_content"
+        },
+        "authority_score": 75,
+        "topics_interested": ["bitcoin_basics", "self_custody", "inheritance_planning"],
+        "last_contacted": null,
+        "success_rate": "high"
+      }
+    ],
+    "financial_publications": [
+      {
+        "name": "Financial Planning Magazine",
+        "type": "publication",
+        "focus": "financial_planning",
+        "contact_info": {
+          "website": "https://www.financial-planning.com",
+          "editor_email": "editorial@financial-planning.com",
+          "pitch_format": "expert_commentary"
+        },
+        "authority_score": 85,
+        "topics_interested": ["emergency_funds", "retirement_planning", "investment_basics"],
+        "last_contacted": null,
+        "success_rate": "medium"
+      },
+      {
+        "name": "Investopedia",
+        "type": "educational_platform",
+        "focus": "financial_education",
+        "contact_info": {
+          "website": "https://investopedia.com",
+          "editor_email": "editors@investopedia.com",
+          "pitch_format": "educational_article"
+        },
+        "authority_score": 95,
+        "topics_interested": ["financial_literacy", "budgeting", "compound_interest"],
+        "last_contacted": null,
+        "success_rate": "low"
+      }
+    ],
+    "podcasts": [
+      {
+        "name": "What Bitcoin Did",
+        "type": "podcast",
+        "focus": "bitcoin_interviews",
+        "contact_info": {
+          "website": "https://whatbitcoindid.com",
+          "host_email": "peter@whatbitcoindid.com",
+          "pitch_format": "interview_request"
+        },
+        "authority_score": 90,
+        "topics_interested": ["bitcoin_education", "self_custody", "bitcoin_adoption"],
+        "last_contacted": null,
+        "success_rate": "medium"
+      },
+      {
+        "name": "The Investors Podcast",
+        "type": "podcast",
+        "focus": "investing",
+        "contact_info": {
+          "website": "https://theinvestorspodcast.com",
+          "host_email": "contact@theinvestorspodcast.com",
+          "pitch_format": "expert_interview"
+        },
+        "authority_score": 85,
+        "topics_interested": ["financial_literacy", "investment_education", "bitcoin_as_investment"],
+        "last_contacted": null,
+        "success_rate": "low"
+      }
+    ],
+    "educational_institutions": [
+      {
+        "name": "MIT OpenCourseWare",
+        "type": "university",
+        "focus": "open_education",
+        "contact_info": {
+          "website": "https://ocw.mit.edu",
+          "contact_email": "ocw@mit.edu",
+          "pitch_format": "educational_resource"
+        },
+        "authority_score": 100,
+        "topics_interested": ["bitcoin_technology", "cryptography", "financial_systems"],
+        "last_contacted": null,
+        "success_rate": "very_low"
+      }
+    ]
+  },
+  "outreach_templates": {
+    "guest_article": {
+      "subject": "Guest Article Proposal: {{TOPIC}} for {{PUBLICATION}}",
+      "body": "Hi {{EDITOR_NAME}},\n\nI'm Dalia Platt, founder of The Sovereign Academy network, which provides free Bitcoin and financial literacy education to {{USER_COUNT}}+ learners.\n\nI'd love to contribute a guest article on {{TOPIC}} for {{PUBLICATION}}. This topic is highly relevant to your audience because {{RELEVANCE_EXPLANATION}}.\n\nProposed article:\n• Title: {{ARTICLE_TITLE}}\n• Length: {{WORD_COUNT}} words\n• Key insights: {{KEY_INSIGHTS}}\n• Supporting data: {{DATA_POINTS}}\n\nI have unique expertise in this area through:\n{{EXPERTISE_CREDENTIALS}}\n\nWould this be of interest? I can send a detailed outline or draft within 48 hours.\n\nBest regards,\nDalia Platt\nFounder, The Sovereign Academy\n{{CONTACT_INFO}}"
+    },
+    "data_story": {
+      "subject": "Exclusive Data: {{DATA_INSIGHT}} - Story Pitch",
+      "body": "Hi {{EDITOR_NAME}},\n\nI have exclusive data from our {{USER_COUNT}}+ user base at The Sovereign Academy that reveals {{DATA_INSIGHT}}.\n\nThe data shows:\n{{DATA_BULLETS}}\n\nThis contradicts/supports the common assumption that {{COMMON_ASSUMPTION}}.\n\nI can provide:\n• Anonymized dataset\n• Expert analysis and commentary\n• Visual charts and infographics\n• Exclusive first look for {{PUBLICATION}}\n\nWould you be interested in this story? I can provide the full dataset and analysis within 24 hours.\n\nBest,\nDalia Platt\n{{CONTACT_INFO}}"
+    },
+    "interview_request": {
+      "subject": "Interview Request: {{TOPIC}} Expert - {{HOST_NAME}}",
+      "body": "Hi {{HOST_NAME}},\n\nI'm Dalia Platt, and I've been following {{PODCAST_NAME}} - particularly enjoyed your recent episode on {{RECENT_EPISODE}}.\n\nI'm the founder of The Sovereign Academy network, which has educated {{USER_COUNT}}+ people on Bitcoin and financial sovereignty through interactive, hands-on learning.\n\nI'd be honored to share insights on {{INTERVIEW_TOPIC}} with your audience. Some unique angles I could discuss:\n\n{{UNIQUE_INSIGHTS}}\n\nI'm based in {{LOCATION}} and available for recording {{AVAILABILITY}}. Happy to work around your schedule.\n\nWould this be a good fit for {{PODCAST_NAME}}?\n\nBest regards,\nDalia Platt\nFounder, The Sovereign Academy\n{{CONTACT_INFO}}"
+    },
+    "educational_resource": {
+      "subject": "Free Educational Resource for {{INSTITUTION}} Students",
+      "body": "Dear {{CONTACT_NAME}},\n\nI'm Dalia Platt, founder of The Sovereign Academy, a free educational platform that has helped {{USER_COUNT}}+ people learn Bitcoin and financial literacy.\n\nI'd like to offer our interactive educational modules as a free resource for {{INSTITUTION}} students studying {{RELEVANT_SUBJECTS}}.\n\nOur platform includes:\n• {{RESOURCE_COUNT}} interactive modules\n• Real-world simulations (no financial risk)\n• Self-paced learning paths\n• Comprehensive assessments\n\nAll content is:\n✓ Completely free\n✓ No registration required\n✓ Educationally focused (not promotional)\n✓ Aligned with academic standards\n\nWould you be interested in exploring this partnership? I'd be happy to provide a demonstration or pilot program.\n\nBest regards,\nDalia Platt\nFounder, The Sovereign Academy\n{{CONTACT_INFO}}"
+    }
+  },
+  "tracking": {
+    "metrics": {
+      "outreach_sent": 0,
+      "responses_received": 0,
+      "backlinks_acquired": 0,
+      "guest_articles_published": 0,
+      "podcast_appearances": 0,
+      "partnerships_formed": 0
+    },
+    "weekly_targets": {
+      "outreach_emails": 5,
+      "follow_ups": 3,
+      "new_backlinks": 1
+    },
+    "success_rates": {
+      "bitcoin_publications": 0.15,
+      "financial_publications": 0.08,
+      "podcasts": 0.12,
+      "educational_institutions": 0.03
+    }
+  },
+  "follow_up_sequences": {
+    "initial_pitch": {
+      "day_0": "send_initial_email",
+      "day_7": "send_follow_up_1",
+      "day_14": "send_follow_up_2",
+      "day_30": "mark_as_cold"
+    },
+    "follow_up_templates": {
+      "follow_up_1": {
+        "subject": "Re: {{ORIGINAL_SUBJECT}} - Additional Context",
+        "body": "Hi {{EDITOR_NAME}},\n\nFollowing up on my email from last week about {{TOPIC}}.\n\nI wanted to add that this topic has generated significant interest - our recent content on {{RELATED_TOPIC}} received {{ENGAGEMENT_METRICS}}.\n\nI'm also happy to adjust the angle or format to better fit {{PUBLICATION}}'s editorial calendar.\n\nStill interested in discussing this?\n\nBest,\nDalia"
+      },
+      "follow_up_2": {
+        "subject": "Final follow-up: {{TOPIC}} for {{PUBLICATION}}",
+        "body": "Hi {{EDITOR_NAME}},\n\nThis is my final follow-up on the {{TOPIC}} article proposal.\n\nI understand you're busy, so I'll keep this brief: if there's any interest in collaborating on {{TOPIC}} content for {{PUBLICATION}}, I'm here.\n\nIf not, no worries - I'll remove you from my outreach list.\n\nBest regards,\nDalia Platt"
+      }
+    }
+  }
+}

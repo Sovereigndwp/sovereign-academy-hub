@@ -1,0 +1,440 @@
+{
+  "monetization_services": {
+    "bitcoin_security_reviews": {
+      "service_name": "Personal Bitcoin Security Review",
+      "price": "$297",
+      "target_audience": "Bitcoin holders with $10k+ who want custody confidence",
+      "value_proposition": "Get your Bitcoin setup reviewed by an expert and eliminate costly mistakes",
+      "pain_points_addressed": [
+        "Fear of losing Bitcoin to mistakes",
+        "Uncertainty about current security setup",
+        "Need for expert validation",
+        "Confusion about best practices"
+      ],
+      "deliverables": [
+        "30-minute video call setup review",
+        "Personalized security checklist",
+        "Step-by-step improvement plan",
+        "Written assessment report",
+        "30-day follow-up email support"
+      ]
+    },
+    "city_programs": {
+      "service_name": "Bitcoin Education City Programs",
+      "price": "Contact for pricing",
+      "target_audience": "City officials, libraries, community centers",
+      "value_proposition": "Bring structured Bitcoin education to your community",
+      "pain_points_addressed": [
+        "Citizens asking about Bitcoin",
+        "Need for trustworthy crypto education",
+        "Community economic development",
+        "Financial literacy gaps"
+      ],
+      "deliverables": [
+        "Custom curriculum development",
+        "Instructor training",
+        "Interactive demo setups",
+        "Community workshop series",
+        "Progress tracking and reporting"
+      ]
+    },
+    "membership_program": {
+      "service_name": "Sovereign Academy Membership",
+      "price": "$97/month",
+      "target_audience": "Individuals serious about financial sovereignty",
+      "value_proposition": "Accelerate your path to financial independence with expert guidance",
+      "pain_points_addressed": [
+        "Information overwhelm in Bitcoin/finance space",
+        "Need for ongoing support and updates",
+        "Desire for community of like-minded people",
+        "Want structured learning path"
+      ],
+      "deliverables": [
+        "Monthly live Q&A sessions",
+        "Private member community access",
+        "New course content monthly",
+        "Direct access to Dalia for questions",
+        "Member-only workshops and events"
+      ]
+    },
+    "workshops": {
+      "service_name": "Corporate Bitcoin Workshops",
+      "price": "$2,997/day",
+      "target_audience": "Companies wanting to understand Bitcoin",
+      "value_proposition": "Get your team educated on Bitcoin without the complexity",
+      "pain_points_addressed": [
+        "Employees asking about Bitcoin policy",
+        "Need to understand crypto landscape",
+        "Treasury diversification questions",
+        "Risk management concerns"
+      ],
+      "deliverables": [
+        "4-hour interactive workshop",
+        "Customized content for industry",
+        "Take-home resources for attendees",
+        "Follow-up consultation call",
+        "Implementation guidance"
+      ]
+    }
+  },
+  "cta_templates": {
+    "bitcoin_content": {
+      "security_review_cta": {
+        "contexts": ["Bitcoin custody articles", "Security guides", "Hardware wallet content"],
+        "variations": [
+          {
+            "type": "soft_cta",
+            "text": "Want an expert to review your Bitcoin setup? Get peace of mind with a Personal Security Review.",
+            "cta_button": "Learn More About Security Reviews",
+            "placement": "mid_article"
+          },
+          {
+            "type": "strong_cta",
+            "text": "Don't risk losing your Bitcoin to a simple mistake. Get your setup professionally reviewed.",
+            "cta_button": "Book Your Security Review ($297)",
+            "placement": "end_article"
+          },
+          {
+            "type": "fear_based",
+            "text": "Every month, people lose Bitcoin to preventable mistakes. Don't be one of them.",
+            "cta_button": "Protect Your Bitcoin Investment",
+            "placement": "sidebar"
+          }
+        ]
+      },
+      "membership_cta": {
+        "contexts": ["Educational articles", "Beginner guides", "FAQ pages"],
+        "variations": [
+          {
+            "type": "value_cta",
+            "text": "Get new Bitcoin education delivered monthly, plus access to our private community.",
+            "cta_button": "Join The Academy ($97/month)",
+            "placement": "end_article"
+          },
+          {
+            "type": "community_cta",
+            "text": "Join 500+ members learning Bitcoin together. Ask questions, share wins, stay updated.",
+            "cta_button": "Become a Member",
+            "placement": "mid_article"
+          }
+        ]
+      }
+    },
+    "financial_content": {
+      "emergency_fund_cta": {
+        "contexts": ["Emergency fund articles", "Financial planning content", "Budgeting guides"],
+        "variations": [
+          {
+            "type": "next_step",
+            "text": "Ready to take your financial planning to the next level? Learn how Bitcoin fits into a sovereign financial strategy.",
+            "cta_button": "Explore Bitcoin Education",
+            "placement": "end_article"
+          }
+        ]
+      },
+      "workshop_cta": {
+        "contexts": ["Corporate finance articles", "Business content", "Economic analysis"],
+        "variations": [
+          {
+            "type": "corporate",
+            "text": "Bring Bitcoin education to your team. Custom workshops designed for your industry.",
+            "cta_button": "Book a Corporate Workshop",
+            "placement": "sidebar"
+          }
+        ]
+      }
+    },
+    "city_government": {
+      "city_program_cta": {
+        "contexts": ["Community content", "Local government articles", "Economic development"],
+        "variations": [
+          {
+            "type": "civic",
+            "text": "Bring trusted Bitcoin education to your community. Programs designed for cities and libraries.",
+            "cta_button": "Contact Us About City Programs",
+            "placement": "end_article"
+          }
+        ]
+      }
+    }
+  },
+  "landing_pages": {
+    "security_review_landing": {
+      "url": "/bitcoin-security-review/",
+      "headline": "Get Your Bitcoin Setup Reviewed by an Expert",
+      "subheadline": "Eliminate costly mistakes and gain confidence in your Bitcoin storage",
+      "structure": {
+        "hero_section": {
+          "headline": "Personal Bitcoin Security Review",
+          "subheadline": "30-minute expert review of your Bitcoin setup + personalized improvement plan",
+          "price": "$297",
+          "cta_button": "Book Your Review Now",
+          "trust_signals": [
+            "44+ interactive Bitcoin demos created",
+            "10,000+ students taught",
+            "Zero security incidents in 5+ years"
+          ]
+        },
+        "problem_section": {
+          "headline": "Are You Making These Dangerous Bitcoin Mistakes?",
+          "problems": [
+            "Using exchange custody for large amounts",
+            "Weak seed phrase storage",
+            "No backup recovery plan",
+            "Mixing hot and cold storage incorrectly",
+            "Poor operational security practices"
+          ]
+        },
+        "solution_section": {
+          "headline": "What You Get in Your Security Review",
+          "deliverables": [
+            "30-minute video call to review your current setup",
+            "Personalized security checklist with specific improvements",
+            "Step-by-step plan to implement recommendations",
+            "Written assessment report you can reference later",
+            "30 days of follow-up email support for questions"
+          ]
+        },
+        "social_proof": {
+          "headline": "What Students Say",
+          "testimonials": [
+            {
+              "quote": "Dalia caught three security vulnerabilities in my setup I never would have found. Worth every penny.",
+              "name": "Michael K.",
+              "detail": "Bitcoin holder since 2017"
+            },
+            {
+              "quote": "Finally feel confident about my Bitcoin storage. The personalized checklist was incredibly helpful.",
+              "name": "Sarah M.",
+              "detail": "Small business owner"
+            }
+          ]
+        },
+        "urgency_section": {
+          "headline": "Don't Wait Until It's Too Late",
+          "text": "Every month, Bitcoin holders lose funds to preventable mistakes. Get your setup reviewed now."
+        }
+      }
+    },
+    "membership_landing": {
+      "url": "/membership/",
+      "headline": "Accelerate Your Path to Financial Sovereignty",
+      "subheadline": "Join 500+ members getting expert Bitcoin and financial guidance monthly",
+      "structure": {
+        "hero_section": {
+          "headline": "The Sovereign Academy Membership",
+          "subheadline": "Monthly live sessions, private community, and continuous learning",
+          "price": "$97/month",
+          "cta_button": "Join The Academy",
+          "guarantee": "30-day money-back guarantee"
+        },
+        "what_included": {
+          "headline": "What's Included",
+          "benefits": [
+            "Monthly live Q&A sessions with Dalia",
+            "Private Discord community (500+ members)",
+            "New course content released monthly",
+            "Early access to new tools and demos",
+            "Member-only workshops and events",
+            "Direct messaging for urgent questions"
+          ]
+        },
+        "member_results": {
+          "headline": "Member Results",
+          "results": [
+            "95% of members successfully set up self-custody within 30 days",
+            "Average emergency fund completion time: 6 months",
+            "78% report increased confidence in financial decisions"
+          ]
+        }
+      }
+    },
+    "workshop_landing": {
+      "url": "/corporate-workshops/",
+      "headline": "Bitcoin Education for Your Team",
+      "subheadline": "Custom workshops that demystify Bitcoin for business professionals",
+      "structure": {
+        "hero_section": {
+          "headline": "Corporate Bitcoin Workshops",
+          "subheadline": "4-hour interactive sessions customized for your industry",
+          "price": "$2,997/day",
+          "cta_button": "Book a Workshop",
+          "note": "Travel expenses additional for on-site delivery"
+        },
+        "workshop_content": {
+          "headline": "What Your Team Will Learn",
+          "modules": [
+            "Bitcoin basics without the technical jargon",
+            "How Bitcoin affects your industry specifically",
+            "Practical custody and transaction demos",
+            "Risk assessment frameworks",
+            "Q&A session addressing your specific concerns"
+          ]
+        },
+        "ideal_for": {
+          "headline": "Ideal For",
+          "audiences": [
+            "Financial services firms",
+            "Technology companies",
+            "Accounting and legal firms",
+            "Investment advisory groups",
+            "Corporate treasury teams"
+          ]
+        }
+      }
+    }
+  },
+  "conversion_optimization": {
+    "content_integration": {
+      "automatic_cta_insertion": {
+        "rules": [
+          "Every article gets at least one relevant CTA",
+          "CTAs match content topic (Bitcoin content → Bitcoin services)",
+          "Mid-article CTAs are soft, end-article CTAs can be stronger",
+          "Maximum 2 CTAs per article to avoid CTA fatigue"
+        ],
+        "placement_logic": {
+          "mid_article": "After 40% of content, before any technical sections",
+          "end_article": "After conclusion, before related articles",
+          "sidebar": "Persistent throughout article reading",
+          "exit_intent": "Pop-up when user shows leaving behavior"
+        }
+      },
+      "contextual_matching": {
+        "bitcoin_custody_content": ["security_review", "membership"],
+        "beginner_bitcoin_content": ["membership", "workshops"],
+        "advanced_bitcoin_content": ["security_review"],
+        "financial_planning_content": ["membership"],
+        "business_content": ["workshops", "city_programs"]
+      }
+    },
+    "email_sequences": {
+      "security_review_nurture": {
+        "trigger": "Downloaded custody guide or visited security content 3+ times",
+        "sequence": [
+          {
+            "day": 1,
+            "subject": "Your Bitcoin security checklist",
+            "content": "Thanks for downloading the guide. Here's what most people miss...",
+            "cta": "Book a security review"
+          },
+          {
+            "day": 4,
+            "subject": "The $50,000 mistake I see constantly",
+            "content": "Real story of a Bitcoin holder who lost funds due to poor backup practices",
+            "cta": "Get your setup reviewed"
+          },
+          {
+            "day": 8,
+            "subject": "Last chance: Security review spots filling up",
+            "content": "Only booking 10 reviews this month. Don't wait.",
+            "cta": "Secure your spot now"
+          }
+        ]
+      },
+      "membership_nurture": {
+        "trigger": "Completed 2+ courses or engaged with community content",
+        "sequence": [
+          {
+            "day": 1,
+            "subject": "Your next step in Bitcoin education",
+            "content": "You've made great progress. Here's how to accelerate your learning...",
+            "cta": "Join the membership"
+          },
+          {
+            "day": 5,
+            "subject": "What our members are saying",
+            "content": "Social proof and testimonials from current members",
+            "cta": "See all member benefits"
+          }
+        ]
+      }
+    },
+    "retargeting_campaigns": {
+      "high_intent_visitors": {
+        "audience": "Visited pricing pages, spent 5+ minutes on service pages",
+        "ad_creative": "Testimonial-based ads with specific results",
+        "offer": "Limited-time discount or bonus"
+      },
+      "content_readers": {
+        "audience": "Read 3+ articles, spent 10+ minutes on site",
+        "ad_creative": "Educational content that builds trust",
+        "offer": "Free resource related to their interests"
+      }
+    },
+    "conversion_tracking": {
+      "metrics_to_track": [
+        "Page views to each service landing page",
+        "CTA click-through rates by placement and type",
+        "Email sequence open and click rates",
+        "Landing page conversion rates",
+        "Customer lifetime value by acquisition source",
+        "Revenue attribution by content type"
+      ],
+      "optimization_schedule": {
+        "weekly": "Review CTA performance and adjust underperformers",
+        "monthly": "A/B test new CTA variations",
+        "quarterly": "Full landing page optimization review"
+      }
+    }
+  },
+  "automation_integration": {
+    "content_analysis_triggers": {
+      "bitcoin_content": {
+        "auto_add_ctas": ["security_review", "membership"],
+        "email_sequences": ["security_review_nurture"],
+        "retargeting_pixels": ["high_intent_bitcoin"]
+      },
+      "financial_content": {
+        "auto_add_ctas": ["membership"],
+        "email_sequences": ["membership_nurture"],
+        "retargeting_pixels": ["financial_planning"]
+      },
+      "business_content": {
+        "auto_add_ctas": ["workshops", "city_programs"],
+        "email_sequences": ["corporate_nurture"],
+        "retargeting_pixels": ["business_decision_makers"]
+      }
+    },
+    "cross_platform_monetization": {
+      "social_media": {
+        "linkedin": "Drive to membership and workshops",
+        "twitter": "Drive to free resources → email sequences",
+        "substack": "Direct membership promotion to subscribers",
+        "nostr": "Value-for-value model + membership mentions"
+      },
+      "content_formats": {
+        "answer_pages": "Soft CTAs to related services",
+        "authority_articles": "Multiple CTAs throughout",
+        "visual_assets": "Include service mentions in graphics",
+        "email_content": "Direct service promotion"
+      }
+    }
+  },
+  "revenue_projections": {
+    "monthly_targets": {
+      "security_reviews": {
+        "target_sales": 10,
+        "price": 297,
+        "monthly_revenue": 2970
+      },
+      "membership": {
+        "target_new_members": 20,
+        "monthly_recurring_revenue": 1940,
+        "annual_value": 23280
+      },
+      "workshops": {
+        "target_workshops": 2,
+        "price": 2997,
+        "monthly_revenue": 5994
+      },
+      "city_programs": {
+        "target_contracts": 1,
+        "average_contract_value": 15000,
+        "quarterly_revenue": 15000
+      }
+    },
+    "total_monthly_target": 10904,
+    "annual_target": 130848
+  }
+}
