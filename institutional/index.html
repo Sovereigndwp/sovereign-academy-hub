@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Programs | The Sovereign Academy</title>
+    <meta name="description" content="Institutional financial education across the full spectrum — from universal financial literacy to Bitcoin mastery. Choose the right program for your organization.">
+    <link rel="canonical" href="https://thesovereign.academy/institutional/">
+    <style>
+        :root { --green:#10b981; --orange:#f7931a; --dark:#0a1f1a; --dark2:#1a1a2e; --light:#e0e0e0; --dim:#9ca3af; --grad-green:linear-gradient(135deg,#10b981,#06b6d4); --grad-orange:linear-gradient(135deg,#f7931a,#ffb347); --grad-both:linear-gradient(135deg,#10b981,#f7931a); }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--dark); color:var(--light); line-height:1.6; }
+        .header { background:rgba(10,31,26,0.97); backdrop-filter:blur(10px); padding:1rem 0; border-bottom:2px solid transparent; border-image:linear-gradient(90deg,#10b981,#f7931a) 1; position:fixed; width:100%; top:0; z-index:1000; }
+        .header-content { max-width:1200px; margin:0 auto; padding:0 2rem; display:flex; justify-content:space-between; align-items:center; }
+        .logo { display:flex; align-items:center; gap:0.75rem; text-decoration:none; color:var(--light); }
+        .logo-icon { width:38px; height:38px; background:var(--grad-both); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.3rem; font-weight:bold; color:white; }
+        .logo-text { font-size:1.1rem; font-weight:bold; }
+        .nav-links { display:flex; gap:1.5rem; list-style:none; align-items:center; }
+        .nav-link { color:var(--dim); text-decoration:none; transition:color 0.2s; font-weight:500; font-size:0.95rem; }
+        .nav-link:hover { color:var(--green); }
+        .cta-nav { background:var(--grad-both); padding:0.5rem 1.2rem; border-radius:20px; color:white!important; font-weight:600; }
+        .hero { padding:8rem 2rem 4rem; text-align:center; background:linear-gradient(135deg,rgba(16,185,129,0.06),rgba(26,26,46,0.95)); }
+        .hero h1 { font-size:clamp(2rem,4.5vw,3rem); font-weight:700; margin-bottom:1rem; }
+        .hero h1 span { background:var(--grad-both); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+        .hero p { font-size:1.15rem; color:var(--dim); max-width:700px; margin:0 auto 1rem; }
+        .hero-note { font-size:0.95rem; color:#6ee7b7; margin-bottom:2.5rem; }
+        .academies { display:grid; grid-template-columns:repeat(auto-fit,minmax(440px,1fr)); gap:3rem; max-width:1050px; margin:4rem auto 0; padding:0 2rem; }
+        .academy-card { background:rgba(26,26,46,0.8); border:2px solid; border-radius:1.5rem; padding:2.5rem; position:relative; overflow:hidden; transition:all 0.4s; }
+        .academy-card.financial { border-color:rgba(16,185,129,0.4); }
+        .academy-card.bitcoin { border-color:rgba(247,147,26,0.4); }
+        .academy-card.financial:hover { border-color:var(--green); transform:translateY(-6px); box-shadow:0 20px 40px rgba(16,185,129,0.2); }
+        .academy-card.bitcoin:hover { border-color:var(--orange); transform:translateY(-6px); box-shadow:0 20px 40px rgba(247,147,26,0.2); }
+        .academy-card::before { content:''; position:absolute; top:0; left:0; right:0; height:4px; }
+        .financial::before { background:var(--grad-green); }
+        .bitcoin::before { background:var(--grad-orange); }
+        .acad-icon { font-size:3rem; margin-bottom:1rem; display:block; }
+        .academy-card h2 { font-size:1.6rem; font-weight:700; margin-bottom:0.5rem; }
+        .financial h2 { color:var(--green); }
+        .bitcoin h2 { color:var(--orange); }
+        .academy-card .tagline { font-size:1rem; color:var(--dim); font-style:italic; margin-bottom:1.5rem; }
+        .academy-card .desc { color:var(--light); line-height:1.7; margin-bottom:2rem; font-size:1rem; }
+        .seg-links { list-style:none; margin-bottom:2rem; }
+        .seg-links li { padding:0.5rem 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+        .seg-links li:last-child { border:none; }
+        .seg-links a { text-decoration:none; font-size:0.9rem; transition:color 0.2s; display:flex; align-items:center; gap:0.5rem; }
+        .financial .seg-links a { color:var(--dim); }
+        .financial .seg-links a:hover { color:var(--green); }
+        .bitcoin .seg-links a { color:var(--dim); }
+        .bitcoin .seg-links a:hover { color:var(--orange); }
+        .cta-btn { width:100%; padding:1.1rem 2rem; font-size:1.05rem; font-weight:700; border:none; border-radius:0.75rem; cursor:pointer; text-decoration:none; display:inline-block; text-align:center; transition:all 0.3s; }
+        .financial .cta-btn { background:var(--grad-green); color:white; }
+        .bitcoin .cta-btn { background:var(--grad-orange); color:white; }
+        .cta-btn:hover { transform:translateY(-3px); box-shadow:0 10px 25px rgba(0,0,0,0.3); }
+        .not-sure { max-width:700px; margin:4rem auto; padding:3rem 2rem; background:rgba(26,26,46,0.6); border-radius:1.5rem; border:1px solid rgba(255,255,255,0.08); text-align:center; }
+        .not-sure h2 { font-size:1.7rem; color:#6ee7b7; margin-bottom:1rem; }
+        .not-sure p { color:var(--dim); margin-bottom:2rem; }
+        .not-sure .btn { display:inline-block; padding:1rem 2.5rem; background:var(--grad-both); color:white; text-decoration:none; border-radius:50px; font-weight:700; transition:all 0.3s; }
+        .not-sure .btn:hover { transform:translateY(-2px); }
+        footer { padding:2rem; background:var(--dark); text-align:center; border-top:1px solid rgba(255,255,255,0.08); }
+        footer p { color:var(--dim); font-size:0.83rem; }
+        .footer-links { display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; margin-bottom:0.75rem; }
+        .footer-links a { color:var(--dim); text-decoration:none; font-size:0.83rem; }
+        .footer-links a:hover { color:var(--green); }
+        @media (max-width:768px) { .nav-links { display:none; } .academies { grid-template-columns:1fr; gap:2rem; padding:0 1rem; } }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="https://thesovereign.academy" class="logo">
+                <div class="logo-icon">&#x1F393;</div>
+                <span class="logo-text">The Sovereign Academy</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://thesovereign.academy" class="nav-link">Home</a></li>
+                    <li><a href="https://financiallysovereign.academy" class="nav-link">Financial Literacy</a></li>
+                    <li><a href="https://bitcoinsovereign.academy" class="nav-link">Bitcoin Mastery</a></li>
+                    <li><a href="/institutional/" class="nav-link" style="color:var(--green)">Institutional</a></li>
+                    <li><a href="https://calendly.com/dalia-thebitcoinadviser/discovery-call" class="nav-link cta-nav">Book Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Institutional Education Across <span>the Full Spectrum</span></h1>
+        <p>Two complementary academies. One network. Choose the educational focus that fits your organization — universal financial literacy, Bitcoin mastery, or both.</p>
+        <p class="hero-note">&#x2728; All programs include free 45-minute strategy consultation &middot; Custom curriculum &middot; Live facilitation</p>
+    </section>
+
+    <div class="academies">
+        <div class="academy-card financial">
+            <span class="acad-icon">&#x1F4B0;</span>
+            <h2>Financial Literacy Programs</h2>
+            <p class="tagline">Universal money skills for every institution</p>
+            <p class="desc">Evidence-based financial literacy programs covering budgeting, saving, investing, debt, taxes, credit, and long-term wealth building. Right for any institutional audience that needs practical, real-world money education.</p>
+            <ul class="seg-links">
+                <li><a href="https://financiallysovereign.academy/institutional/cities">&#x1F3DB;&#xFE0F; Cities &amp; Municipalities &rarr;</a></li>
+                <li><a href="https://financiallysovereign.academy/institutional/corporations">&#x1F3E2; Corporations &amp; Employers &rarr;</a></li>
+                <li><a href="https://financiallysovereign.academy/institutional/wealth-advisors">&#x1F4BC; Wealth Advisors &amp; RIAs &rarr;</a></li>
+                <li><a href="https://financiallysovereign.academy/institutional/correctional">&#x1F504; Correctional &amp; Reentry Programs &rarr;</a></li>
+                <li><a href="https://financiallysovereign.academy/institutional/education">&#x1F393; Schools &amp; Universities &rarr;</a></li>
+            </ul>
+            <a href="https://financiallysovereign.academy/institutional/" class="cta-btn">Explore Financial Literacy Programs &rarr;</a>
+        </div>
+
+        <div class="academy-card bitcoin">
+            <span class="acad-icon">&#x20BF;</span>
+            <h2>Bitcoin Education Programs</h2>
+            <p class="tagline">Bitcoin-specific mastery for forward-thinking institutions</p>
+            <p class="desc">Targeted Bitcoin education programs covering treasury allocation, employee benefits, custody, policy literacy, and curriculum integration. Right for institutions actively engaging with Bitcoin today or positioning for tomorrow.</p>
+            <ul class="seg-links">
+                <li><a href="https://bitcoinsovereign.academy/institutional/cities">&#x1F3DB;&#xFE0F; Cities &amp; Municipalities &rarr;</a></li>
+                <li><a href="https://bitcoinsovereign.academy/institutional/corporations">&#x1F3E2; Corporations &amp; Employers &rarr;</a></li>
+                <li><a href="https://bitcoinsovereign.academy/institutional/wealth-advisors">&#x1F4BC; Wealth Advisors &amp; RIAs &rarr;</a></li>
+                <li><a href="https://bitcoinsovereign.academy/institutional/correctional">&#x1F504; Correctional &amp; Reentry Programs &rarr;</a></li>
+                <li><a href="https://bitcoinsovereign.academy/institutional/education">&#x1F393; Schools &amp; Universities &rarr;</a></li>
+            </ul>
+            <a href="https://bitcoinsovereign.academy/institutional/" class="cta-btn">Explore Bitcoin Programs &rarr;</a>
+        </div>
+    </div>
+
+    <div class="not-sure">
+        <h2>&#x1F4AC; Not Sure Which to Choose?</h2>
+        <p>Many institutions start with financial literacy foundations and add Bitcoin education as a second phase. Others need Bitcoin-specific content immediately. A 45-minute strategy call helps us recommend the right sequence for your organization.</p>
+        <a href="https://calendly.com/dalia-thebitcoinadviser/discovery-call" class="btn">Schedule Free Strategy Call</a>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://thesovereign.academy">The Sovereign Academy</a>
+            <a href="https://financiallysovereign.academy">Financially Sovereign Academy</a>
+            <a href="https://bitcoinsovereign.academy">Bitcoin Sovereign Academy</a>
+        </div>
+        <p>&copy; 2026 The Sovereign Academy &middot; Educational content only &middot; Not financial advice</p>
+    </footer>
+</body>
+</html>
