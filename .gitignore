@@ -1,1 +1,38 @@
+# Vercel build output
 .vercel
+
+# macOS
+.DS_Store
+
+# ───────────────────────────────────────────────────────────────────
+# Private working files — never publish to thesovereign.academy
+# These live on disk so Cowork/Claude can keep editing them, but they
+# are NOT for the deployed website.
+# ───────────────────────────────────────────────────────────────────
+
+# Productivity system (internal memory + tasks + dashboard)
+CLAUDE.md
+TASKS.md
+dashboard.html
+memory/
+
+# Skills (internal tooling — content-inventory and others)
+skills/
+
+# Florida real-estate-developer pilot — competitive strategy, drafts,
+# legal memos, fee-structure documents, attorney intro letters.
+# These should NEVER be deployed publicly.
+florida-pilot/
+
+# Redesign drafts — blueprint, mockups, design tokens
+# (Uncomment the line below ONLY if you want to start tracking the redesign
+#  publicly. Keep ignored while it's a working draft.)
+redesign/
+
+# Logo working files (move to /assets/ when ready to ship)
+*.png
+
+# Common scratch / temp files
+*.swp
+*.tmp
+*~
