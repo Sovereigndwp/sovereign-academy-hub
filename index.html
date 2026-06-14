@@ -304,7 +304,7 @@
       font-family: var(--font-sans); font-weight: 900; font-size: 0.85rem; color: #000;
     }
     .fc-glyph.bsa { background: var(--brand-gradient); }
-    .fc-glyph.fsa { background: var(--brand-gradient-financial, linear-gradient(135deg,#0D9668,#6EE7B7)); color:#04231a; }
+    .fc-glyph.fsa { background: var(--brand-gradient, linear-gradient(135deg,#FF7A00,#FFD400)); color:#000; }
     .fc-glyph.adv { background: var(--color-cream-3); color: var(--color-muted-on-cream); }
     .fc-text { flex: 1; }
     .fc-name { font-family: var(--font-sans); font-weight: 800; font-size: 0.98rem; color: var(--color-ink-on-cream); line-height: 1.1; }
@@ -383,7 +383,7 @@
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
       background: var(--brand-gradient); opacity: 0.85;
     }
-    .prop-card.fsa::before { background: var(--brand-gradient-financial, linear-gradient(90deg,#0D9668,#6EE7B7)); }
+    .prop-card.fsa::before { background: var(--brand-gradient, linear-gradient(90deg,#FF7A00,#FFD400)); }
     .prop-card.adv::before { background: var(--color-border-strong, #3A3D45); }
     .prop-card:hover { transform: translateY(-5px); border-color: rgba(255,122,0,0.45); box-shadow: 0 14px 40px rgba(0,0,0,0.45); }
     .prop-card.adv:hover { border-color: var(--color-border-strong); }
@@ -395,7 +395,7 @@
       font-family: var(--font-sans); font-weight: 900; font-size: 1.1rem; color: #000;
     }
     .prop-glyph.bsa { background: var(--brand-gradient); box-shadow: var(--glow-orange); }
-    .prop-glyph.fsa { background: var(--brand-gradient-financial, linear-gradient(135deg,#0D9668,#6EE7B7)); color: #04231a; }
+    .prop-glyph.fsa { background: var(--brand-gradient, linear-gradient(135deg,#FF7A00,#FFD400)); color: #000; }
     .prop-glyph.adv { background: var(--color-surface-deepest); color: var(--color-muted); border: 1px solid var(--color-border-strong); }
     .prop-status {
       font-family: var(--font-mono); font-size: 8px; font-weight: 700;
@@ -408,7 +408,7 @@
 
     .prop-name { font-family: var(--font-sans); font-size: 1.35rem; font-weight: 800; color: var(--color-text-strong); letter-spacing: -0.01em; }
     .prop-domain { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--color-yellow); margin-top: 4px; }
-    .prop-card.fsa .prop-domain { color: var(--accent-financial-text-on-dark, #6EE7B7); }
+    .prop-card.fsa .prop-domain { color: var(--color-yellow, #FFD400); }
     .prop-card.adv .prop-domain { color: var(--color-muted); }
     .prop-desc { margin-top: 1rem; font-size: 0.96rem; line-height: 1.6; color: var(--color-muted); flex: 1; }
     .prop-for {
@@ -543,7 +543,7 @@
             <span class="fc-name">Financially Sovereign Academy</span>
             <span class="fc-desc">Practical finance · LATAM-fluent</span>
           </span>
-          <span class="fc-pill soon">Next</span>
+          <span class="fc-pill live">Live</span>
         </div>
         <div class="family-card__row">
           <span class="fc-glyph adv">◇</span>
@@ -631,10 +631,10 @@
         </article>
 
         <!-- FSA -->
-        <article class="prop-card fsa">
+        <article class="prop-card fsa live">
           <div class="prop-top">
             <span class="prop-glyph fsa">$</span>
-            <span class="prop-status soon">● Building next</span>
+            <span class="prop-status live">● Live</span>
           </div>
           <h3 class="prop-name">Financially Sovereign Academy</h3>
           <div class="prop-domain">financiallysovereign.academy</div>
@@ -645,7 +645,7 @@
           </p>
           <div class="prop-for"><span>For:</span> Anyone building financial footing, LATAM-first</div>
           <div class="prop-cta">
-            <a href="#" class="btn btn-secondary" aria-disabled="true">Coming soon</a>
+            <a href="https://financiallysovereign.academy" class="btn btn-primary">Start learning</a>
           </div>
         </article>
 
@@ -728,7 +728,7 @@
         </div>
         <nav class="footer-links" aria-label="Footer">
           <a href="https://bitcoinsovereign.academy">Bitcoin Sovereign Academy</a>
-          <a href="#properties">Financially Sovereign Academy</a>
+          <a href="https://financiallysovereign.academy">Financially Sovereign Academy</a>
           <a href="#properties">Advisor Certification</a>
           <a href="#engine">The Engine</a>
           <a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener">Book a Consultation</a>
