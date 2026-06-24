@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Sovereign Academy — Learn to own your money, your keys, your future</title>
-  <meta name="description" content="The Sovereign Academy is a family of sovereignty-education properties. We teach everyday people to hold their own Bitcoin and take control of their finances — one clear, interactive lesson at a time.">
+  <title>The Sovereign Academy · Own your money, your keys, your future</title>
+  <meta name="description" content="The Sovereign Academy is a family of sovereignty-education properties. We teach everyday people to hold their own Bitcoin and take control of their finances, one clear, interactive lesson at a time.">
   <link rel="canonical" href="https://thesovereign.academy/">
   <meta name="theme-color" content="#16181C">
 
@@ -14,8 +14,8 @@
   <meta property="og:description" content="A family of sovereignty-education properties. Find the right place to start.">
   <meta property="og:url" content="https://thesovereign.academy/">
 
-  <!-- Structured data — preserved from prior homepage (commit f9b8999).
-       Primary name set to "The Sovereign Academy" (the family) — the old data
+  <!-- Structured data, preserved from prior homepage (commit f9b8999).
+       Primary name set to "The Sovereign Academy" (the family), the old data
        listed "Sovereign Academy", which is a different, existing company. -->
   <script type="application/ld+json">
   {
@@ -65,7 +65,7 @@
     "mainEntity": [
       { "@type": "Question", "name": "What is The Sovereign Academy?", "acceptedAnswer": { "@type": "Answer", "text": "The Sovereign Academy is a family of free educational platforms covering Bitcoin self-custody and practical financial education. Choose your path: Bitcoin mastery or universal money skills." } },
       { "@type": "Question", "name": "Is The Sovereign Academy free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, 100% free. No signup required. No credit card needed. All education is accessible immediately." } },
-      { "@type": "Question", "name": "Should I start with Bitcoin or financial literacy?", "acceptedAnswer": { "@type": "Answer", "text": "Most people start with Bitcoin Sovereign Academy and self-custody. There are no prerequisites — start wherever your question lives." } }
+      { "@type": "Question", "name": "Should I start with Bitcoin or financial literacy?", "acceptedAnswer": { "@type": "Answer", "text": "Most people start with Bitcoin Sovereign Academy and self-custody. There are no prerequisites, start wherever your question lives." } }
     ]
   }
   </script>
@@ -88,19 +88,21 @@
 
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
 
-  <!-- Primary sans (Inter) — brand.css imports only the serif/mono families -->
+  <!-- Primary sans (Inter), brand.css imports only the serif/mono families -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap">
 
-  <!-- BSA design system — copied verbatim from bitcoin-sovereign-academy -->
+  <!-- BSA design system, copied verbatim from bitcoin-sovereign-academy -->
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/design-tokens.css">
   <link rel="stylesheet" href="/css/brand.css">
+  <link rel="stylesheet" href="/css/tsa-brand.css">
 
   <style>
     /* ============================================================
-       THE SOVEREIGN ACADEMY — HUB
+       THE SOVEREIGN ACADEMY, HUB
        Built on the BSA visual system:
        deep black base · electric orange · bright yellow glow.
        The orange-to-yellow fade is the signature.
@@ -208,11 +210,11 @@
     .hero__left .inner { max-width: 620px; margin-left: auto; padding-left: 2rem; }
 
     .eyebrow-row { display: flex; align-items: center; gap: 12px; margin-bottom: 1.75rem; }
-    .eyebrow-line { width: 40px; height: 1px; background: var(--color-yellow); }
+    .eyebrow-line { width: 40px; height: 1px; background: var(--color-accent); }
     .eyebrow-text {
       font-family: var(--font-mono);
       font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--color-yellow); font-weight: 700;
+      color: var(--color-accent); font-weight: 700;
     }
 
     .hero__title {
@@ -222,7 +224,7 @@
       color: var(--color-text-strong);
       margin-bottom: 1.4rem;
     }
-    .hero__title em { font-style: italic; color: var(--color-yellow); }
+    .hero__title em { font-style: italic; background: var(--brand-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent !important; color: transparent; }
     .hero__title .grad {
       background: var(--brand-gradient);
       -webkit-background-clip: text; background-clip: text; color: transparent;
@@ -252,7 +254,7 @@
     .trust-item { display: flex; align-items: center; gap: 8px; }
     .trust-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--color-success); }
 
-    /* Hero right — family map card (cream inversion) */
+    /* Hero right, family map card (cream inversion) */
     .hero__right {
       background: var(--color-surface-deepest);
       position: relative;
@@ -269,7 +271,7 @@
     .family-card {
       background: var(--color-cream);
       color: var(--color-ink-on-cream);
-      border-left: 3px solid var(--color-yellow);
+      border-left: 3px solid var(--color-accent);
       width: 100%; max-width: 440px;
       position: relative; z-index: 1;
       box-shadow: var(--shadow-card);
@@ -331,9 +333,9 @@
       display: flex; align-items: center; gap: 0.5rem;
       font-family: var(--font-mono); font-size: 10px; font-weight: 700;
       letter-spacing: 0.25em; text-transform: uppercase;
-      color: var(--color-yellow); margin-bottom: 1.5rem;
+      color: var(--color-accent); margin-bottom: 1.5rem;
     }
-    .section-tag::before { content: '◆'; font-size: 7px; color: var(--color-yellow); }
+    .section-tag::before { content: '◆'; font-size: 7px; color: var(--color-accent); }
 
     .section { padding: 6rem 0; position: relative; z-index: 2; }
 
@@ -344,7 +346,7 @@
       font-weight: 900; letter-spacing: -0.015em; line-height: 1.05;
       color: var(--color-text-strong);
     }
-    .section-title em { font-style: italic; color: var(--color-yellow); }
+    .section-title em { font-style: italic; color: var(--color-accent); }
     .section-sub {
       margin-top: 1rem; font-size: 1.1rem; line-height: 1.6;
       color: var(--color-muted); max-width: 620px;
@@ -407,8 +409,8 @@
     .prop-status.later { background: rgba(255,255,255,0.05); color: var(--color-muted); border: 1px solid var(--color-border); }
 
     .prop-name { font-family: var(--font-sans); font-size: 1.35rem; font-weight: 800; color: var(--color-text-strong); letter-spacing: -0.01em; }
-    .prop-domain { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--color-yellow); margin-top: 4px; }
-    .prop-card.fsa .prop-domain { color: var(--color-yellow, #FFD400); }
+    .prop-domain { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; color: var(--color-accent); margin-top: 4px; }
+    .prop-card.fsa .prop-domain { color: var(--color-accent, #FF8A00); }
     .prop-card.adv .prop-domain { color: var(--color-muted); }
     .prop-desc { margin-top: 1rem; font-size: 0.96rem; line-height: 1.6; color: var(--color-muted); flex: 1; }
     .prop-for {
@@ -457,7 +459,49 @@
       .container { padding: 0 1.5rem; }
       .section { padding: 4rem 0; }
     }
-  </style>
+  
+/* ===== TSA parent brand bridge (PR2): neutral graphite + silver ===== */
+:root{
+  --color-brand:var(--tsa-silver); --color-accent:var(--tsa-silver);
+  --color-orange-deep:var(--tsa-silver); --color-orange-bright:var(--tsa-silver);
+  --brand-gradient:var(--tsa-fade); --gradient-orange:var(--tsa-fade);
+  --glow-orange:0 0 22px rgba(199,204,209,0.16);
+  --color-bg:var(--tsa-bg); --color-surface:var(--tsa-surface); --color-panel:var(--tsa-elevated);
+  --color-surface-deepest:var(--tsa-deepest); --color-border:var(--tsa-border); --color-border-strong:var(--tsa-border-strong);
+  --color-text:var(--tsa-ink); --color-text-strong:var(--tsa-ink-strong); --color-muted:var(--tsa-muted); --color-text-faint:var(--tsa-faint);
+  --color-cream:var(--tsa-elevated); --color-cream-2:var(--tsa-surface); --color-cream-3:var(--tsa-surface);
+  --color-ink-on-cream:var(--tsa-ink); --color-muted-on-cream:var(--tsa-muted);
+}
+body::before{background:radial-gradient(ellipse at top,rgba(199,204,209,0.06) 0%,transparent 60%)!important}
+.hero::before{background:radial-gradient(ellipse at 72% 50%,rgba(199,204,209,0.05) 0%,transparent 55%)!important}
+.hero__right::before{background:radial-gradient(ellipse at 55% 40%,rgba(199,204,209,0.05) 0%,transparent 60%)!important}
+.nav-link:hover{color:var(--tsa-ink)!important;background:rgba(199,204,209,0.08)!important}
+.prop-card:hover{border-color:var(--tsa-border-strong)!important}
+.prop-card.adv:hover{border-color:var(--tsa-border-strong)!important}
+.prop-status.soon{background:rgba(199,204,209,0.10)!important;color:var(--tsa-silver)!important;border-color:var(--tsa-border-strong)!important}
+.footer-links a:hover{color:var(--tsa-platinum)!important}
+.family-card{border-left-color:var(--tsa-silver)!important}
+.family-card__header,.family-card__row,.family-card__footer{border-color:var(--tsa-border)!important}
+.fc-pill.live{background:rgba(52,211,153,0.14)!important;color:#34D399!important}
+.fc-pill.soon{background:rgba(199,204,209,0.12)!important;color:var(--tsa-silver)!important}
+.fc-pill.later{background:rgba(255,255,255,0.05)!important;color:var(--tsa-muted)!important}
+.principle{border-top-color:var(--tsa-border)!important}
+/* editorial serif on display headings */
+.hero__title,.section-title,.prop-name,.fc-name,.footer-brand,.engine-item h4,.principle-item h4{font-family:var(--font-serif)!important}
+/* buttons: silver gradient outline, ivory text, never hue-filled */
+.btn-primary{background:linear-gradient(var(--tsa-bg),var(--tsa-bg)) padding-box,var(--tsa-fade) border-box!important;border:1.6px solid transparent!important;color:var(--tsa-ink-strong)!important;box-shadow:none!important}
+.btn-secondary{background:transparent!important;border:1.5px solid var(--tsa-border-strong)!important;color:var(--tsa-ink)!important}
+.btn-secondary:hover{border-color:var(--tsa-silver)!important;color:var(--tsa-platinum)!important}
+/* child wayfinding color: only on child glyphs, card top-bars, and child card buttons */
+.fc-glyph.bsa,.prop-glyph.bsa{background:var(--bsa-fade)!important;box-shadow:none!important;color:#1a1300!important}
+.fc-glyph.fsa,.prop-glyph.fsa{background:var(--fsa-fade)!important;color:#06231A!important}
+.prop-card.bsa::before{background:var(--bsa-fade)!important;opacity:1!important}
+.prop-card.fsa::before{background:var(--fsa-fade)!important;opacity:1!important}
+.prop-card.bsa .btn-primary{background:linear-gradient(var(--tsa-elevated),var(--tsa-elevated)) padding-box,var(--bsa-fade) border-box!important}
+.prop-card.fsa .btn-primary{background:linear-gradient(var(--tsa-elevated),var(--tsa-elevated)) padding-box,var(--fsa-fade) border-box!important}
+.logo-mark{box-shadow:none!important;color:var(--tsa-deepest)!important}
+/* ===== end TSA bridge ===== */
+</style>
 </head>
 <body>
   <a href="#properties" class="skip-link">Skip to properties</a>
@@ -487,26 +531,26 @@
           <span class="eyebrow-text">Don't Trust, Verify</span>
         </div>
         <h1 class="hero__title">
-          Learn to own your money,<br>your keys, <em>your future.</em>
+          Learn to own your <span class="fade-f">money</span>,<br>your <span class="fade-b">keys</span>, <em>your future.</em>
         </h1>
         <p class="hero__sub">
           The Sovereign Academy is a small family of sovereignty-education properties.
-          One engine of clear teaching and interactive tools — pointed at the few sites
-          that help everyday people take real control of their finances.
+          One engine of clear teaching and interactive tools, pointed at the few sites
+          that help everyday people take real control of their <span class="fade-f">finances</span>.
         </p>
 
         <div class="hero__proof">
           <div class="proof-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-yellow)" stroke-width="1.5" aria-hidden="true"><polygon points="12 2, 22 12, 12 22, 2 12"/><line x1="6" y1="16" x2="18" y2="8"/></svg>
-            <span><strong>20-minute modules</strong> — learn at your own pace</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" aria-hidden="true"><polygon points="12 2, 22 12, 12 22, 2 12"/><line x1="6" y1="16" x2="18" y2="8"/></svg>
+            <span><strong>20-minute modules</strong>, learn at your own pace</span>
           </div>
           <div class="proof-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-yellow)" stroke-width="1.5" aria-hidden="true"><polygon points="12 2, 22 12, 12 22, 2 12"/><polygon points="12 8, 16 12, 12 16, 8 12" fill="var(--color-yellow)" stroke="none"/></svg>
-            <span><strong>Practice safely</strong> — zero-risk simulations</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" aria-hidden="true"><polygon points="12 2, 22 12, 12 22, 2 12"/><polygon points="12 8, 16 12, 12 16, 8 12" fill="var(--color-accent)" stroke="none"/></svg>
+            <span><strong>Practice safely</strong>, zero-risk simulations</span>
           </div>
           <div class="proof-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-yellow)" stroke-width="1.5" aria-hidden="true"><polygon points="12 2, 22 12, 12 22, 2 12"/><circle cx="12" cy="12" r="1.5" fill="var(--color-yellow)" stroke="none"/></svg>
-            <span><strong>Interactive demos</strong> — not lectures</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5" aria-hidden="true"><polygon points="12 2, 22 12, 12 22, 2 12"/><circle cx="12" cy="12" r="1.5" fill="var(--color-accent)" stroke="none"/></svg>
+            <span><strong>Interactive demos</strong>, not lectures</span>
           </div>
         </div>
 
@@ -548,8 +592,8 @@
         <div class="family-card__row">
           <span class="fc-glyph adv">◇</span>
           <span class="fc-text">
-            <span class="fc-name">Bitcoin Advisor Certification</span>
-            <span class="fc-desc">Professional credential</span>
+            <span class="fc-name">Bitcoin Advisor Readiness</span>
+            <span class="fc-desc">Professional education track</span>
           </span>
           <span class="fc-pill later">Later</span>
         </div>
@@ -568,16 +612,17 @@
       <div class="section-head">
         <h2 class="section-title">One <em>engine</em>, not a pile of websites.</h2>
         <p class="section-sub">
-          Every property shares the same pedagogy, the same funnel, and the same design
-          system. New tracks incubate until they earn a live home — so the family stays
-          small enough for one person to run well.
+          Every property shares the same pedagogy, funnel, and design system. The numbers
+          below are the flagship's: Bitcoin Sovereign Academy, where the engine is proven
+          in production. New tracks incubate until they earn a live home, so the family
+          stays small enough for one person to run well.
         </p>
       </div>
       <div class="engine-grid">
         <div class="engine-item">
           <div class="num">315</div>
           <h4>Pages of teaching</h4>
-          <p>A proven library of lessons, guides, and deep dives — refined in production, not theory.</p>
+          <p>A proven library of lessons, guides, and deep dives, refined in production, not theory.</p>
         </div>
         <div class="engine-item">
           <div class="num">50+</div>
@@ -592,7 +637,7 @@
         <div class="engine-item">
           <div class="num">1</div>
           <h4>Shared design system</h4>
-          <p>The same tokens, type, and components you're looking at right now — across the whole family.</p>
+          <p>The same tokens, type, and components you're looking at right now, across the whole family.</p>
         </div>
       </div>
     </div>
@@ -605,7 +650,7 @@
       <div class="section-head">
         <h2 class="section-title">Three properties. <em>Pick the one that fits you.</em></h2>
         <p class="section-sub">
-          Each site has one job, one audience, and one tone. Start where your question lives —
+          Each site has one job, one audience, and one tone. Start where your question lives, 
           you can always cross over later.
         </p>
       </div>
@@ -617,10 +662,10 @@
             <span class="prop-glyph bsa">₿</span>
             <span class="prop-status live">● Live</span>
           </div>
-          <h3 class="prop-name">Bitcoin Sovereign Academy</h3>
+          <h3 class="prop-name"><span class="fade-b">Bitcoin</span> Sovereign Academy</h3>
           <div class="prop-domain">bitcoinsovereign.academy</div>
           <p class="prop-desc">
-            Hold your own Bitcoin with confidence — off exchanges, in your own keys,
+            Hold your own Bitcoin with confidence, off exchanges, in your own keys,
             without fear of losing it. Money, self-custody, recovery, inheritance,
             privacy, and security, taught before mistakes become expensive.
           </p>
@@ -636,10 +681,10 @@
             <span class="prop-glyph fsa">$</span>
             <span class="prop-status live">● Live</span>
           </div>
-          <h3 class="prop-name">Financially Sovereign Academy</h3>
+          <h3 class="prop-name"><span class="fade-f">Financially</span> Sovereign Academy</h3>
           <div class="prop-domain">financiallysovereign.academy</div>
           <p class="prop-desc">
-            Practical financial education for the underbanked — budgeting, saving, credit,
+            Practical financial education for the underbanked, budgeting, saving, credit,
             and the basics that schools skip. Mission-driven and LATAM-fluent, home of the
             proven programa-colombia curriculum.
           </p>
@@ -655,14 +700,18 @@
             <span class="prop-glyph adv">◇</span>
             <span class="prop-status later">● Later phase</span>
           </div>
-          <h3 class="prop-name">Bitcoin Advisor Certification</h3>
+          <h3 class="prop-name">Bitcoin Advisor Readiness</h3>
           <div class="prop-domain">advisor · own brand</div>
           <p class="prop-desc">
-            A professional credential for advisors who guide clients through Bitcoin
-            custody and planning. Its own brand, built on the same teaching engine —
-            launching in a later phase.
+            A professional education track for wealth advisors, family offices, banks,
+            attorneys, accountants, and others who work with clients and money. Built for
+            professionals who see Bitcoin being accepted, requested, and implemented across
+            traditional finance, but still want a clear, guided path through the why, the
+            risks, the custody questions, and the client conversations before taking the
+            next step. Its own brand, built on the same teaching engine, launching in a
+            later phase.
           </p>
-          <div class="prop-for"><span>For:</span> Wealth advisors &amp; professionals</div>
+          <div class="prop-for"><span>For:</span> advisors, family offices, banks, attorneys, accountants</div>
           <div class="prop-cta">
             <a href="#" class="btn btn-ghost" aria-disabled="true">In development &rarr;</a>
           </div>
@@ -688,8 +737,8 @@
           <p>Content goes live only with a named audience, a way to sustain it, and a commitment to maintain it. Until then it incubates.</p>
         </div>
         <div class="principle-item">
-          <h4>Bitcoin, not noise</h4>
-          <p>We teach Bitcoin and real financial skills — not trading calls, maximalist discourse, or altcoin speculation.</p>
+          <h4><span class="fade-b">Bitcoin</span>, not noise</h4>
+          <p>We teach Bitcoin and real financial skills, not trading calls, maximalist discourse, or altcoin speculation.</p>
         </div>
         <div class="principle-item">
           <h4>Practice over lectures</h4>
@@ -729,7 +778,7 @@
         <nav class="footer-links" aria-label="Footer">
           <a href="https://bitcoinsovereign.academy">Bitcoin Sovereign Academy</a>
           <a href="https://financiallysovereign.academy">Financially Sovereign Academy</a>
-          <a href="#properties">Advisor Certification</a>
+          <a href="#properties">Bitcoin Advisor Readiness</a>
           <a href="#engine">The Engine</a>
           <a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener">Book a Consultation</a>
           <a href="mailto:thesovereign.academy@proton.me">Contact</a>
