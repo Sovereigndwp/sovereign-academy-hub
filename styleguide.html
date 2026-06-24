@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sovereign Academy Style Guide</title>
+<link rel="stylesheet" href="/css/tsa-brand.css">
+<style>
+  /* page-local layout only; all visual tokens come from tsa-brand.css */
+  .sg-head { padding: 4rem 0 2rem; }
+  .sg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin-top: 1rem; }
+  .sw { border: 1px solid var(--tsa-border); border-radius: var(--radius-md); overflow: hidden; }
+  .sw .bar { height: 64px; }
+  .sw .meta { padding: 0.6rem 0.8rem; font-family: var(--font-mono); font-size: 0.72rem; color: var(--tsa-muted); background: var(--tsa-surface); }
+  .sw .meta b { color: var(--tsa-ink); display: block; font-family: var(--font-sans); font-size: 0.8rem; }
+  .row { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-top: 1rem; }
+  .label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tsa-muted); margin: 2rem 0 0.6rem; }
+  .props { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; margin-top: 1rem; }
+  .glyph { width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; border: 1px solid var(--tsa-border-strong); }
+  .glyph.b { color: #FF7A00; } .glyph.f { color: #10B981; } .glyph.a { color: var(--tsa-silver); }
+</style>
+</head>
+<body>
+<a class="tsa-skip-link" href="#main">Skip to content</a>
+
+<header class="tsa-section--deep tsa-section--glow">
+  <div class="tsa-wrap sg-head">
+    <div class="tsa-eyebrow">The Sovereign Academy</div>
+    <h1 class="tsa-h1">The parent <em>brand</em>, in one page.</h1>
+    <p class="tsa-lede">The neutral parent above Bitcoin Sovereign Academy and Financially Sovereign Academy. Dark graphite, warm ivory, a near-monochrome silver accent, and a metallic fade. Color belongs to the children. This page renders from <span style="font-family:var(--font-mono)">css/tsa-brand.css</span>.</p>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="tsa-section">
+  <div class="tsa-wrap">
+    <div class="tsa-section-tag">Surfaces and text</div>
+    <h2 class="tsa-h2">Neutral graphite, warm ivory</h2>
+    <div class="sg-grid">
+      <div class="sw"><div class="bar" style="background:var(--tsa-bg)"></div><div class="meta"><b>Page</b>--tsa-bg · #121316</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-surface)"></div><div class="meta"><b>Surface</b>--tsa-surface · #191B1F</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-elevated)"></div><div class="meta"><b>Card</b>--tsa-elevated · #212429</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-deepest)"></div><div class="meta"><b>Deepest</b>--tsa-deepest · #0C0D0F</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-ink)"></div><div class="meta"><b>Ink</b>--tsa-ink · #ECECE6</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-muted)"></div><div class="meta"><b>Muted</b>--tsa-muted · #A7ABB3</div></div>
+    </div>
+    <div class="label">Accent: near-monochrome silver + the metallic fade</div>
+    <div class="sg-grid">
+      <div class="sw"><div class="bar" style="background:var(--tsa-pewter)"></div><div class="meta"><b>Pewter</b>--tsa-pewter · #8A9098</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-silver)"></div><div class="meta"><b>Silver</b>--tsa-silver · #C7CCD1</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-platinum)"></div><div class="meta"><b>Platinum</b>--tsa-platinum · #E5E7E9</div></div>
+      <div class="sw"><div class="bar" style="background:var(--tsa-fade)"></div><div class="meta"><b>Metallic fade</b>--tsa-fade · pewter&rarr;silver&rarr;ivory</div></div>
+    </div>
+    <div class="label">Child wayfinding fades (accents only)</div>
+    <div class="sg-grid">
+      <div class="sw"><div class="bar" style="background:var(--bsa-fade)"></div><div class="meta"><b>BSA fade</b>--bsa-fade · orange&rarr;yellow</div></div>
+      <div class="sw"><div class="bar" style="background:var(--fsa-fade)"></div><div class="meta"><b>FSA fade</b>--fsa-fade · emerald&rarr;mint</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="tsa-section tsa-section--alt">
+  <div class="tsa-wrap">
+    <div class="tsa-section-tag">Typography</div>
+    <h2 class="tsa-h2">One editorial <em>grammar</em>, neutral palette</h2>
+    <div class="label">Heading 1 · Playfair Display</div>
+    <div class="tsa-h1">Own your <span class="fade-f">money</span>, your <span class="fade-b">keys</span>, <em>your future.</em></div>
+    <div class="label">Heading 3 · Inter</div>
+    <div class="tsa-h3">Few, finished, high-craft</div>
+    <div class="label">Eyebrow · JetBrains Mono</div>
+    <div class="tsa-eyebrow">Don't Trust, Verify</div>
+    <div class="label">Lede · Inter</div>
+    <p class="tsa-lede">A small family of sovereignty-education properties, pointed at the few sites that help everyday people take real control of their <span class="fade-f">finances</span>.</p>
+    <div class="label">Word accents: color attaches to the word that names a child</div>
+    <p style="max-width:var(--width-prose);color:var(--tsa-muted)"><span class="fade-b">Bitcoin</span> self-custody on one side. Practical <span class="fade-f">financial</span> education on the other. The parent voice stays silver.</p>
+  </div>
+</section>
+
+<section class="tsa-section">
+  <div class="tsa-wrap">
+    <div class="tsa-section-tag">Buttons</div>
+    <h2 class="tsa-h2">Silver outline, never hue-filled</h2>
+    <div class="row">
+      <a class="tsa-btn tsa-btn--primary tsa-btn--lg" href="#">Start with Bitcoin</a>
+      <a class="tsa-btn tsa-btn--secondary tsa-btn--lg" href="#">See all properties</a>
+      <span class="tsa-badge">One engine</span>
+    </div>
+  </div>
+</section>
+
+<section class="tsa-section tsa-section--alt">
+  <div class="tsa-wrap">
+    <div class="tsa-section-tag">Child property cards</div>
+    <h2 class="tsa-h2">Neutral cards, the child's color on its <em>name</em></h2>
+    <div class="props">
+      <div class="tsa-card tsa-card--bsa tsa-card--hover">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.9rem"><span class="glyph b">&#8383;</span><span class="tsa-status"><span class="tsa-dot"></span> Live</span></div>
+        <h3 class="tsa-h3"><span class="fade-b">Bitcoin</span> Sovereign Academy</h3>
+        <p style="color:var(--tsa-muted);font-size:0.95rem;margin:0.4rem 0 1rem">Hold your own Bitcoin with confidence, off exchanges, in your own keys.</p>
+        <a class="tsa-btn tsa-btn--primary" href="#">Start learning</a>
+      </div>
+      <div class="tsa-card tsa-card--fsa tsa-card--hover">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.9rem"><span class="glyph f">$</span><span class="tsa-status"><span class="tsa-dot"></span> Live</span></div>
+        <h3 class="tsa-h3"><span class="fade-f">Financially</span> Sovereign Academy</h3>
+        <p style="color:var(--tsa-muted);font-size:0.95rem;margin:0.4rem 0 1rem">Practical financial education for the underbanked. LATAM-fluent.</p>
+        <a class="tsa-btn tsa-btn--primary" href="#">Start learning</a>
+      </div>
+      <div class="tsa-card tsa-card--hover">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.9rem"><span class="glyph a">&#9671;</span><span class="tsa-status"><span class="tsa-dot tsa-dot--later"></span> Later</span></div>
+        <h3 class="tsa-h3">Bitcoin Advisor Certification</h3>
+        <p style="color:var(--tsa-muted);font-size:0.95rem;margin:0.4rem 0 1rem">A professional credential, its own brand, on the same engine.</p>
+        <a class="tsa-btn tsa-btn--secondary" href="#">In development &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="tsa-hr-fade">
+
+<footer class="tsa-section--deep" style="border:0">
+  <div class="tsa-wrap" style="padding-top:2.5rem;padding-bottom:2.5rem">
+    <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem"><span style="width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-serif);font-weight:700;color:var(--tsa-deepest);background:var(--tsa-fade)">S</span> <b style="color:var(--tsa-ink)">The Sovereign Academy</b> <span class="tsa-status">thesovereign.academy</span></div>
+    <p style="color:var(--tsa-faint);font-size:0.8rem;max-width:620px;line-height:1.6">A family of sovereignty-education properties. Built and run by Dalia. Not affiliated with "Sovereign Academy."</p>
+  </div>
+</footer>
+
+</main>
+</body>
+</html>
