@@ -1,236 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-platform="tsa">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tier-1 Components · TSA Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Crimson+Pro:wght@400;500;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/tsa-design-tokens.css">
+<link rel="stylesheet" href="../css/tsa-platform-variants.css">
+<link rel="stylesheet" href="../css/tsa-tier-1-components.css">
+<style>
+  /* page-local layout only; all component visuals come from the linked CSS */
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-sans); line-height: var(--lh-body); }
+  section { padding: var(--space-12) 0; border-bottom: 1px solid var(--border); }
+  h2 { font-family: var(--font-serif); font-size: var(--fs-h2); color: var(--ink-strong); margin: 0 0 4px; }
+  .note { color: var(--muted); font-size: var(--fs-small); margin: 0 0 var(--space-6); }
+  .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--tsa-pewter); margin: var(--space-6) 0 10px; }
+  .row { display: flex; gap: var(--space-4); flex-wrap: wrap; align-items: center; }
+  .cls { font-family: var(--font-mono); font-size: 10px; color: var(--faint); }
+  .platform-switch { display: flex; gap: 8px; margin-top: var(--space-6); }
+  .platform-switch button { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 14px; background: var(--surface); color: var(--muted); border: 1px solid var(--border-strong); border-radius: var(--radius-sm); cursor: pointer; }
+  .platform-switch button[aria-pressed="true"] { color: var(--ink-strong); border-color: var(--brand); }
+  .slide-scale { width: 480px; height: 270px; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius-md); }
+  .slide-scale .tsa-slide { transform: scale(0.25); }
+</style>
 </head>
 <body>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  html, body { margin: 0; padding: 0; background: #121316; }
-  * { box-sizing: border-box; }
-</style>
-
-
-<div style="font-family:'Inter',system-ui,sans-serif;background:#121316;color:#ECECE6;line-height:1.6;padding-bottom:64px">
-
-  <!-- Header -->
-  <header style="border-bottom:1px solid #2C2F36;padding:56px 0 36px">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <div style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:#8A9098"><span style="font-size:8px;color:#C7CCD1">◆</span>Phase 3 · Tier 1 · Core</div>
-      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:44px;line-height:1.08;letter-spacing:-0.015em;color:#FBFBF7;margin:12px 0 0">Component sheet <em style="font-style:italic;background:linear-gradient(135deg,#8A9098,#C7CCD1,#ECECE6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">v0.1</em></h1>
-      <p style="color:#A7ABB3;font-size:16px;max-width:700px;margin:14px 0 0">Nine core components, each shown in the skins where it differs. Anatomy is fixed; only tokens change. Nothing merges without its paper + one-color-print behavior defined.</p>
+<header class="tsa-hero">
+  <div class="tsa-wrap">
+    <div class="tsa-hero__eyebrow">◆ Foundations · Components</div>
+    <h1 class="tsa-hero__title">Tier-1 <em class="fade-brand">components</em></h1>
+    <p class="tsa-hero__lede">The reusable base kit — rendered entirely from <span class="cls">css/tsa-tier-1-components.css</span>. Switch the platform to confirm the accent swaps while structure holds.</p>
+    <div class="platform-switch" role="group" aria-label="Platform theme">
+      <button data-p="tsa" aria-pressed="true">TSA</button>
+      <button data-p="bsa" aria-pressed="false">BSA</button>
+      <button data-p="fsa" aria-pressed="false">FSA</button>
     </div>
-  </header>
+  </div>
+</header>
+<main>
 
-  <!-- 1 · Buttons -->
-  <section data-screen-label="Buttons" style="padding:44px 0;border-bottom:1px solid #2C2F36">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">1 · Buttons</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">radius 2 · min-height 44 · primary = signal fade border, never hue-filled · hover: −1px lift</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:12px">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098">TSA · graphite</span>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#191B1F,#191B1F) padding-box,linear-gradient(90deg,#8A9098,#C7CCD1,#ECECE6) border-box;color:#FBFBF7;font-weight:600;font-size:14px">Primary</span>
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.5px solid #3C4047;color:#ECECE6;font-weight:600;font-size:14px">Secondary</span>
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 6px;color:#C7CCD1;font-weight:600;font-size:14px">Text →</span>
-          </div>
-        </div>
-        <div style="background:#FDFCF9;border:1px solid #2C2F36;border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:12px">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#5A5E66">FSA · paper</span>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#FDFCF9,#FDFCF9) padding-box,linear-gradient(90deg,#0F766E,#10B981,#5EEAD4) border-box;color:#1A1C1F;font-weight:600;font-size:14px">Primary</span>
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.5px solid #B9B6AE;color:#1A1C1F;font-weight:600;font-size:14px">Secondary</span>
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 6px;color:#0F766E;font-weight:600;font-size:14px">Text →</span>
-          </div>
-        </div>
-        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:12px">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098">BSA · graphite ember</span>
-          <div style="display:flex;gap:10px;flex-wrap:wrap">
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#191B1F,#191B1F) padding-box,linear-gradient(90deg,#FF7A00,#FF9A00,#FFD400) border-box;color:#FBFBF7;font-weight:600;font-size:14px">Primary</span>
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.5px solid #3C4047;color:#ECECE6;font-weight:600;font-size:14px">Secondary</span>
-            <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 6px;color:#FF9A00;font-weight:600;font-size:14px">Text →</span>
-          </div>
-        </div>
-      </div>
+<!-- Base primitives -->
+<section><div class="tsa-wrap">
+  <h2>Base primitives</h2>
+  <p class="note cls">.tsa-btn · .tsa-badge · .tsa-status · .tsa-list · .tsa-panel · .tsa-pullquote</p>
+  <div class="row">
+    <a class="tsa-btn tsa-btn--primary" href="#">Start learning →</a>
+    <a class="tsa-btn tsa-btn--secondary" href="#">See all properties</a>
+    <span class="tsa-badge">◆ One engine</span>
+    <span class="tsa-status"><span class="tsa-dot"></span> Live</span>
+    <span class="tsa-status"><span class="tsa-dot tsa-dot--later"></span> Later</span>
+  </div>
+</div></section>
+
+<!-- WAVE A -->
+<section><div class="tsa-wrap">
+  <h2>Wave A · shells &amp; notes</h2>
+
+  <div class="lbl">Hero shell — .tsa-hero</div>
+  <div class="tsa-card" style="padding:0;overflow:hidden">
+    <div class="tsa-hero" style="border:0;padding:var(--space-12) var(--space-8)">
+      <div class="tsa-hero__eyebrow">◆ The Sovereign Academy</div>
+      <div class="tsa-hero__title">Own your <span class="fade-f">money</span>, your <span class="fade-b">keys.</span></div>
+      <p class="tsa-hero__lede">One editorial grammar, neutral palette, three doors.</p>
+      <div class="tsa-hero__actions"><a class="tsa-btn tsa-btn--primary" href="#">Start</a><a class="tsa-btn tsa-btn--secondary" href="#">Browse</a></div>
     </div>
-  </section>
+  </div>
 
-  <!-- 2 · Eyebrow -->
-  <section data-screen-label="Eyebrow" style="padding:44px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">2 · Eyebrow / section tag</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">mono 700 · 10–11px · caps · 0.22–0.25em · ◆ takes the signal solid</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px"><div style="display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#A7ABB3"><span style="font-size:8px;color:#C7CCD1">◆</span>Find your starting point</div></div>
-        <div style="background:#FDFCF9;border:1px solid #2C2F36;border-radius:8px;padding:20px"><div style="display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#5A5E66"><span style="font-size:8px;color:#0F766E">◆</span>Scenario worksheet</div></div>
-        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px"><div style="display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#A7ABB3"><span style="font-size:8px;color:#FF9A00">◆</span>Key ceremony</div></div>
-      </div>
+  <div class="lbl">Platform / program / lesson cards</div>
+  <div class="tsa-grid">
+    <div class="tsa-card tsa-card--platform tsa-card--hover">
+      <div class="tsa-card__head"><span class="tsa-card__glyph">◆</span><span class="tsa-status"><span class="tsa-dot"></span> Live</span></div>
+      <h3 class="tsa-card__title">Platform card</h3>
+      <p class="tsa-card__body">Child-property tile. <span class="cls">.tsa-card--platform</span></p>
+      <a class="tsa-btn tsa-btn--primary" href="#">Enter</a>
     </div>
-  </section>
-
-  <!-- 3 · Callouts -->
-  <section data-screen-label="Callouts" style="padding:44px 0;border-bottom:1px solid #2C2F36">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">3 · Callouts — three severities</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">severity is carried by structure, not color: NOTE = surface box · CAUTION = 3px left rule · STOP = signal border (double rule in one-color print)</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:14px 16px">
-            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;margin-bottom:4px">Note</div>
-            <p style="color:#A7ABB3;font-size:13px;margin:0;line-height:1.55">Twenty minutes. No prior reading required.</p>
-          </div>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">NOTE · graphite</span>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="background:#191B1F;border:1px solid #3C4047;border-left:3px solid #FF9A00;border-radius:4px;padding:14px 16px">
-            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FF9A00;margin-bottom:4px">Caution</div>
-            <p style="color:#A7ABB3;font-size:13px;margin:0;line-height:1.55">Fees rise when blocks are full. Check before you send.</p>
-          </div>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">CAUTION · left rule takes signal solid</span>
-        </div>
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#FF7A00,#FF9A00,#FFD400) border-box;border-radius:4px;padding:14px 16px">
-            <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FF9A00;margin-bottom:4px">Stop — read first</div>
-            <p style="color:#ECECE6;font-size:13px;margin:0;line-height:1.55">Your seed words never touch a keyboard or camera.</p>
-          </div>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">STOP · signal fade border · print: double rule</span>
-        </div>
-      </div>
+    <div class="tsa-card tsa-card--program tsa-card--hover">
+      <span class="tsa-card__index">Module 04</span>
+      <h3 class="tsa-card__title">Program card</h3>
+      <p class="tsa-card__body">Program/module tile. <span class="cls">.tsa-card--program</span></p>
+      <div class="tsa-card__meta">6 lessons · bilingual</div>
     </div>
-  </section>
-
-  <!-- 4 · Cards -->
-  <section data-screen-label="Cards" style="padding:44px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">4 · Card</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">radius 8 · padding 20–24 · 1px border · surfaces stay neutral — color lands on words + the button border only · hover: −3px lift, border-strong</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-        <div style="background:#212429;border:1px solid #2C2F36;border-radius:8px;padding:22px;display:flex;flex-direction:column;gap:8px">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098">Eyebrow slot</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:#FBFBF7;margin:0">Title with one <span style="background:linear-gradient(90deg,#FF7A00,#FFD400);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:700">signal word</span></h3>
-          <p style="color:#A7ABB3;font-size:13.5px;margin:0;line-height:1.6">Body slot. One paragraph, no more — cards summarize, pages explain.</p>
-          <span style="display:inline-flex;align-items:center;min-height:44px;padding:9px 20px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#212429,#212429) padding-box,linear-gradient(90deg,#FF7A00,#FF9A00,#FFD400) border-box;color:#FBFBF7;font-weight:600;font-size:13px;align-self:flex-start;margin-top:6px">Action slot</span>
-        </div>
-        <div style="background:#FDFCF9;border:1px solid #D9D6CE;border-radius:8px;padding:22px;display:flex;flex-direction:column;gap:8px">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#0F766E">Eyebrow slot</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:#1A1C1F;margin:0">Same anatomy on paper</h3>
-          <p style="color:#3F434B;font-size:13.5px;margin:0;line-height:1.6">Paper skin swaps tokens only. Structure, slots, and spacing are identical.</p>
-          <span style="display:inline-flex;align-items:center;min-height:44px;padding:9px 20px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#FDFCF9,#FDFCF9) padding-box,linear-gradient(90deg,#0F766E,#10B981,#5EEAD4) border-box;color:#1A1C1F;font-weight:600;font-size:13px;align-self:flex-start;margin-top:6px">Action slot</span>
-        </div>
-      </div>
+    <div class="tsa-card tsa-card--lesson tsa-card--hover">
+      <span class="tsa-card__stage">Stage 1 · Custody</span>
+      <h3 class="tsa-card__title">Lesson card</h3>
+      <div class="tsa-tags"><span class="tsa-tag">keys</span><span class="tsa-tag">seed phrase</span></div>
+      <span class="tsa-card__time">~8 min</span>
     </div>
-  </section>
+  </div>
 
-  <!-- 5 · Step list -->
-  <section data-screen-label="Step list" style="padding:44px 0;border-bottom:1px solid #2C2F36">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">5 · Step list</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">mono number takes signal solid · title 600 · detail line mono, muted · checkbox variant adds an 18px box</p>
-      <div style="display:flex;flex-direction:column;gap:8px;max-width:640px">
-        <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
-          <span style="font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#C7CCD1;flex-shrink:0">1.</span>
-          <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Step title, imperative voice</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">optional detail — constraints, amounts, warnings</div></div>
-        </div>
-        <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
-          <span style="width:18px;height:18px;border:1.5px solid #6E727A;border-radius:2px;flex-shrink:0;margin-top:1px"></span>
-          <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Checkbox variant — for checklists and ceremonies</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">print: box ≥ 0.18in</div></div>
-        </div>
-      </div>
+  <div class="lbl">Source note / boundary note</div>
+  <div class="tsa-note--source"><b>Sourced claim.</b> Bitcoin supply is capped at 21,000,000 BTC. <a href="#">bitcoin.org/bitcoin.pdf</a></div>
+  <div class="tsa-note--boundary"><b>Education, not advice.</b> This explains the questions and risks. It does not design your plan. For personalized custody or inheritance, speak with a qualified adviser.</div>
+
+  <div class="lbl">Download card / bridge card</div>
+  <div class="tsa-grid">
+    <div class="tsa-card tsa-card--download">
+      <div class="tsa-card__file"><h3 class="tsa-card__title" style="margin:0">Custody Questions Checklist</h3><span class="tsa-card__size">PDF · 240 KB</span></div>
+      <a class="tsa-chip" href="#">PDF</a><a class="tsa-chip" href="#">DOCX</a>
     </div>
-  </section>
-
-  <!-- 6 · Glossary term -->
-  <section data-screen-label="Glossary" style="padding:44px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">6 · Glossary term</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">inline: dotted underline, definition on hover/footnote in print · sidebar: "Words to know" box · every term of art gets one</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;max-width:760px">
-        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px">
-          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.7">Set aside your <span style="color:#ECECE6;border-bottom:1.5px dotted #C7CCD1;cursor:help">must-pay</span> bills the day you get paid.</p>
-          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">inline term</span>
-        </div>
-        <div style="background:#F5F3EE;border:1px solid #D9D6CE;border-radius:4px;padding:14px 14px">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#0F766E;margin-bottom:6px">Words to know</div>
-          <p style="font-size:12px;line-height:1.55;margin:0;color:#1A1C1F"><b>Must-pay</b> — a bill with a real consequence if missed.</p>
-        </div>
-      </div>
+    <div class="tsa-card tsa-card--bridge">
+      <div class="tsa-card__kicker">Honest next step</div>
+      <h3 class="tsa-card__title">You understand the tradeoffs.</h3>
+      <p class="tsa-card__body">If your situation is specific, a diagnostic or a qualified adviser is the right next move — no pressure.</p>
     </div>
-  </section>
+  </div>
+</div></section>
 
-  <!-- 7 · Data table -->
-  <section data-screen-label="Data table" style="padding:44px 0;border-bottom:1px solid #2C2F36">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">7 · Data table</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">mono-caps header on surface · 1px row rules · numerals mono, right-aligned, tabular · total row on surface, 700 · fill-in variant leaves cells blank with $ prompt</p>
-      <div style="border:1px solid #2C2F36;border-radius:8px;overflow:hidden;max-width:560px">
-        <div style="display:grid;grid-template-columns:1fr 140px;background:#191B1F;border-bottom:1px solid #2C2F36">
-          <div style="padding:9px 16px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#8A9098">Expense</div>
-          <div style="padding:9px 16px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:#8A9098;border-left:1px solid #2C2F36;text-align:right">Amount</div>
-        </div>
-        <div style="display:grid;grid-template-columns:1fr 140px;border-bottom:1px solid #2C2F36"><div style="padding:10px 16px;font-size:13.5px;color:#ECECE6">Rent</div><div style="padding:10px 16px;border-left:1px solid #2C2F36;font-family:'JetBrains Mono',monospace;font-size:13px;color:#A7ABB3;text-align:right">650.00</div></div>
-        <div style="display:grid;grid-template-columns:1fr 140px;border-bottom:1px solid #2C2F36"><div style="padding:10px 16px;font-size:13.5px;color:#ECECE6">Phone</div><div style="padding:10px 16px;border-left:1px solid #2C2F36;font-family:'JetBrains Mono',monospace;font-size:13px;color:#A7ABB3;text-align:right">45.00</div></div>
-        <div style="display:grid;grid-template-columns:1fr 140px;background:#191B1F"><div style="padding:10px 16px;font-size:13.5px;font-weight:700;color:#FBFBF7">Total</div><div style="padding:10px 16px;border-left:1px solid #2C2F36;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;color:#ECECE6;text-align:right">695.00</div></div>
-      </div>
+<!-- WAVE B -->
+<section><div class="tsa-wrap">
+  <h2>Wave B · document &amp; deck shells</h2>
+  <p class="note">Frame only — per-document content stays inline in real pages. Print-first.</p>
+
+  <div class="lbl">Workbook shell — .tsa-doc--workbook</div>
+  <div class="tsa-card">
+    <div class="tsa-doc--workbook">
+      <div class="tsa-doc__band"><span class="cls">Worksheet · Module 04</span><h3 class="tsa-doc__title">Where is my money going?</h3></div>
+      <div class="tsa-field"><div class="tsa-field__q"><span class="tsa-field__n">1</span>List your three largest fixed expenses.</div><div class="tsa-field__lines"><span></span><span></span></div></div>
     </div>
-  </section>
+  </div>
 
-  <!-- 8 · Progress marker -->
-  <section data-screen-label="Progress" style="padding:44px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">8 · Progress marker</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">dots: done = signal solid, current = ink outline, later = faint · always paired with mono "n of N" — color never carries alone</p>
-      <div style="display:flex;align-items:center;gap:16px;background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:18px 20px;max-width:420px">
-        <div style="display:flex;gap:8px;align-items:center">
-          <span style="width:9px;height:9px;border-radius:50%;background:#FF9A00"></span>
-          <span style="width:9px;height:9px;border-radius:50%;background:#FF9A00"></span>
-          <span style="width:9px;height:9px;border-radius:50%;border:1.5px solid #ECECE6"></span>
-          <span style="width:9px;height:9px;border-radius:50%;background:#3C4047"></span>
-          <span style="width:9px;height:9px;border-radius:50%;background:#3C4047"></span>
-        </div>
-        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;color:#A7ABB3">MODULE 3 OF 5</span>
-      </div>
+  <div class="lbl">Facilitator shell — .tsa-doc--facilitator</div>
+  <div class="tsa-card">
+    <div class="tsa-doc--facilitator">
+      <div class="tsa-doc__rail"><div class="tsa-doc__time">00:10</div>Warm-up</div>
+      <div class="tsa-doc__notes"><h3 class="tsa-card__title" style="margin:0 0 6px">Opening the session</h3><p class="tsa-card__body">Ask the room what "sovereign" means to them before defining it. Do not correct — collect.</p></div>
     </div>
-  </section>
+  </div>
 
-  <!-- 9 · Endorsement footer -->
-  <section data-screen-label="Endorsement" style="padding:44px 0;border-bottom:1px solid #2C2F36">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
-      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;color:#FBFBF7;margin:0 0 4px">9 · Endorsement footer</h2>
-      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:0 0 18px">the one parent mark on program surfaces · mono caps 0.2em · top hairline rule · pairs with page number (print) or domain (web)</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px">
-        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:18px 20px">
-          <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid #2C2F36;padding-top:12px">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6E727A">A Sovereign Academy property</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8A9098">bitcoinsovereign.academy</span>
-          </div>
-        </div>
-        <div style="background:#FDFCF9;border:1px solid #D9D6CE;border-radius:8px;padding:18px 20px">
-          <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid #D9D6CE;padding-top:12px">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#8A8D93">A Sovereign Academy property</span>
-            <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#5A5E66">Page 12 of 40</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="lbl">Certificate shell — .tsa-doc--certificate</div>
+  <div class="tsa-doc--certificate">
+    <div class="tsa-doc__seal">◆</div>
+    <div class="cls">Certificate of completion</div>
+    <div class="tsa-doc__name">Attendee Name</div>
+    <p class="tsa-card__body">has completed Bitcoin Custody Foundations.</p>
+    <div class="tsa-doc__signatures"><span>Dalia · Instructor</span><span>Date</span></div>
+  </div>
 
-  <!-- Footer -->
-  <footer style="background:#0C0D0F;padding:36px 0;border-top:1px solid #2C2F36">
-    <div style="max-width:1060px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-      <span style="width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:12px;color:#0C0D0F;background:linear-gradient(135deg,#8A9098,#C7CCD1,#ECECE6)">S</span>
-      <b style="color:#ECECE6;font-size:13px">The Sovereign Academy</b>
-      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#6E727A">Tier-1 components · v0.1 · tokens from Token Sheet v0.1 only</span>
-    </div>
-  </footer>
+  <div class="lbl">Slide shell — .tsa-slide (graphite + paper), scaled preview</div>
+  <div class="row">
+    <div class="slide-scale"><div class="tsa-slide"><div class="tsa-slide__eyebrow">◆ Module 04</div><div class="tsa-slide__title">Title master</div></div></div>
+    <div class="slide-scale"><div class="tsa-slide tsa-slide--paper"><div class="tsa-slide__eyebrow">◆ FSA</div><div class="tsa-slide__title">Paper variant</div></div></div>
+  </div>
+</div></section>
+</main>
 
-</div>
-
+<script>
+  document.querySelectorAll('.platform-switch button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.documentElement.setAttribute('data-platform', b.dataset.p);
+      document.querySelectorAll('.platform-switch button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+    });
+  });
+</script>
 </body>
 </html>

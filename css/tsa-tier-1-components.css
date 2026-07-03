@@ -1,0 +1,202 @@
+/* ============================================================================
+   tsa-tier-1-components.css  —  The Sovereign Academy Tier-1 component layer
+   PR2. Additive. Consumes tsa-design-tokens.css + tsa-platform-variants.css.
+
+   Rules encoded here:
+     - No raw hex, no new tokens — only var(--…). (grep '#[0-9a-f]{6}' == 0)
+     - One engine prefix `tsa-`; BEM-lite (block __element --modifier).
+     - Platform theming is by [data-platform], never per-platform classes.
+     - Load order: tokens → variants → components.
+   Adopted by nothing yet; proven only in design-system/tier-1-components.html.
+   ========================================================================== */
+
+/* ─────────────────────────── Layout primitive ─────────────────────────── */
+.tsa-wrap { max-width: var(--width-default); margin: 0 auto; padding: 0 var(--space-8); }
+.tsa-wrap--prose { max-width: var(--width-prose); }
+
+/* ─────────────────────────── Base primitives ──────────────────────────── */
+.tsa-eyebrow {
+  font-family: var(--font-mono); font-size: var(--fs-eyebrow); font-weight: 700;
+  letter-spacing: 0.24em; text-transform: uppercase; color: var(--brand);
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.tsa-btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+  padding: 0 20px; font-family: var(--font-sans); font-weight: 600; font-size: 0.95rem;
+  border-radius: var(--radius-sm); text-decoration: none; cursor: pointer;
+  border: 1.6px solid transparent; transition: var(--transition-base);
+}
+/* primary = brand fade as OUTLINE, never hue-filled */
+.tsa-btn--primary {
+  color: var(--ink-strong);
+  background: linear-gradient(var(--elevated), var(--elevated)) padding-box,
+              var(--brand-fade) border-box;
+}
+.tsa-btn--primary:hover {
+  background: linear-gradient(var(--surface), var(--surface)) padding-box,
+              var(--brand-fade) border-box;
+}
+.tsa-btn--secondary { color: var(--ink); border-color: var(--border-strong); background: transparent; }
+.tsa-btn--secondary:hover { border-color: var(--brand); }
+.tsa-btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+.tsa-badge {
+  display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono);
+  font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 12px;
+  border-radius: var(--radius-pill); border: 1px solid var(--border-strong); color: var(--muted);
+}
+.tsa-status { display: inline-flex; align-items: center; gap: 7px; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); }
+.tsa-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--success); }
+.tsa-dot--later { background: var(--faint); }
+
+.tsa-card {
+  background: var(--elevated); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: var(--space-6); box-shadow: var(--shadow-1);
+}
+.tsa-card--hover { transition: var(--transition-base); }
+.tsa-card--hover:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: var(--shadow-2); }
+.tsa-card--gradient {
+  border: 1px solid transparent;
+  background: linear-gradient(var(--elevated), var(--elevated)) padding-box, var(--brand-fade) border-box;
+}
+.tsa-card__title { font-family: var(--font-sans); font-size: var(--fs-h3); font-weight: 600; color: var(--ink-strong); margin: 0 0 6px; }
+.tsa-card__body { color: var(--muted); font-size: var(--fs-small); margin: 0; }
+
+.tsa-list { list-style: none; padding: 0; margin: 0; }
+.tsa-list li { position: relative; padding: 8px 0 8px 22px; border-bottom: 1px solid var(--border); color: var(--ink); }
+.tsa-list li::before { content: "\25C6"; position: absolute; left: 0; top: 12px; color: var(--brand); font-size: 0.7em; }
+
+.tsa-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-6); font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink); }
+.tsa-panel__label { display: block; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); margin-bottom: 8px; }
+.tsa-panel__accent { color: var(--brand-solid); font-weight: 700; }
+
+.tsa-pullquote { font-family: var(--font-serif); font-style: italic; font-size: 1.4rem; color: var(--ink-strong); border-left: 2px solid var(--brand); padding-left: var(--space-6); margin: 0; max-width: var(--width-prose); }
+
+/* ═══════════════════════════ WAVE A COMPONENTS ═══════════════════════════ */
+
+/* 1 · Hero shell */
+.tsa-hero { padding: var(--space-16) 0 var(--space-12); border-bottom: 1px solid var(--border); }
+.tsa-hero--deep { background: var(--deepest); }
+.tsa-hero__eyebrow { font-family: var(--font-mono); font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--tsa-pewter); display: flex; align-items: center; gap: 8px; }
+.tsa-hero__title { font-family: var(--font-serif); font-size: var(--fs-h1); line-height: var(--lh-tight); letter-spacing: -0.015em; color: var(--ink-strong); margin: 12px 0 0; }
+.tsa-hero__title em { font-style: italic; }
+.tsa-hero__lede { color: var(--muted); font-size: var(--fs-lede); max-width: var(--width-prose); margin-top: 14px; }
+.tsa-hero__actions { display: flex; gap: var(--space-4); flex-wrap: wrap; margin-top: var(--space-8); }
+
+/* 2 · Platform card (child-property tile) */
+.tsa-card--platform { display: flex; flex-direction: column; }
+.tsa-card--platform .tsa-card__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4); }
+.tsa-card__glyph { width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; border: 1px solid var(--border-strong); color: var(--brand); }
+.tsa-card--platform .tsa-btn { margin-top: auto; }
+
+/* 3 · Program card (module/program tile) */
+.tsa-card--program { display: flex; flex-direction: column; gap: 6px; }
+.tsa-card--program .tsa-card__index { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand); }
+.tsa-card--program .tsa-card__meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--faint); margin-top: auto; padding-top: var(--space-4); }
+
+/* 4 · Lesson card */
+.tsa-card--lesson { display: flex; flex-direction: column; gap: 8px; }
+.tsa-card--lesson .tsa-card__stage { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tsa-pewter); }
+.tsa-card--lesson .tsa-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tsa-tag { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.08em; padding: 2px 8px; border-radius: var(--radius-pill); border: 1px solid var(--border-strong); color: var(--muted); }
+.tsa-card--lesson .tsa-card__time { font-family: var(--font-mono); font-size: 0.72rem; color: var(--faint); }
+
+/* 5 · Source note (sourced-claim marker; compliance/traceability — prints) */
+.tsa-note--source {
+  display: block; font-family: var(--font-mono); font-size: 0.75rem; line-height: 1.5;
+  color: var(--muted); border-left: 2px solid var(--border-strong);
+  padding: 6px 0 6px 12px; margin: var(--space-3) 0;
+}
+.tsa-note--source b { color: var(--ink); font-weight: 700; }
+.tsa-note--source a { color: var(--brand-solid); }
+
+/* 6 · Boundary note (education-not-advice / route-to-qualified-adviser — prints) */
+.tsa-note--boundary {
+  border: 1px solid var(--border-strong); border-radius: var(--radius-md);
+  background: var(--surface); padding: var(--space-4) var(--space-6);
+  color: var(--muted); font-size: var(--fs-small); margin: var(--space-6) 0;
+}
+.tsa-note--boundary::before {
+  content: "\25C6  "; color: var(--brand);
+}
+.tsa-note--boundary b { color: var(--ink); }
+
+/* 7 · Download card (kit/template file) */
+.tsa-card--download { display: flex; align-items: center; gap: var(--space-4); }
+.tsa-card--download .tsa-card__file { flex: 1; }
+.tsa-card--download .tsa-card__size { font-family: var(--font-mono); font-size: 0.72rem; color: var(--faint); }
+.tsa-chip { display: inline-flex; align-items: center; min-height: 28px; padding: 0 10px; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; border-radius: var(--radius-sm); border: 1px solid var(--border-strong); color: var(--muted); text-decoration: none; }
+.tsa-chip:hover { border-color: var(--brand); color: var(--ink); }
+
+/* 8 · Bridge card (end-of-module honest next step; deliberately NOT salesy) */
+.tsa-card--bridge {
+  border-left: 2px solid var(--brand); background: var(--surface);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+.tsa-card--bridge .tsa-card__kicker { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--tsa-pewter); margin-bottom: 6px; }
+
+/* ═══════════════════════════ WAVE B: DOCUMENT / DECK SHELLS ══════════════
+   Frame only. Per-document content and field counts stay inline in the page. */
+
+/* 9 · Workbook page shell (printable worksheet) */
+.tsa-doc--workbook { max-width: var(--width-content); margin: 0 auto; color: var(--ink); }
+.tsa-doc__band { border-bottom: 2px solid var(--brand); padding-bottom: var(--space-4); margin-bottom: var(--space-8); }
+.tsa-doc__title { font-family: var(--font-serif); font-size: var(--fs-h2); color: var(--ink-strong); margin: 4px 0 0; }
+.tsa-field { margin: var(--space-6) 0; }
+.tsa-field__q { font-family: var(--font-sans); font-weight: 600; color: var(--ink-strong); }
+.tsa-field__q .tsa-field__n { font-family: var(--font-mono); color: var(--brand); margin-right: 8px; }
+.tsa-field__lines { margin-top: var(--space-3); }
+.tsa-field__lines > span { display: block; border-bottom: 1px solid var(--border-strong); height: 28px; }
+
+/* 10 · Facilitator guide shell (instructor doc) */
+.tsa-doc--facilitator { max-width: var(--width-default); margin: 0 auto; color: var(--ink); display: grid; grid-template-columns: 120px 1fr; gap: var(--space-8); }
+.tsa-doc__rail { font-family: var(--font-mono); font-size: 0.75rem; color: var(--tsa-pewter); border-right: 1px solid var(--border); padding-right: var(--space-4); }
+.tsa-doc__rail .tsa-doc__time { color: var(--brand); }
+.tsa-doc__notes { color: var(--muted); }
+
+/* 11 · Certificate shell (award, print-first) */
+.tsa-doc--certificate {
+  max-width: 840px; margin: 0 auto; text-align: center; color: var(--ink);
+  border: 1px solid transparent;
+  background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--brand-fade) border-box;
+  border-radius: var(--radius-md); padding: var(--space-16) var(--space-12);
+}
+.tsa-doc--certificate .tsa-doc__seal { width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--brand); display: inline-flex; align-items: center; justify-content: center; color: var(--brand); margin-bottom: var(--space-6); }
+.tsa-doc--certificate .tsa-doc__name { font-family: var(--font-serif); font-size: var(--fs-h1); color: var(--ink-strong); border-bottom: 1px solid var(--border-strong); display: inline-block; padding: 0 var(--space-8) 8px; margin: var(--space-6) 0; }
+.tsa-doc__signatures { display: flex; justify-content: center; gap: var(--space-16); margin-top: var(--space-12); font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); }
+.tsa-doc__signatures span { border-top: 1px solid var(--border-strong); padding-top: 6px; }
+
+/* 12 · Slide shell (deck master; fixed ratio, scales — does not reflow) */
+.tsa-slide {
+  width: 1920px; height: 1080px; background: var(--deepest); color: var(--ink);
+  font-family: var(--font-sans); padding: 120px 180px; display: flex; flex-direction: column;
+  justify-content: center; transform-origin: top left; box-shadow: var(--shadow-2);
+}
+.tsa-slide__eyebrow { font-family: var(--font-mono); font-size: 22px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--tsa-pewter); display: flex; align-items: center; gap: 12px; }
+.tsa-slide__title { font-family: var(--font-serif); font-size: 96px; line-height: 1.04; color: var(--ink-strong); margin: 24px 0 0; }
+.tsa-slide--divider { justify-content: center; align-items: flex-start; }
+.tsa-slide--quote .tsa-slide__title { font-style: italic; }
+.tsa-slide--paper { background: var(--p-bg); color: var(--p-ink); }
+.tsa-slide--paper .tsa-slide__title { color: var(--p-ink); }
+.tsa-slide--paper .tsa-slide__eyebrow { color: var(--p-muted); }
+
+/* ─────────────────────────── Utilities ───────────────────────────── */
+.tsa-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4); }
+
+/* ─────────────────────────── Mobile ───────────────────────────── */
+@media (max-width: 640px) {
+  .tsa-grid { grid-template-columns: 1fr; }
+  .tsa-doc--facilitator { grid-template-columns: 1fr; }
+  .tsa-doc__rail { border-right: 0; border-bottom: 1px solid var(--border); padding: 0 0 var(--space-3); }
+  .tsa-card--download { flex-wrap: wrap; }
+  .tsa-doc__signatures { flex-direction: column; gap: var(--space-8); }
+}
+
+/* ─────────────────────────── Print (adds to the PR1 paper skin) ─────────── */
+@media print {
+  .tsa-hero__actions, .tsa-card--download .tsa-chip, .tsa-card--download .tsa-card__size { display: none !important; }
+  .tsa-slide { display: none !important; }                 /* decks are screen/export only */
+  .tsa-doc--certificate { border: 2px solid var(--p-ink) !important; background: #fff !important; }
+  .tsa-note--boundary, .tsa-note--source { border-color: var(--p-border-strong); }
+  .tsa-field__lines > span { border-bottom: 1px solid var(--p-ink); }
+}
