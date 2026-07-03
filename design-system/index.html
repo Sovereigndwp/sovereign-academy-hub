@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-platform="tsa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>The Sovereign Academy · Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/tsa-design-tokens.css">
+<link rel="stylesheet" href="../css/tsa-platform-variants.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-sans); line-height: var(--lh-body); }
+  .wrap { max-width: var(--width-default); margin: 0 auto; padding: 0 var(--space-8); }
+  header { border-bottom: 1px solid var(--border); padding: var(--space-16) 0 var(--space-12); }
+  .eyebrow { font-family: var(--font-mono); font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--tsa-pewter); display: flex; align-items: center; gap: 8px; }
+  .eyebrow span { color: var(--tsa-silver); }
+  h1 { font-family: var(--font-serif); font-size: var(--fs-h1); line-height: var(--lh-tight); letter-spacing: -0.015em; color: var(--ink-strong); margin: 12px 0 0; }
+  h1 em { font-style: italic; }
+  .lede { color: var(--muted); font-size: var(--fs-lede); max-width: var(--width-prose); margin-top: 14px; }
+  h2 { font-family: var(--font-serif); font-size: var(--fs-h2); color: var(--ink-strong); margin: var(--space-16) 0 var(--space-4); }
+  section { padding: var(--space-12) 0; border-bottom: 1px solid var(--border); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+  .card { display: block; text-decoration: none; background: var(--elevated); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-6); color: var(--ink); transition: var(--transition-base); }
+  .card:hover { border-color: var(--border-strong); transform: translateY(-2px); box-shadow: var(--shadow-1); }
+  .card .k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--faint); }
+  .card h3 { font-family: var(--font-sans); font-size: 1.05rem; margin: 6px 0 4px; color: var(--ink-strong); }
+  .card p { font-size: var(--fs-small); color: var(--muted); margin: 0; }
+  .tag { display: inline-block; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; padding: 2px 7px; border-radius: var(--radius-pill); border: 1px solid var(--border-strong); margin-top: 10px; }
+  .tag.tsa { color: var(--tsa-silver); } .tag.bsa { color: var(--bsa-solid); } .tag.fsa { color: var(--fsa-solid); }
+  footer { padding: var(--space-12) 0; color: var(--faint); font-size: var(--fs-small); }
+  code { font-family: var(--font-mono); color: var(--tsa-platinum); font-size: 0.85em; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow"><span>◆</span> The Sovereign Academy · Design System</div>
+    <h1>One grammar, <em class="fade-brand">three doors.</em></h1>
+    <p class="lede">The governed reference for TSA, BSA, and FSA. Every page here renders from the extracted tokens in <code>css/tsa-design-tokens.css</code> and <code>css/tsa-platform-variants.css</code>. Reference-only, not indexed.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>Foundations</h2>
+    <div class="grid">
+      <a class="card" href="token-sheet.html"><div class="k">Tokens</div><h3>Token Sheet</h3><p>Neutral scales, accents, type, spacing, radii — rendered live from the CSS.</p></a>
+      <a class="card" href="tier-1-components.html"><div class="k">Components</div><h3>Tier-1 Components</h3><p>Buttons, cards, eyebrows, badges, panels — the base kit all platforms compose from.</p></a>
+      <a class="card" href="examples/index.html"><div class="k">Examples</div><h3>Reference Pages</h3><p>The 14 target designs, grouped by platform.</p></a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Reference designs</h2>
+    <div class="grid">
+      <a class="card" href="Hub.html"><div class="k">System</div><h3>Hub</h3><p>Design-system index.</p><span class="tag tsa">TSA</span></a>
+      <a class="card" href="TSA-Landing-Page.html"><div class="k">Page</div><h3>TSA Landing Page</h3><p>Target for the hub homepage.</p><span class="tag tsa">TSA</span></a>
+      <a class="card" href="Design-System-Brief.html"><div class="k">Doc</div><h3>Design System Brief</h3><p>Why the system looks and works as it does.</p><span class="tag tsa">TSA</span></a>
+      <a class="card" href="Slide-Masters.html"><div class="k">Deck</div><h3>Slide Masters</h3><p>1920×1080 masters, graphite + paper.</p><span class="tag tsa">TSA</span></a>
+      <a class="card" href="BSA-Lesson-Page.html"><div class="k">Page</div><h3>BSA Lesson Page</h3><p>Target for a path/lesson module.</p><span class="tag bsa">BSA</span></a>
+      <a class="card" href="BSA-Custody-Checklist.html"><div class="k">Tool</div><h3>BSA Custody Checklist</h3><p>Interactive checklist.</p><span class="tag bsa">BSA</span></a>
+      <a class="card" href="BSA-Checklist-Print-Twin.html"><div class="k">Print</div><h3>BSA Checklist Print Twin</h3><p>Canonical print/PDF pattern.</p><span class="tag bsa">BSA</span></a>
+      <a class="card" href="FSA-Program-Page.html"><div class="k">Page</div><h3>FSA Program Page</h3><p>Target for a program/module page.</p><span class="tag fsa">FSA</span></a>
+      <a class="card" href="FSA-Workbook-Page.html"><div class="k">Print</div><h3>FSA Workbook Page</h3><p>Printable worksheet.</p><span class="tag fsa">FSA</span></a>
+      <a class="card" href="FSA-Facilitator-Guide.html"><div class="k">Doc</div><h3>FSA Facilitator Guide</h3><p>Instructor guide.</p><span class="tag fsa">FSA</span></a>
+      <a class="card" href="FSA-Certificate.html"><div class="k">Print</div><h3>FSA Certificate</h3><p>Certificate, print.</p><span class="tag fsa">FSA</span></a>
+      <a class="card" href="Tier-1-Component-Sheet.html"><div class="k">Spec</div><h3>Tier-1 Component Sheet</h3><p>Component states + do/don't.</p><span class="tag tsa">TSA</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Created by Dalia · thesovereign.academy · design-system reference · not indexed</div></footer>
+</body>
+</html>

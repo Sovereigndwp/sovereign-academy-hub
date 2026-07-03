@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-platform="tsa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Reference Examples · TSA Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/tsa-design-tokens.css">
+<link rel="stylesheet" href="../../css/tsa-platform-variants.css">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-sans); line-height: var(--lh-body); }
+  .wrap { max-width: var(--width-default); margin: 0 auto; padding: 0 var(--space-8); }
+  header { border-bottom: 1px solid var(--border); padding: var(--space-16) 0 var(--space-12); }
+  .eyebrow { font-family: var(--font-mono); font-size: var(--fs-eyebrow); font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase; color: var(--tsa-pewter); }
+  h1 { font-family: var(--font-serif); font-size: var(--fs-h1); color: var(--ink-strong); margin: 12px 0 0; }
+  h2 { font-family: var(--font-serif); font-size: var(--fs-h2); color: var(--ink-strong); margin: var(--space-12) 0 var(--space-4); }
+  a.back { color: var(--tsa-silver); font-family: var(--font-mono); font-size: var(--fs-small); text-decoration: none; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: var(--space-4); }
+  .card { display: block; text-decoration: none; background: var(--elevated); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-6); color: var(--ink); transition: var(--transition-base); }
+  .card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
+  .card h3 { font-family: var(--font-sans); font-size: 1rem; margin: 0 0 4px; color: var(--ink-strong); }
+  .card p { font-size: var(--fs-small); color: var(--muted); margin: 0; }
+  .tag { display: inline-block; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; padding: 2px 7px; border-radius: var(--radius-pill); border: 1px solid var(--border-strong); margin-top: 10px; }
+  .tag.tsa { color: var(--tsa-silver); } .tag.bsa { color: var(--bsa-solid); } .tag.fsa { color: var(--fsa-solid); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="eyebrow">◆ Foundations · Examples</div>
+  <h1>Reference pages</h1>
+  <p style="color:var(--muted);max-width:var(--width-prose);margin-top:14px">The 14 target designs, grouped by platform. These are the source-of-truth mockups each migration PR aims to match. <a class="back" href="../index.html">← back to system</a></p>
+</div></header>
+<main><div class="wrap">
+
+  <h2>TSA — parent</h2>
+  <div class="grid">
+    <a class="card" href="../Hub.html"><h3>Hub</h3><p>System index.</p><span class="tag tsa">TSA</span></a>
+    <a class="card" href="../TSA-Landing-Page.html"><h3>Landing Page</h3><p>Hub homepage target.</p><span class="tag tsa">TSA</span></a>
+    <a class="card" href="../Design-System-Brief.html"><h3>Design System Brief</h3><p>Rationale.</p><span class="tag tsa">TSA</span></a>
+    <a class="card" href="../Slide-Masters.html"><h3>Slide Masters</h3><p>Deck masters.</p><span class="tag tsa">TSA</span></a>
+    <a class="card" href="../Token-Sheet.html"><h3>Token Sheet (ref)</h3><p>Original token mockup.</p><span class="tag tsa">TSA</span></a>
+    <a class="card" href="../Tier-1-Components.html"><h3>Tier-1 Components (ref)</h3><p>Original component mockup.</p><span class="tag tsa">TSA</span></a>
+    <a class="card" href="../Tier-1-Component-Sheet.html"><h3>Tier-1 Component Sheet</h3><p>States + do/don't.</p><span class="tag tsa">TSA</span></a>
+  </div>
+
+  <h2>BSA — Bitcoin</h2>
+  <div class="grid">
+    <a class="card" href="../BSA-Lesson-Page.html"><h3>Lesson Page</h3><p>Path/lesson module.</p><span class="tag bsa">BSA</span></a>
+    <a class="card" href="../BSA-Custody-Checklist.html"><h3>Custody Checklist</h3><p>Interactive checklist.</p><span class="tag bsa">BSA</span></a>
+    <a class="card" href="../BSA-Checklist-Print-Twin.html"><h3>Checklist Print Twin</h3><p>Print/PDF pattern.</p><span class="tag bsa">BSA</span></a>
+  </div>
+
+  <h2>FSA — financial</h2>
+  <div class="grid">
+    <a class="card" href="../FSA-Program-Page.html"><h3>Program Page</h3><p>Program/module target.</p><span class="tag fsa">FSA</span></a>
+    <a class="card" href="../FSA-Workbook-Page.html"><h3>Workbook Page</h3><p>Printable worksheet.</p><span class="tag fsa">FSA</span></a>
+    <a class="card" href="../FSA-Facilitator-Guide.html"><h3>Facilitator Guide</h3><p>Instructor guide.</p><span class="tag fsa">FSA</span></a>
+    <a class="card" href="../FSA-Certificate.html"><h3>Certificate</h3><p>Certificate, print.</p><span class="tag fsa">FSA</span></a>
+  </div>
+
+</div></main>
+</body>
+</html>

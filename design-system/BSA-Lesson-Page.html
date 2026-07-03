@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #121316; }
+  * { box-sizing: border-box; }
+  a { text-decoration: none; }
+</style>
+
+
+<div data-screen-label="BSA Lesson Page" style="font-family:'Inter',system-ui,sans-serif;background:#121316;color:#ECECE6;line-height:1.6;font-size:17px">
+
+  <!-- Nav -->
+  <nav style="position:sticky;top:0;z-index:50;background:rgba(18,19,22,0.94);backdrop-filter:blur(8px);border-bottom:1px solid #2C2F36">
+    <div style="max-width:1100px;margin:0 auto;padding:14px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:14px;color:#0C0D0F;background:linear-gradient(90deg,#FF7A00,#FFD400)">₿</span>
+        <span style="font-weight:700;font-size:15px;color:#ECECE6">Bitcoin Sovereign Academy</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:22px;font-size:14px">
+        <a href="#" style="color:#A7ABB3">Learning path</a>
+        <a href="#" style="color:#A7ABB3">Glossary</a>
+        <a href="#" style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A9098;border:1px solid #2C2F36;border-radius:2px;padding:8px 14px">Print this lesson</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Progress marker -->
+  <div style="border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1100px;margin:0 auto;padding:12px 26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#8A9098">Module 07 · Custody</span>
+      <div style="display:flex;align-items:center;gap:6px">
+        <span style="width:9px;height:9px;background:#FF9A00"></span><span style="width:9px;height:9px;background:#FF9A00"></span><span style="width:9px;height:9px;background:#FF9A00"></span><span style="width:9px;height:9px;border:1px solid #3C4047"></span><span style="width:9px;height:9px;border:1px solid #3C4047"></span>
+      </div>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">lesson 3 of 5</span>
+    </div>
+  </div>
+
+  <!-- Lesson header -->
+  <header style="border-bottom:1px solid #2C2F36">
+    <div style="max-width:1100px;margin:0 auto;padding:64px 26px 48px">
+      <div style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#8A9098"><span style="font-size:8px;color:#FF9A00">◆</span>Lesson 7.3 · 25 minutes</div>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:clamp(32px,4.5vw,46px);line-height:1.12;letter-spacing:-0.012em;color:#FBFBF7;margin:14px 0 0;max-width:760px">Why your node is the only vote <em style="font-style:italic;background:linear-gradient(90deg,#FF7A00,#FFD400);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">you can verify</em></h1>
+      <!-- Objective block -->
+      <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:16px 20px;margin-top:26px;max-width:720px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#FF9A00;margin-bottom:6px">By the end of this lesson</div>
+        <p style="font-size:15px;color:#A7ABB3;margin:0;line-height:1.65">You can explain what a full node checks, run one verification against a block you choose, and say precisely what "don't trust, verify" costs and buys.</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Body -->
+  <main style="max-width:1100px;margin:0 auto;padding:56px 26px 0">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;align-items:start">
+
+      <!-- Main column -->
+      <div style="display:flex;flex-direction:column;gap:32px;max-width:680px">
+
+        <div>
+          <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:28px;color:#FBFBF7;margin:0 0 12px;letter-spacing:-0.01em">Rules without rulers</h2>
+          <p style="color:#A7ABB3;margin:0 0 16px">Every bitcoin node holds a full copy of the rulebook and checks every block against it — <b style="color:#ECECE6">21 million</b> coins, valid signatures, no double spends. There is no appeal process and no customer support, because there is nothing to appeal: a block either follows the rules or it does not exist.</p>
+          <p style="color:#A7ABB3;margin:0">When you run your own node, nobody summarizes the state of the network for you. You compute it.</p>
+        </div>
+
+        <!-- Verification block -->
+        <div style="background:#191B1F;border:1px solid #3C4047;border-left:3px solid #FF9A00;border-radius:4px;padding:20px 24px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#FF9A00;margin-bottom:10px">Verify this yourself</div>
+          <p style="color:#A7ABB3;font-size:14.5px;margin:0 0 14px">Ask your node for the current supply. No block explorer, no website — your own hardware answers:</p>
+          <div style="background:#0C0D0F;border:1px solid #2C2F36;border-radius:2px;padding:14px 16px;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:1.8;overflow-x:auto">
+            <div style="color:#6E727A">$ bitcoin-cli gettxoutsetinfo</div>
+            <div style="color:#ECECE6">"total_amount": <span style="color:#FF9A00">19,876,543.21</span></div>
+          </div>
+          <p style="color:#6E727A;font-size:13px;margin:12px 0 0;font-family:'JetBrains Mono',monospace">takes ~2 min on a home node · the number is the audit</p>
+        </div>
+
+        <div>
+          <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:28px;color:#FBFBF7;margin:0 0 12px;letter-spacing:-0.01em">What verification costs</h2>
+          <p style="color:#A7ABB3;margin:0">Disk space, sync time, and the discipline to check instead of ask. That is the whole bill. What it buys: you never have to believe anyone — an exchange, a developer, this academy — about what the rules are or whether your money follows them.</p>
+        </div>
+
+        <!-- Caution callout -->
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-left:3px solid #FF9A00;border-radius:4px;padding:16px 20px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#FF9A00;margin-bottom:5px">Caution</div>
+          <p style="color:#A7ABB3;font-size:14.5px;margin:0">A wallet connected to someone else's node trusts that node's answers. Fine for coffee money; not fine for savings. Lesson 7.4 covers pointing your wallet at your own node.</p>
+        </div>
+
+        <!-- Knowledge check -->
+        <div style="border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#FF7A00,#FFD400) border-box;border-radius:8px;padding:24px 28px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#FF9A00;margin-bottom:12px">Knowledge check</div>
+          <p style="font-size:16px;color:#ECECE6;font-weight:500;margin:0 0 14px">Your node rejects a block that a major exchange's explorer shows as confirmed. Who is right about your money?</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="display:flex;align-items:center;gap:12px;border:1px solid #2C2F36;border-radius:4px;padding:12px 16px;min-height:44px"><span style="width:16px;height:16px;border-radius:50%;border:1.5px solid #6E727A;flex-shrink:0"></span><span style="font-size:14.5px;color:#A7ABB3">The exchange — it has more users</span></div>
+            <div style="display:flex;align-items:center;gap:12px;border:1px solid #2C2F36;border-radius:4px;padding:12px 16px;min-height:44px"><span style="width:16px;height:16px;border-radius:50%;border:1.5px solid #6E727A;flex-shrink:0"></span><span style="font-size:14.5px;color:#A7ABB3">Your node — its rules are the only ones you verified</span></div>
+            <div style="display:flex;align-items:center;gap:12px;border:1px solid #2C2F36;border-radius:4px;padding:12px 16px;min-height:44px"><span style="width:16px;height:16px;border-radius:50%;border:1.5px solid #6E727A;flex-shrink:0"></span><span style="font-size:14.5px;color:#A7ABB3">Whichever confirms first</span></div>
+          </div>
+        </div>
+
+        <!-- Pager -->
+        <div style="display:flex;justify-content:space-between;gap:12px;border-top:1px solid #2C2F36;padding:28px 0 64px;flex-wrap:wrap">
+          <a href="#" style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.5px solid #3C4047;color:#ECECE6;font-weight:600;font-size:14px">← 7.2 · Scarcity you can audit</a>
+          <a href="#" style="display:inline-flex;align-items:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#FF7A00,#FFD400) border-box;color:#FBFBF7;font-weight:600;font-size:14px">7.4 · Your wallet, your node →</a>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside style="display:flex;flex-direction:column;gap:14px;position:sticky;top:96px">
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#FF9A00;margin-bottom:8px">Words to know</div>
+          <p style="font-size:13px;line-height:1.6;margin:0 0 10px;color:#A7ABB3"><b style="color:#ECECE6;border-bottom:1px dotted #FF9A00">Full node</b> — software that checks every rule itself instead of asking.</p>
+          <p style="font-size:13px;line-height:1.6;margin:0;color:#A7ABB3"><b style="color:#ECECE6;border-bottom:1px dotted #FF9A00">UTXO set</b> — the complete list of spendable coins your node computes.</p>
+        </div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;margin-bottom:8px">In this module</div>
+          <div style="display:flex;flex-direction:column;gap:8px;font-size:13px">
+            <span style="color:#6E727A">7.1 Keys are the money</span>
+            <span style="color:#6E727A">7.2 Scarcity you can audit</span>
+            <span style="color:#ECECE6;font-weight:600">7.3 Your node, your vote ●</span>
+            <span style="color:#A7ABB3">7.4 Your wallet, your node</span>
+            <span style="color:#A7ABB3">7.5 The key ceremony</span>
+          </div>
+        </div>
+        <div style="border:1px solid #2C2F36;border-radius:4px;padding:16px 18px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;margin-bottom:8px">Offline?</div>
+          <p style="font-size:13px;line-height:1.6;margin:0;color:#A7ABB3">This lesson prints to the §9 document grid — bitcoinsovereign.academy/m07/3-print</p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background:#0C0D0F;padding:36px 0;border-top:1px solid #2C2F36">
+    <div style="max-width:1100px;margin:0 auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:12px;color:#0C0D0F;background:linear-gradient(90deg,#FF7A00,#FFD400)">₿</span>
+        <span style="font-weight:700;font-size:14px;color:#ECECE6">Bitcoin Sovereign Academy</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">bitcoinsovereign.academy</span>
+      </div>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098">A Sovereign Academy property</span>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

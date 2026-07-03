@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #121316; }
+  * { box-sizing: border-box; }
+  a { text-decoration: none; }
+</style>
+
+
+<div style="font-family:'Inter',system-ui,sans-serif;background:#121316;color:#ECECE6;line-height:1.6;font-size:16px">
+
+  <!-- ============ HEADER ============ -->
+  <header data-screen-label="Header" style="border-bottom:1px solid #2C2F36;background:radial-gradient(ellipse at 70% 0%, rgba(199,204,209,0.07) 0%, transparent 55%)">
+    <div style="max-width:1060px;margin:0 auto;padding:72px 32px 56px">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:28px">
+        <span style="width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:#0C0D0F;background:linear-gradient(135deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%)">S</span>
+        <span style="font-weight:700;color:#ECECE6">The Sovereign Academy</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6E727A">Internal · v0.1</span>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:#8A9098">Design-System Brief</div>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:52px;line-height:1.08;letter-spacing:-0.015em;color:#FBFBF7;margin:14px 0 0">One engine. Three voices.<br><em style="font-style:italic;background:linear-gradient(135deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Connected, not identical.</em></h1>
+      <p style="font-size:18px;color:#A7ABB3;max-width:680px;margin:20px 0 0;line-height:1.6">The system that ties TSA, FSA, and BSA together — what they share, where they diverge, and how to migrate without breaking what already works. FSA's print and institutional constraints anchor every decision: if it survives a photocopier, it survives everywhere.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:8px 14px;font-size:13px;color:#A7ABB3"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#8A9098,#ECECE6)"></span>TSA · parent · graphite &amp; silver</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:8px 14px;font-size:13px;color:#A7ABB3"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#0F766E,#5EEAD4)"></span>FSA · program · emerald</span>
+        <span style="display:inline-flex;align-items:center;gap:8px;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:8px 14px;font-size:13px;color:#A7ABB3"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(90deg,#FF7A00,#FFD400)"></span>BSA · program · orange→yellow</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ TOC ============ -->
+  <nav style="border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:28px 32px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px 24px;font-size:13px">
+      <a href="#directions" style="color:#C7CCD1;font-weight:600">0 · Three directions to compare</a>
+      <a href="#s1" style="color:#A7ABB3">1 · Brand architecture</a>
+      <a href="#s2" style="color:#A7ABB3">2 · Visual relationship</a>
+      <a href="#skins" style="color:#A7ABB3">2b · Skins side-by-side</a>
+      <a href="#s3" style="color:#A7ABB3">3 · Shared principles</a>
+      <a href="#s4" style="color:#A7ABB3">4 · Always consistent</a>
+      <a href="#s5" style="color:#A7ABB3">5 · Different by platform</a>
+      <a href="#s6" style="color:#A7ABB3">6 · Color system</a>
+      <a href="#s7" style="color:#A7ABB3">7 · Typography</a>
+      <a href="#s8" style="color:#A7ABB3">8 · Component library</a>
+      <a href="#s9" style="color:#A7ABB3">9 · Document templates</a>
+      <a href="#s10" style="color:#A7ABB3">10 · Slide templates</a>
+      <a href="#s11" style="color:#A7ABB3">11 · Workbook templates</a>
+      <a href="#s12" style="color:#A7ABB3">12 · Web page templates</a>
+      <a href="#s13" style="color:#A7ABB3">13 · Diagram style</a>
+      <a href="#s14" style="color:#A7ABB3">14 · Motion rules</a>
+      <a href="#s15" style="color:#A7ABB3">15 · Accessibility &amp; print</a>
+      <a href="#s16" style="color:#A7ABB3">16 · Migration plan</a>
+      <a href="#s17" style="color:#A7ABB3">17 · Not yet</a>
+    </div>
+  </nav>
+
+  <!-- ============ 0 · DIRECTIONS ============ -->
+  <section id="directions" data-screen-label="0 Directions" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#A7ABB3;margin-bottom:14px"><span style="font-size:8px;color:#C7CCD1">◆</span>Decision zero</div>
+      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:36px;line-height:1.12;letter-spacing:-0.01em;color:#FBFBF7;margin:0 0 12px">Three directions <em style="font-style:italic;background:linear-gradient(135deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">to compare</em></h2>
+      <p style="color:#A7ABB3;font-size:16px;max-width:720px;margin:0 0 28px">The core tension: TSA's brand is dark graphite, but FSA lives on paper. Which world is <b style="color:#ECECE6">canonical</b> — the one tokens are defined in, and the other is derived from — shapes every downstream decision. Pick one before any component work starts.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px">
+        <!-- Direction A -->
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;color:#8A9098">DIRECTION A</span>
+            <sc-if value="{{ recA }}" hint-placeholder-val="{{ false }}"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#0C0D0F;background:linear-gradient(90deg,#C7CCD1,#ECECE6);border-radius:3px;padding:3px 8px;font-weight:700">Recommended</span></sc-if>
+          </div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#FBFBF7;margin:0">Graphite Canon</h3>
+          <div style="height:6px;border-radius:3px;background:linear-gradient(90deg,#0C0D0F 0%,#121316 55%,#ECECE6 100%);border:1px solid #2C2F36"></div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.6">Dark web is canonical; print is an export. Tokens defined on graphite, inverted for paper. Truest to today's TSA site.</p>
+          <p style="color:#6E727A;font-size:13px;margin:0"><b style="color:#A7ABB3">Risk:</b> FSA documents always feel like a dark website printed in a hurry. The anchor audience gets the derived experience.</p>
+        </div>
+        <!-- Direction B -->
+        <div style="background:#191B1F;border:1px solid #3C4047;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;color:#8A9098">DIRECTION B</span>
+            <sc-if value="{{ recB }}" hint-placeholder-val="{{ true }}"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#0C0D0F;background:linear-gradient(90deg,#C7CCD1,#ECECE6);border-radius:3px;padding:3px 8px;font-weight:700">Recommended</span></sc-if>
+          </div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#FBFBF7;margin:0">Paper Canon</h3>
+          <div style="height:6px;border-radius:3px;background:linear-gradient(90deg,#F7F5F0 0%,#ECECE6 55%,#121316 100%);border:1px solid #2C2F36"></div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.6">Warm paper is canonical — tokens defined light-first, B/W-photocopy-safe by construction. Graphite becomes TSA's and BSA's <em>web skin</em>, derived from the same scale.</p>
+          <p style="color:#6E727A;font-size:13px;margin:0"><b style="color:#A7ABB3">Why it wins:</b> FSA anchors the system. Anything born print-safe upgrades gracefully to screens; the reverse never holds.</p>
+        </div>
+        <!-- Direction C -->
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;justify-content:space-between">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;color:#8A9098">DIRECTION C</span>
+            <sc-if value="{{ recC }}" hint-placeholder-val="{{ false }}"><span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#0C0D0F;background:linear-gradient(90deg,#C7CCD1,#ECECE6);border-radius:3px;padding:3px 8px;font-weight:700">Recommended</span></sc-if>
+          </div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#FBFBF7;margin:0">Dual Native</h3>
+          <div style="height:6px;border-radius:3px;background:linear-gradient(90deg,#121316 0%,#121316 49%,#F7F5F0 51%,#F7F5F0 100%);border:1px solid #2C2F36"></div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.6">Two co-equal themes; every semantic token ships a paired dark/light value. Nothing is derived — both are designed.</p>
+          <p style="color:#6E727A;font-size:13px;margin:0"><b style="color:#A7ABB3">Risk:</b> double maintenance for a one-person operation. Every new component needs two reviews forever.</p>
+        </div>
+      </div>
+      <p style="color:#6E727A;font-size:13px;margin:20px 0 0;font-family:'JetBrains Mono',monospace">The rest of this brief assumes the recommended direction. Everything else survives a switch; only §6 token definitions would flip.</p>
+    </div>
+  </section>
+
+  <!-- ============ 1 · BRAND ARCHITECTURE ============ -->
+  <section id="s1" data-screen-label="1 Brand architecture" style="padding:64px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">01</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Brand architecture</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 24px">A <b style="color:#ECECE6">branded house with endorsed programs</b>. TSA is the masterbrand and the quiet authority behind everything; FSA and BSA are named programs that carry their own signal color and their own tone, endorsed by — never dressed as — the parent.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:8px">Parent</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:19px;color:#FBFBF7;margin:0 0 6px">TSA — The Sovereign Academy</h3>
+          <p style="color:#A7ABB3;font-size:14px;margin:0">Holds the philosophy, the engine, and the credibility. Speaks in monochrome silver. Never competes with its programs for attention.</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:8px">Endorsed program</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:19px;color:#FBFBF7;margin:0 0 6px"><span style="font-weight:700;background:linear-gradient(135deg,#10B981,#6EE7B7);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">FSA</span> — Financially Sovereign Academy</h3>
+          <p style="color:#A7ABB3;font-size:14px;margin:0">Institution-facing. Its brand must survive a facility's photocopier, a district's procurement PDF, and a facilitator with no design tools.</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:8px">Endorsed program</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:19px;color:#FBFBF7;margin:0 0 6px"><span style="font-weight:700;background:linear-gradient(90deg,#FF7A00,#FFD400);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">BSA</span> — Bitcoin Sovereign Academy</h3>
+          <p style="color:#A7ABB3;font-size:14px;margin:0">Individual-facing. Precision and verification are the brand: exact numbers, exact steps, no crypto-generalization, no hype.</p>
+        </div>
+      </div>
+      <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px;margin-top:16px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Endorsement grammar</div>
+        <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.7">Every program surface carries one — and only one — parent endorsement: the line <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#C7CCD1;background:#191B1F;border:1px solid #2C2F36;border-radius:3px;padding:2px 7px">A SOVEREIGN ACADEMY PROPERTY</span> in mono caps, placed in the footer (web), the back cover (print), or the closing slide (decks). Program lockups never combine the TSA mark with the program name; the endorsement line is the whole relationship.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 · VISUAL RELATIONSHIP ============ -->
+  <section id="s2" data-screen-label="2 Visual relationship" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">02</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Visual relationship</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 24px"><b style="color:#ECECE6">Same skeleton, different metabolism.</b> The three platforms share structure — type, spacing, component anatomy, the eyebrow-and-diamond section grammar — and differ in exactly two things: signal color and temperature.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;overflow:hidden">
+          <div style="height:8px;background:linear-gradient(90deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%)"></div>
+          <div style="padding:20px 22px">
+            <h3 style="font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#FBFBF7;margin:0 0 6px">TSA · Editorial monochrome</h3>
+            <p style="color:#A7ABB3;font-size:14px;margin:0">Cool, quiet, serif-led. Silver fade on a few key words. The most restrained of the three — the parent whispers.</p>
+          </div>
+        </div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;overflow:hidden">
+          <div style="height:8px;background:linear-gradient(90deg,#0F766E 0%,#10B981 50%,#5EEAD4 100%)"></div>
+          <div style="padding:20px 22px">
+            <h3 style="font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#FBFBF7;margin:0 0 6px">FSA · Warm paper emerald</h3>
+            <p style="color:#A7ABB3;font-size:14px;margin:0">Light-first, generous whitespace, larger type, plainer words. The warm-educational half of the brand mood lives here.</p>
+          </div>
+        </div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;overflow:hidden">
+          <div style="height:8px;background:linear-gradient(90deg,#FF7A00 0%,#FF9A00 45%,#FFD400 100%)"></div>
+          <div style="padding:20px 22px">
+            <h3 style="font-family:'Inter',sans-serif;font-weight:600;font-size:15px;color:#FBFBF7;margin:0 0 6px">BSA · Graphite ember</h3>
+            <p style="color:#A7ABB3;font-size:14px;margin:0">TSA's dark shell with the orange→yellow fade as its only heat. Mono-heavy: numerals, hashes, checklists, exactness.</p>
+          </div>
+        </div>
+      </div>
+      <p style="color:#6E727A;font-size:14px;margin:20px 0 0;max-width:720px">Recognition test: any page from any platform, with logos removed, should be attributable to the family within two seconds — and to the right platform within five.</p>
+    </div>
+  </section>
+
+  <!-- ============ 2b · SKINS SIDE-BY-SIDE ============ -->
+  <section id="skins" data-screen-label="Skins side-by-side" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:center;gap:9px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.25em;text-transform:uppercase;color:#A7ABB3;margin-bottom:14px"><span style="font-size:8px;color:#C7CCD1">◆</span>One skeleton, three skins</div>
+      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0 0 12px;letter-spacing:-0.01em">The same page, <em style="font-style:italic;background:linear-gradient(135deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">three ways</em></h2>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 28px;font-size:15px">Identical anatomy in every column — eyebrow, heading with one fade phrase, body, callout, primary button, endorsement line. Only the signal color and the temperature change.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;align-items:stretch">
+
+        <!-- TSA skin -->
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#C7CCD1">TSA · Graphite silver</div>
+          <div style="flex:1;background:#121316;border:1px solid #3C4047;border-radius:8px;padding:26px 24px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:13px;color:#0C0D0F;background:linear-gradient(135deg,#8A9098,#C7CCD1,#ECECE6)">S</span>
+              <span style="font-weight:700;font-size:13px;color:#ECECE6">The Sovereign Academy</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#8A9098"><span style="font-size:7px;color:#C7CCD1">◆</span>Module 04</div>
+            <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;line-height:1.15;color:#FBFBF7">Systems thinking for <em style="font-style:italic;background:linear-gradient(135deg,#8A9098,#C7CCD1,#ECECE6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">everyday decisions</em></div>
+            <p style="color:#A7ABB3;font-size:13px;line-height:1.6;margin:0">Sovereignty starts with seeing the system you are inside. This module gives you three lenses and one worked example.</p>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:12px 14px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;margin-bottom:4px">Note</div>
+              <p style="color:#A7ABB3;font-size:12px;margin:0;line-height:1.55">Twenty minutes. No prior reading required.</p>
+            </div>
+            <span style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#8A9098,#C7CCD1,#ECECE6) border-box;color:#FBFBF7;font-weight:600;font-size:13px;align-self:flex-start">Begin module</span>
+            <div style="margin-top:auto;padding-top:12px;border-top:1px solid #2C2F36;font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#6E727A">A Sovereign Academy property</div>
+          </div>
+        </div>
+
+        <!-- FSA skin -->
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#34D399">FSA · Warm paper emerald</div>
+          <div style="flex:1;background:#FDFCF9;border:1px solid #D9D6CE;border-radius:8px;padding:26px 24px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:13px;color:#FDFCF9;background:linear-gradient(135deg,#0F766E,#10B981)">F</span>
+              <span style="font-weight:700;font-size:13px;color:#1A1C1F">Financially Sovereign Academy</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#5A5E66"><span style="font-size:7px;color:#0F766E">◆</span>Module 04</div>
+            <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;line-height:1.15;color:#1A1C1F">Make a budget <em style="font-style:italic;background:linear-gradient(135deg,#0F766E,#10B981);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">you can keep</em></div>
+            <p style="color:#3F434B;font-size:13.5px;line-height:1.65;margin:0">You will list what comes in, what must go out, and what is left. One real scenario, step by step. Pencil is fine.</p>
+            <div style="background:#F5F3EE;border:1px solid #D9D6CE;border-radius:4px;padding:12px 14px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#0F766E;margin-bottom:4px">Facilitator cue</div>
+              <p style="color:#3F434B;font-size:12px;margin:0;line-height:1.55">Hand out worksheet 4-A before starting this section.</p>
+            </div>
+            <span style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#FDFCF9,#FDFCF9) padding-box,linear-gradient(90deg,#0F766E,#10B981,#5EEAD4) border-box;color:#1A1C1F;font-weight:600;font-size:13px;align-self:flex-start">Start the worksheet</span>
+            <div style="margin-top:auto;padding-top:12px;border-top:1px solid #D9D6CE;font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#8A8D93">A Sovereign Academy property</div>
+          </div>
+        </div>
+
+        <!-- BSA skin -->
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#FF9A00">BSA · Graphite ember</div>
+          <div style="flex:1;background:#121316;border:1px solid #3C4047;border-radius:8px;padding:26px 24px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:13px;color:#0C0D0F;background:linear-gradient(90deg,#FF7A00,#FFD400)">₿</span>
+              <span style="font-weight:700;font-size:13px;color:#ECECE6">Bitcoin Sovereign Academy</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#8A9098"><span style="font-size:7px;color:#FF9A00">◆</span>Module 04</div>
+            <div style="font-family:'Playfair Display',serif;font-weight:700;font-size:24px;line-height:1.15;color:#FBFBF7">Take custody of <em style="font-style:italic;background:linear-gradient(90deg,#FF7A00,#FFD400);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">your own keys</em></div>
+            <p style="color:#A7ABB3;font-size:13px;line-height:1.6;margin:0">Move from exchange balance to self-custody in a zero-risk simulation. Every step verified before it counts.</p>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:12px 14px">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.18em;text-transform:uppercase;color:#FF9A00;margin-bottom:4px">Verify this yourself</div>
+              <p style="color:#A7ABB3;font-size:12px;margin:0;line-height:1.55;font-family:'JetBrains Mono',monospace">testnet only · fee: 0 sats · nothing at risk</p>
+            </div>
+            <span style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 22px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#FF7A00,#FFD400) border-box;color:#FBFBF7;font-weight:600;font-size:13px;align-self:flex-start">Run the simulation</span>
+            <div style="margin-top:auto;padding-top:12px;border-top:1px solid #2C2F36;font-family:'JetBrains Mono',monospace;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#6E727A">A Sovereign Academy property</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · PRINCIPLES ============ -->
+  <section id="s3" data-screen-label="3 Principles" style="padding:64px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">03</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Shared design principles</h2></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:20px">
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.1em;margin-bottom:6px">P1</div><h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 5px">Color is meaning, not decoration</h3><p style="color:#A7ABB3;font-size:14px;margin:0">One signal color per platform, spent on a few words, one button border, one rule line. Neutral surfaces everywhere else. If a page has more than three colored moments, it's off-brand.</p></div>
+        <div style="background:#121316;border:1px solid #2C4047;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.1em;margin-bottom:6px">P2</div><h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 5px">Paper is a first-class citizen</h3><p style="color:#A7ABB3;font-size:14px;margin:0">Every artifact must pass the photocopier test: legible, complete, and correctly branded in one-color black on white. Anything that fails is a web-only ornament, not a system element.</p></div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.1em;margin-bottom:6px">P3</div><h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 5px">Plain language before ornament</h3><p style="color:#A7ABB3;font-size:14px;margin:0">Copy is part of the design system. Short sentences, concrete scenarios, no jargon without a glossary entry. FSA targets grade 6–8 reading level; TSA and BSA may run higher but never hide behind it.</p></div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.1em;margin-bottom:6px">P4</div><h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 5px">One skeleton, three voices</h3><p style="color:#A7ABB3;font-size:14px;margin:0">Structure is shared and non-negotiable; expression is per-platform and deliberate. A component may change its skin, never its anatomy.</p></div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.1em;margin-bottom:6px">P5</div><h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 5px">Show, don't hype</h3><p style="color:#A7ABB3;font-size:14px;margin:0">Numbers over adjectives, worked examples over promises, sources visible. Calm authority is the shared tone; urgency and FOMO are permanently off-brand — especially at BSA.</p></div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.1em;margin-bottom:6px">P6</div><h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 5px">Built for one maintainer</h3><p style="color:#A7ABB3;font-size:14px;margin:0">Every rule must be cheap to follow. Fewer tokens, fewer variants, no component that needs a designer to use correctly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 & 5 · CONSISTENT / DIFFERENT ============ -->
+  <section id="s4" data-screen-label="4-5 Consistent vs Different" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px">
+        <div>
+          <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">04</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:28px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Always consistent</h2></div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:14px">
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Type stack</b> — Playfair Display / Inter / JetBrains Mono, same roles everywhere (§7)</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Spacing &amp; radii</b> — 4px base grid; radii 2 / 4 / 8px only</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Button anatomy</b> — gradient-border outline, never hue-filled; 44px min height</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Section grammar</b> — mono-caps eyebrow with ◆ marker; serif heading with one italic fade phrase</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Fade-on-words rule</b> — brand fades land on words and thin rules, never on backgrounds or fills</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Endorsement line</b> — placement and typesetting per §1</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Accessibility floors</b> — contrast, sizes, targets per §15; no platform may trade them away</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Diagram + icon style</b> — one geometric line language per §13</div>
+          </div>
+        </div>
+        <div id="s5">
+          <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">05</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:28px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Different by platform</h2></div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:14px">
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Signal color</b> — silver (TSA) / emerald (FSA) / orange→yellow (BSA); never mixed on one surface</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Theme default</b> — graphite web for TSA + BSA; warm paper light for FSA everywhere</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Voice &amp; reading level</b> — editorial (TSA) / plain grade 6–8, scenario-first (FSA) / precise, imperative (BSA)</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Density</b> — FSA runs ~15% larger type and looser leading; BSA runs the densest, with mono data blocks</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Signature components</b> — scenario worksheets (FSA) / custody checklists &amp; verification blocks (BSA) / property cards (TSA)</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Imagery</b> — TSA: abstract/architectural; FSA: documentary photos of real people and paper; BSA: hardware, hands, keys — never coins-and-rockets stock art</div>
+            <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Motion budget</b> — TSA modest, BSA functional-only, FSA near-zero (§14)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · COLOR ============ -->
+  <section id="s6" data-screen-label="6 Color system" style="padding:64px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">06</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Shared color system</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 24px">Three layers: a <b style="color:#ECECE6">neutral core</b> shared by everyone, one <b style="color:#ECECE6">signal fade</b> per platform with a mandatory solid fallback, and <b style="color:#ECECE6">semantic tokens</b> (ink, surface, border, muted) resolved per theme. Fades never carry meaning alone — every fade has a solid stand-in for print and low-fidelity contexts.</p>
+
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Neutral core — graphite scale (web)</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:20px">
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#0C0D0F"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#0C0D0F</div><div style="font-size:10px;color:#6E727A">deepest</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#121316"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#121316</div><div style="font-size:10px;color:#6E727A">bg</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#191B1F"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#191B1F</div><div style="font-size:10px;color:#6E727A">surface</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#212429"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#212429</div><div style="font-size:10px;color:#6E727A">elevated</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#6E727A"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#6E727A</div><div style="font-size:10px;color:#6E727A">faint</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#A7ABB3"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#A7ABB3</div><div style="font-size:10px;color:#6E727A">muted</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#C7CCD1"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#C7CCD1</div><div style="font-size:10px;color:#6E727A">silver</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#ECECE6"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#ECECE6</div><div style="font-size:10px;color:#6E727A">ink</div></div></div>
+      </div>
+
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Neutral core — paper scale (print canon, new)</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-bottom:20px">
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#FDFCF9"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#FDFCF9</div><div style="font-size:10px;color:#6E727A">paper</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#F5F3EE"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#F5F3EE</div><div style="font-size:10px;color:#6E727A">paper-surface</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#D9D6CE"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#D9D6CE</div><div style="font-size:10px;color:#6E727A">paper-border</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#5A5E66"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#5A5E66</div><div style="font-size:10px;color:#6E727A">paper-muted</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:44px;background:#1A1C1F"></div><div style="padding:7px 10px;background:#121316"><div style="font-size:11px;font-family:'JetBrains Mono',monospace;color:#ECECE6">#1A1C1F</div><div style="font-size:10px;color:#6E727A">paper-ink</div></div></div>
+      </div>
+
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Signal fades + mandatory solid fallbacks</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px">
+        <div style="border:1px solid #2C2F36;border-radius:6px;padding:16px;background:#121316">
+          <div style="height:30px;border-radius:4px;background:linear-gradient(90deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%);margin-bottom:10px"></div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;font-family:'JetBrains Mono',monospace"><span style="color:#ECECE6">TSA silver fade</span><span style="color:#6E727A">solid: #C7CCD1</span></div>
+        </div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;padding:16px;background:#121316">
+          <div style="height:30px;border-radius:4px;background:linear-gradient(90deg,#0F766E 0%,#10B981 50%,#5EEAD4 100%);margin-bottom:10px"></div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;font-family:'JetBrains Mono',monospace"><span style="color:#ECECE6">FSA emerald fade</span><span style="color:#6E727A">solid: #0F766E</span></div>
+        </div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;padding:16px;background:#121316">
+          <div style="height:30px;border-radius:4px;background:linear-gradient(90deg,#FF7A00,#FF9A00,#FFD400);margin-bottom:10px"></div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;font-family:'JetBrains Mono',monospace"><span style="color:#ECECE6">BSA ember fade</span><span style="color:#6E727A">solid: #E56E00</span></div>
+        </div>
+      </div>
+      <p style="color:#6E727A;font-size:13px;margin:16px 0 0;max-width:720px">Usage rules: fades on <b style="color:#A7ABB3">words, thin rules, button borders</b> only — never as backgrounds or card fills. On paper, the FSA solid darkens to #0F766E for 4.5:1 contrast; the BSA solid darkens to #B45400 when used as text. In one-color print, all signals collapse to black — layouts must already work that way.</p>
+    </div>
+  </section>
+
+  <!-- ============ 7 · TYPOGRAPHY ============ -->
+  <section id="s7" data-screen-label="7 Typography" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">07</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Typography system</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 24px">One stack, three roles, all platforms. This delivers the modern-editorial half of the mood (serif display, mono labels) while Inter keeps body text warm and effortless to read.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'Playfair Display',serif;font-size:38px;font-weight:700;color:#FBFBF7;line-height:1.1;margin-bottom:12px">Playfair Display</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;margin-bottom:6px">Display · headings · pull quotes</div>
+          <p style="color:#A7ABB3;font-size:13px;margin:0">Weights 500/700/900 + italic. Italic reserved for the one fade-accented phrase per heading. Never below 19px.</p>
+        </div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'Inter',sans-serif;font-size:38px;font-weight:600;color:#FBFBF7;line-height:1.1;margin-bottom:12px">Inter</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;margin-bottom:6px">Body · UI · forms · captions</div>
+          <p style="color:#A7ABB3;font-size:13px;margin:0">400–700. Web body 17px/1.6 (FSA: 18px/1.65). The workhorse — everything not a heading or a label.</p>
+        </div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:500;color:#FBFBF7;line-height:1.1;margin-bottom:12px">JetBrains Mono</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;margin-bottom:6px">Eyebrows · data · labels · addresses</div>
+          <p style="color:#A7ABB3;font-size:13px;margin:0">Mono-caps with 0.18–0.25em tracking for section tags. At BSA it also sets amounts, fees, seed-phrase blanks, and anything verifiable.</p>
+        </div>
+      </div>
+      <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px;margin-top:14px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Print &amp; institutional fallbacks</div>
+        <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.7">Documents produced outside our tooling (facilitator-edited Word docs, facility print shops) fall back to <b style="color:#ECECE6">Georgia / system sans / Courier New</b> in the same roles. Templates must be designed so the fallback version is still on-system: role and hierarchy carry the brand, not the specific font file. Print body minimum 12pt; FSA participant materials 13pt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8 · COMPONENTS ============ -->
+  <section id="s8" data-screen-label="8 Components" style="padding:64px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">08</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Component library</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 24px">Built in three tiers. Every component ships in graphite, paper, and one-color-print skins from day one — a component without a print skin doesn't merge.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.12em;margin-bottom:10px">TIER 1 · CORE</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.8">Buttons (primary fade-border, secondary, text) · cards · eyebrow/section-tag · callout (note / caution / stop) · step list · definition/glossary term · data table · progress marker · footer with endorsement line</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.12em;margin-bottom:10px">TIER 2 · LEARNING</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.8">Module header · lesson objective block · knowledge check (multiple choice, true/false) · scenario block (setup → decision → outcome) · reflection prompt with writing space · vocabulary sidebar · "try it" interactive frame</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.12em;margin-bottom:10px">TIER 3 · PLATFORM SIGNATURE</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.8"><b style="color:#34D399">FSA:</b> budget worksheet grid, facilitator cue box, session agenda · <b style="color:#FF9A00">BSA:</b> custody checklist, verification block ("check this yourself"), key-ceremony steps, inheritance worksheet · <b style="color:#C7CCD1">TSA:</b> property card, principle grid</p>
+        </div>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:20px;background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098">Anatomy reference</span>
+        <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 26px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#8A9098,#C7CCD1,#ECECE6) border-box;color:#FBFBF7;font-weight:600;font-size:14px">Primary — fade border</span>
+        <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 26px;border-radius:2px;border:1.5px solid #3C4047;color:#ECECE6;font-weight:600;font-size:14px">Secondary</span>
+        <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 26px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#FF7A00,#FFD400) border-box;color:#FBFBF7;font-weight:600;font-size:14px">BSA skin — same anatomy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9-12 · TEMPLATES ============ -->
+  <section id="s9" data-screen-label="9-12 Templates" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">09–12</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Template families</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 24px">Four families, one grid. Documents and workbooks are FSA-anchored (US Letter, one-color-safe); slides and web pages inherit the same section grammar at their native sizes.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
+        <div id="s9a" style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.12em;margin-bottom:8px">09 · DOCUMENTS</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0 0 10px;line-height:1.7">US Letter, 0.75in margins, single column with a 1.75in sidebar zone for cues and definitions. Templates: <b style="color:#ECECE6">one-pager · facilitator guide · participant handout · partner/procurement brief · letterhead</b>.</p>
+          <p style="color:#6E727A;font-size:13px;margin:0">Rules: 12pt minimum, no color-dependent meaning, header carries program name + module code in mono, footer carries page number + endorsement line. Must photocopy clean at 100% black.</p>
+        </div>
+        <div id="s10" style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.12em;margin-bottom:8px">10 · SLIDES</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0 0 10px;line-height:1.7">1920×1080, six masters: <b style="color:#ECECE6">title · section divider · content · scenario · diagram · quote/close</b>. Body text never under 24px; one idea per slide.</p>
+          <p style="color:#6E727A;font-size:13px;margin:0">TSA/BSA decks run graphite; FSA decks run paper-light by default (classrooms, projectors, printouts of decks). Section dividers are the only slides that may use a fade rule full-width.</p>
+        </div>
+        <div id="s11" style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.12em;margin-bottom:8px">11 · WORKBOOKS</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0 0 10px;line-height:1.7">FSA's flagship family. Pages: <b style="color:#ECECE6">cover · module opener · lesson spread · scenario worksheet · fill-in tables · reflection page · glossary · completion certificate</b>.</p>
+          <p style="color:#6E727A;font-size:13px;margin:0">Writing-space rules: 0.4in line spacing for handwriting, generous answer boxes, checkbox size ≥ 0.18in. No content that requires a device, a link, or a QR code to complete. Spanish-first variants planned from the start, not retrofitted.</p>
+        </div>
+        <div id="s12" style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#C7CCD1;letter-spacing:0.12em;margin-bottom:8px">12 · WEB PAGES</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0 0 10px;line-height:1.7">Five templates: <b style="color:#ECECE6">landing · learning-path overview · lesson/module · interactive-demo shell · institutional program page</b> (FSA's partner-facing pitch).</p>
+          <p style="color:#6E727A;font-size:13px;margin:0">All share the 1100px wrap, sticky nav, band-section rhythm, and footer grammar of the current TSA site. Lesson pages get a persistent progress marker and a print-this-lesson path that emits the §9 document layout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 13 · DIAGRAMS ============ -->
+  <section id="s13" data-screen-label="13 Diagrams" style="padding:64px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">13</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Visual &amp; diagram style</h2></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:18px">
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 6px">Line language</h3>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.7">Geometric line diagrams: 1.5px strokes, square or 4px-rounded nodes, mono labels, straight or 90° connectors. Ink-colored lines; the platform signal color marks exactly one thing — the decision point, the flow of money, the key. No 3D, no isometric, no clip art, no mascots.</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 6px">Icons</h3>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.7">One outline icon set (1.5px stroke, 24px grid) shared by all platforms, always paired with a text label in learning contexts. No emoji anywhere in the system.</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <h3 style="font-size:15px;font-weight:600;color:#FBFBF7;margin:0 0 6px">Photography</h3>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.7">Documentary, not stock: real hands, real paper, real hardware, natural light, desaturated ~10%. Photography is optional everywhere and forbidden as a meaning-carrier — every photo must be removable without losing information (photocopier test again).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 14 · MOTION ============ -->
+  <section id="s14" data-screen-label="14 Motion" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">14</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Motion rules</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 18px">Motion explains; it never performs. Global budget: <b style="color:#ECECE6">150–250ms, ease-out, opacity + ≤4px translate</b>. Hover lift ≤3px. No parallax, no scroll-jacking, no autoplaying loops, no animated gradients.</p>
+      <div style="display:flex;flex-direction:column;gap:8px;max-width:760px">
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#C7CCD1">TSA</b> — full (modest) budget: section reveals on first load, card hovers, fade-rule draw-in on hero only.</div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#34D399">FSA</b> — near-zero: state changes only (focus, expand/collapse, form validation). Institutional screens must read as still documents.</div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#FF9A00">BSA</b> — functional only: simulation feedback, step-completion ticks, confirmation counts. Motion may demonstrate a mechanism (blocks confirming) but never celebrates.</div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:6px;padding:12px 16px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">All</b> — <span style="font-family:'JetBrains Mono',monospace;font-size:12px">prefers-reduced-motion</span> honored completely: everything lands instantly, nothing is lost.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 15 · A11Y & PRINT ============ -->
+  <section id="s15" data-screen-label="15 Accessibility" style="padding:64px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">15</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Accessibility &amp; print rules</h2></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:18px">
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Floors — every platform</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.9">WCAG 2.2 AA · text contrast ≥ 4.5:1 (fade text measured at its weakest stop) · web body ≥ 17px · touch targets ≥ 44px · full keyboard paths · visible focus (2px silver ring) · color never the sole carrier of meaning · alt text on every informative image</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Print gates — FSA-anchored</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.9">One-color photocopy test is a release gate · 12pt minimum (13pt participant materials) · no information in color, links, or QR codes alone — every URL also written out · works stapled, hole-punched, and copied at 90% · facilitator versions annotate in the sidebar zone, never inline</p>
+        </div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:8px;padding:22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Language</div>
+          <p style="color:#A7ABB3;font-size:14px;margin:0;line-height:1.9">FSA: grade 6–8 reading level, checked per document · scenario-first explanations · glossary entry for every term of art · Spanish parity for FSA program materials · BSA may be technical but defines every term on first use</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 16 · MIGRATION ============ -->
+  <section id="s16" data-screen-label="16 Migration" style="padding:64px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">16</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">Migration plan</h2></div>
+      <p style="color:#A7ABB3;max-width:720px;margin:0 0 24px">Tokens before components, components before pages, paper before pixels. Each phase ships something usable on its own; nothing waits for a big-bang relaunch.</p>
+      <div style="display:flex;flex-direction:column;gap:10px;max-width:820px">
+        <div style="display:flex;gap:16px;background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:18px 20px;align-items:flex-start">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#0C0D0F;background:linear-gradient(135deg,#C7CCD1,#ECECE6);border-radius:3px;padding:3px 9px;font-weight:700;flex-shrink:0">PH 1</span>
+          <div><b style="color:#FBFBF7;font-size:14px">Tokens &amp; type</b><p style="color:#A7ABB3;font-size:14px;margin:4px 0 0">Ratify Direction B. Publish the token sheet (both scales, three signals, semantic mapping), the type scale, and the spacing/radius grid as a single reference page. No product changes yet.</p></div>
+        </div>
+        <div style="display:flex;gap:16px;background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:18px 20px;align-items:flex-start">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#0C0D0F;background:linear-gradient(135deg,#C7CCD1,#ECECE6);border-radius:3px;padding:3px 9px;font-weight:700;flex-shrink:0">PH 2</span>
+          <div><b style="color:#FBFBF7;font-size:14px">FSA print kit first</b><p style="color:#A7ABB3;font-size:14px;margin:4px 0 0">Documents + workbook templates (§9, §11) — the anchor audience and the strictest constraints. Pilot with one institutional partner before locking the family.</p></div>
+        </div>
+        <div style="display:flex;gap:16px;background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:18px 20px;align-items:flex-start">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#0C0D0F;background:linear-gradient(135deg,#C7CCD1,#ECECE6);border-radius:3px;padding:3px 9px;font-weight:700;flex-shrink:0">PH 3</span>
+          <div><b style="color:#FBFBF7;font-size:14px">Tier-1 web components + slides</b><p style="color:#A7ABB3;font-size:14px;margin:4px 0 0">Core component set in all three skins; the six slide masters. BSA adopts the shell first (closest to current TSA styling), FSA's light web theme derives from the paper canon.</p></div>
+        </div>
+        <div style="display:flex;gap:16px;background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:18px 20px;align-items:flex-start">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#0C0D0F;background:linear-gradient(135deg,#C7CCD1,#ECECE6);border-radius:3px;padding:3px 9px;font-weight:700;flex-shrink:0">PH 4</span>
+          <div><b style="color:#FBFBF7;font-size:14px">Page templates &amp; TSA refresh</b><p style="color:#A7ABB3;font-size:14px;margin:4px 0 0">The five web templates roll out per-page, highest-traffic first. TSA's own site is last — the parent adopts the system only after both programs prove it.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 17 · NOT YET ============ -->
+  <section id="s17" data-screen-label="17 Not yet" style="padding:64px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:10px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#C7CCD1;letter-spacing:0.1em">17</span><h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;color:#FBFBF7;margin:0;letter-spacing:-0.01em">What not to redesign yet</h2></div>
+      <div style="display:flex;flex-direction:column;gap:8px;max-width:760px;margin-top:16px">
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:6px;padding:14px 18px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Live curriculum in use</b> — the proven programa-colombia materials and anything currently in facilitators' hands. Reprint on new templates only at natural content-revision moments.</div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:6px;padding:14px 18px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">BSA interactive demo internals</b> — the 50+ simulations keep their working UIs; only their outer shell (nav, type, frame) adopts the system in Phase 3.</div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:6px;padding:14px 18px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Logos and marks</b> — the current marks stay until the system settles; a mark refresh, if any, is its own project after Phase 4.</div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:6px;padding:14px 18px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Information architecture &amp; URLs</b> — this system restyles pages; it does not reorganize them. IA changes ride separately.</div>
+        <div style="background:#121316;border:1px solid #2C2F36;border-radius:6px;padding:14px 18px;font-size:14px;color:#A7ABB3"><b style="color:#ECECE6">Advisor Certification brand</b> — deliberately out of scope; it gets its own brand on this engine in a later phase.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#0C0D0F;padding:48px 0 40px">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="height:1px;background:linear-gradient(90deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%);opacity:0.5;margin-bottom:28px"></div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span style="width:26px;height:26px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;color:#0C0D0F;background:linear-gradient(135deg,#8A9098 0%,#C7CCD1 50%,#ECECE6 100%)">S</span>
+        <b style="color:#ECECE6;font-size:14px">The Sovereign Academy</b>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#6E727A">Design-System Brief · v0.1 · Next: ratify Direction B, then token sheet</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script type="text/x-dc" data-dc-script data-props="{&quot;recommendedDirection&quot;: {&quot;editor&quot;: &quot;enum&quot;, &quot;options&quot;: [&quot;A&quot;, &quot;B&quot;, &quot;C&quot;], &quot;default&quot;: &quot;B&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Brief&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const d = this.props.recommendedDirection ?? 'B';
+    return { recA: d === 'A', recB: d === 'B', recC: d === 'C' };
+  }
+}
+</script>
+</body>
+</html>
