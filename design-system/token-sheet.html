@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #121316; }
+  * { box-sizing: border-box; }
+</style>
+
+
+<div style="font-family:'Inter',system-ui,sans-serif;background:#121316;color:#ECECE6;line-height:1.6;padding-bottom:64px">
+
+  <!-- Header -->
+  <header style="border-bottom:1px solid #2C2F36;padding:56px 0 36px">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <div style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:#8A9098"><span style="font-size:8px;color:#C7CCD1">◆</span>Phase 1 · Direction B (Paper Canon)</div>
+      <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:44px;line-height:1.08;letter-spacing:-0.015em;color:#FBFBF7;margin:12px 0 0">Token sheet <em style="font-style:italic;background:linear-gradient(135deg,#8A9098,#C7CCD1,#ECECE6);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">v0.1</em></h1>
+      <p style="color:#A7ABB3;font-size:16px;max-width:680px;margin:14px 0 0">The single reference for all three platforms. Tokens are defined on paper first; the graphite theme is the derived web skin. Semantic names are what components use — raw hexes never appear in component code.</p>
+    </div>
+  </header>
+
+  <!-- 1 · Neutral scales -->
+  <section data-screen-label="Neutral scales" style="padding:48px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:26px;color:#FBFBF7;margin:0 0 18px">1 · Neutral scales</h2>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Paper scale — canonical</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-bottom:24px">
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#FDFCF9"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#FDFCF9</div><div style="font-size:10px;color:#6E727A">paper / bg</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#F5F3EE"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#F5F3EE</div><div style="font-size:10px;color:#6E727A">surface</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#D9D6CE"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#D9D6CE</div><div style="font-size:10px;color:#6E727A">border</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#B9B6AE"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#B9B6AE</div><div style="font-size:10px;color:#6E727A">border-strong</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#8A8D93"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#8A8D93</div><div style="font-size:10px;color:#6E727A">faint</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#5A5E66"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#5A5E66</div><div style="font-size:10px;color:#6E727A">muted</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#3F434B"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#3F434B</div><div style="font-size:10px;color:#6E727A">ink-soft</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#1A1C1F"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#1A1C1F</div><div style="font-size:10px;color:#6E727A">ink</div></div></div>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:10px">Graphite scale — derived web skin (TSA · BSA)</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px">
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#0C0D0F"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#0C0D0F</div><div style="font-size:10px;color:#6E727A">deepest</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#121316"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#121316</div><div style="font-size:10px;color:#6E727A">bg</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#191B1F"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#191B1F</div><div style="font-size:10px;color:#6E727A">surface</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#212429"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#212429</div><div style="font-size:10px;color:#6E727A">elevated</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#2C2F36"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#2C2F36</div><div style="font-size:10px;color:#6E727A">border</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#3C4047"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#3C4047</div><div style="font-size:10px;color:#6E727A">border-strong</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#6E727A"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#6E727A</div><div style="font-size:10px;color:#6E727A">faint</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#A7ABB3"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#A7ABB3</div><div style="font-size:10px;color:#6E727A">muted</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#ECECE6"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#ECECE6</div><div style="font-size:10px;color:#6E727A">ink</div></div></div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;overflow:hidden"><div style="height:52px;background:#FBFBF7"></div><div style="padding:8px 12px;background:#191B1F;font-family:'JetBrains Mono',monospace"><div style="font-size:11px;color:#ECECE6">#FBFBF7</div><div style="font-size:10px;color:#6E727A">ink-strong</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Signals -->
+  <section data-screen-label="Signal tokens" style="padding:48px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:26px;color:#FBFBF7;margin:0 0 6px">2 · Signal tokens</h2>
+      <p style="color:#A7ABB3;font-size:14px;max-width:700px;margin:0 0 18px">Each platform resolves <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#C7CCD1">signal / signal-solid / signal-on-paper</span> to its own values. Fades: words, thin rules, button borders only. One-color print: everything collapses to ink.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:12px">
+        <div style="border:1px solid #2C2F36;border-radius:6px;padding:18px;background:#121316">
+          <div style="height:28px;border-radius:4px;background:linear-gradient(90deg,#8A9098,#C7CCD1,#ECECE6);margin-bottom:12px"></div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:2;color:#A7ABB3"><b style="color:#ECECE6">TSA</b><br>signal: 90° #8A9098→#C7CCD1→#ECECE6<br>signal-solid: #C7CCD1<br>signal-on-paper: #5A5E66</div>
+        </div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;padding:18px;background:#121316">
+          <div style="height:28px;border-radius:4px;background:linear-gradient(90deg,#0F766E,#10B981,#5EEAD4);margin-bottom:12px"></div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:2;color:#A7ABB3"><b style="color:#ECECE6">FSA</b><br>signal: 90° #0F766E→#10B981→#5EEAD4<br>signal-solid: #10B981<br>signal-on-paper: #0F766E</div>
+        </div>
+        <div style="border:1px solid #2C2F36;border-radius:6px;padding:18px;background:#121316">
+          <div style="height:28px;border-radius:4px;background:linear-gradient(90deg,#FF7A00,#FF9A00,#FFD400);margin-bottom:12px"></div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:2;color:#A7ABB3"><b style="color:#ECECE6">BSA</b><br>signal: 90° #FF7A00→#FF9A00→#FFD400<br>signal-solid: #FF9A00<br>signal-on-paper: #B45400</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Semantic mapping -->
+  <section data-screen-label="Semantic mapping" style="padding:48px 0;border-bottom:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:26px;color:#FBFBF7;margin:0 0 18px">3 · Semantic mapping</h2>
+      <div style="border:1px solid #2C2F36;border-radius:8px;overflow:hidden;font-family:'JetBrains Mono',monospace;font-size:12px">
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;background:#191B1F;border-bottom:1px solid #2C2F36">
+          <div style="padding:10px 16px;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098">Token</div>
+          <div style="padding:10px 16px;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;border-left:1px solid #2C2F36">Paper (canon)</div>
+          <div style="padding:10px 16px;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8A9098;border-left:1px solid #2C2F36">Graphite (derived)</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--bg</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#FDFCF9</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#121316</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--surface</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#F5F3EE</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#191B1F</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--elevated</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#FFFFFF</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#212429</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--border</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#D9D6CE</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#2C2F36</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--border-strong</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#B9B6AE</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#3C4047</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--ink</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#1A1C1F</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#ECECE6</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--ink-strong</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#000000</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#FBFBF7</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--muted</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#5A5E66</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#A7ABB3</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr;border-bottom:1px solid #2C2F36"><div style="padding:9px 16px;color:#ECECE6">--faint</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#8A8D93</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">#6E727A</div></div>
+        <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr"><div style="padding:9px 16px;color:#ECECE6">--focus-ring</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">2px #1A1C1F</div><div style="padding:9px 16px;color:#A7ABB3;border-left:1px solid #2C2F36">2px #C7CCD1</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Type scale -->
+  <section data-screen-label="Type scale" style="padding:48px 0;border-bottom:1px solid #2C2F36;background:#191B1F">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:26px;color:#FBFBF7;margin:0 0 18px">4 · Type scale</h2>
+      <div style="display:flex;flex-direction:column;gap:0;border:1px solid #2C2F36;border-radius:8px;overflow:hidden;background:#121316">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #2C2F36;flex-wrap:wrap"><span style="font-family:'Playfair Display',serif;font-weight:700;font-size:44px;line-height:1.08;color:#FBFBF7">Display</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">Playfair 700 · 44–52px / 1.08 · print 28pt</span></div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #2C2F36;flex-wrap:wrap"><span style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;line-height:1.12;color:#FBFBF7">Heading</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">Playfair 700 · 32px / 1.12 · print 20pt</span></div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #2C2F36;flex-wrap:wrap"><span style="font-family:'Inter',sans-serif;font-weight:600;font-size:19px;color:#FBFBF7">Subheading</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">Inter 600 · 19px / 1.3 · print 14pt</span></div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #2C2F36;flex-wrap:wrap"><span style="font-size:17px;color:#ECECE6">Body — web 17px, FSA web 18px</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">Inter 400 · 17–18px / 1.6 · print 12pt (FSA 13pt)</span></div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #2C2F36;flex-wrap:wrap"><span style="font-size:14px;color:#A7ABB3">Caption / secondary</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">Inter 400 · 14px / 1.55 · print 10pt (captions only)</span></div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #2C2F36;flex-wrap:wrap"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#A7ABB3">Eyebrow / section tag</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">Mono 700 · 10–11px / caps / 0.18–0.25em</span></div>
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 20px;flex-wrap:wrap"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#ECECE6">Data / verifiable — 1,480.00 · a1b2…c3d4</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A">Mono 400–500 · 12–13px · tabular</span></div>
+      </div>
+      <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:14px 0 0">Fallbacks (print shops / edited docs): Playfair→Georgia · Inter→system sans · JetBrains Mono→Courier New. Roles carry the brand, not files.</p>
+    </div>
+  </section>
+
+  <!-- 5 · Space, radius, size floors -->
+  <section data-screen-label="Spacing and radii" style="padding:48px 0">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px">
+      <h2 style="font-family:'Playfair Display',serif;font-weight:700;font-size:26px;color:#FBFBF7;margin:0 0 18px">5 · Space, radius, floors</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:14px">Spacing — 4px grid</div>
+          <div style="display:flex;align-items:flex-end;gap:10px">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:4px;height:4px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">4</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:8px;height:8px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">8</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:12px;height:12px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">12</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:16px;height:16px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">16</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:24px;height:24px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">24</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:32px;height:32px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">32</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:48px;height:48px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">48</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:64px;height:64px;background:#C7CCD1"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">64</span></div>
+          </div>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:14px 0 0">Section padding 64 · card padding 20–24 · gaps 8/14/16</p>
+        </div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:14px">Radii — three, only</div>
+          <div style="display:flex;gap:12px;align-items:flex-end">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:52px;height:36px;border:1.5px solid #C7CCD1;border-radius:2px"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">2 · buttons</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:52px;height:36px;border:1.5px solid #C7CCD1;border-radius:4px"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">4 · callouts</span></div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:6px"><div style="width:52px;height:36px;border:1.5px solid #C7CCD1;border-radius:8px"></div><span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#6E727A">8 · cards</span></div>
+          </div>
+          <p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin:14px 0 0">Circles for marks only. No pills.</p>
+        </div>
+        <div style="background:#191B1F;border:1px solid #2C2F36;border-radius:8px;padding:20px 22px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098;margin-bottom:14px">Floors</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:2.1;color:#A7ABB3">touch target ≥ 44px<br>checkbox print ≥ 0.18in / web ≥ 18px<br>writing line 0.4in<br>contrast ≥ 4.5:1 (fade at weakest stop)<br>content wrap 1060–1100px</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#0C0D0F;padding:36px 0;border-top:1px solid #2C2F36">
+    <div style="max-width:1060px;margin:0 auto;padding:0 32px;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <span style="width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:12px;color:#0C0D0F;background:linear-gradient(135deg,#8A9098,#C7CCD1,#ECECE6)">S</span>
+      <b style="color:#ECECE6;font-size:13px">The Sovereign Academy</b>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#6E727A">Token sheet · v0.1 · Phase 1 · raw hexes live here and nowhere else</span>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

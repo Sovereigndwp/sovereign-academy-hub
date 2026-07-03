@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #0C0D0F; }
+  * { box-sizing: border-box; }
+</style>
+
+
+<div style="font-family:'Inter',system-ui,sans-serif;background:#0C0D0F;min-height:100vh;padding:48px 24px;display:flex;flex-direction:column;align-items:center;gap:18px">
+
+  <div style="max-width:816px;width:100%">
+    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#8A9098">Template mock · BSA signature component · custody checklist</span>
+  </div>
+
+  <!-- ============ THE CHECKLIST ============ -->
+  <div data-screen-label="BSA Custody Checklist" style="width:816px;background:#121316;border:1px solid #2C2F36;border-radius:8px;box-shadow:0 24px 60px rgba(0,0,0,0.6);padding:56px 64px;color:#ECECE6">
+
+    <!-- Header -->
+    <div style="display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2C2F36;padding-bottom:14px;margin-bottom:28px">
+      <div style="display:flex;align-items:center;gap:9px">
+        <span style="width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-weight:700;font-size:13px;color:#0C0D0F;background:linear-gradient(90deg,#FF7A00,#FFD400)">₿</span>
+        <span style="font-weight:700;font-size:14px;color:#ECECE6">Bitcoin Sovereign Academy</span>
+      </div>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.15em;color:#8A9098">MODULE 07 · CHECKLIST 7-C</span>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#8A9098;margin-bottom:10px"><span style="font-size:7px;color:#FF9A00">◆</span>Key ceremony</div>
+    <h1 style="font-family:'Playfair Display',serif;font-weight:700;font-size:32px;line-height:1.12;color:#FBFBF7;margin:0 0 10px">Self-custody setup, <em style="font-style:italic;background:linear-gradient(90deg,#FF7A00,#FFD400);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">verified at every step</em></h1>
+    <p style="color:#A7ABB3;font-size:15px;line-height:1.6;margin:0 0 14px;max-width:620px">Work top to bottom. Do not skip a verify step — each one exists because someone lost money without it. Budget one unhurried hour.</p>
+
+    <div style="display:flex;gap:18px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin-bottom:28px">
+      <span>— hardware signer</span><span>— pen, not printer</span><span>— no cameras in the room</span><span>— phone in another room</span>
+    </div>
+
+    <!-- STOP callout -->
+    <div style="border:1.6px solid transparent;background:linear-gradient(#121316,#121316) padding-box,linear-gradient(90deg,#FF7A00,#FFD400) border-box;border-radius:4px;padding:16px 20px;margin-bottom:30px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#FF9A00;margin-bottom:5px">Stop — read first</div>
+      <p style="font-size:14px;color:#ECECE6;margin:0;line-height:1.6">Your seed words never touch a keyboard, a camera, a photo, a cloud note, or a password manager. Handwriting on the supplied card is the only copy that exists. Anyone who sees the words controls the money.</p>
+    </div>
+
+    <!-- PHASE 1 -->
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:0.15em;color:#FF9A00">PHASE 1</span>
+      <span style="font-weight:600;font-size:16px;color:#FBFBF7">Prepare</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:26px">
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
+        <sc-if value="{{ demoChecked }}" hint-placeholder-val="{{ false }}"><span style="width:18px;height:18px;border:1.5px solid #FF9A00;border-radius:2px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;color:#FF9A00;font-size:12px;font-weight:700">✓</span></sc-if>
+        <sc-if value="{{ demoUnchecked }}" hint-placeholder-val="{{ true }}"><span style="width:18px;height:18px;border:1.5px solid #6E727A;border-radius:2px;flex-shrink:0;margin-top:1px"></span></sc-if>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Buy the signer directly from the manufacturer</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">never second-hand · never from a marketplace reseller</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
+        <sc-if value="{{ demoChecked }}" hint-placeholder-val="{{ false }}"><span style="width:18px;height:18px;border:1.5px solid #FF9A00;border-radius:2px;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;color:#FF9A00;font-size:12px;font-weight:700">✓</span></sc-if>
+        <sc-if value="{{ demoUnchecked }}" hint-placeholder-val="{{ true }}"><span style="width:18px;height:18px;border:1.5px solid #6E727A;border-radius:2px;flex-shrink:0;margin-top:1px"></span></sc-if>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Inspect the tamper seal before opening</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">if anything looks disturbed: stop, photograph, contact manufacturer</div></div>
+      </div>
+      <!-- verify block -->
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #3C4047;border-left:3px solid #FF9A00;border-radius:4px;padding:13px 16px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#FF9A00;flex-shrink:0;margin-top:2px">VERIFY</span>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Check the firmware signature yourself</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#A7ABB3;margin-top:3px">compare the fingerprint on the device screen with the one published at the manufacturer's site — type the URL by hand</div></div>
+      </div>
+    </div>
+
+    <!-- PHASE 2 -->
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:0.15em;color:#FF9A00">PHASE 2</span>
+      <span style="font-weight:600;font-size:16px;color:#FBFBF7">Generate &amp; record</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:26px">
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
+        <span style="width:18px;height:18px;border:1.5px solid #6E727A;border-radius:2px;flex-shrink:0;margin-top:1px"></span>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Generate the seed on the device — never import one</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">a seed that ever existed anywhere else is not yours alone</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
+        <span style="width:18px;height:18px;border:1.5px solid #6E727A;border-radius:2px;flex-shrink:0;margin-top:1px"></span>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Write all 24 words, in order, in pen</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">word 1 ______ · word 2 ______ · … numbered card supplied with module 07</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #3C4047;border-left:3px solid #FF9A00;border-radius:4px;padding:13px 16px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#FF9A00;flex-shrink:0;margin-top:2px">VERIFY</span>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Read the card back against the device, word by word</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#A7ABB3;margin-top:3px">out loud, finger on each word — most recovery failures are transcription errors made here</div></div>
+      </div>
+    </div>
+
+    <!-- PHASE 3 -->
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:12px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:0.15em;color:#FF9A00">PHASE 3</span>
+      <span style="font-weight:600;font-size:16px;color:#FBFBF7">Prove recovery before funding</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:30px">
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
+        <span style="width:18px;height:18px;border:1.5px solid #6E727A;border-radius:2px;flex-shrink:0;margin-top:1px"></span>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Wipe the device and restore it from your handwritten card</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">yes, really — before a single sat arrives</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:13px 16px">
+        <span style="width:18px;height:18px;border:1.5px solid #6E727A;border-radius:2px;flex-shrink:0;margin-top:1px"></span>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Send a small test amount, then send it back out</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#6E727A;margin-top:3px">receiving proves the address; spending proves the keys</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;background:#191B1F;border:1px solid #3C4047;border-left:3px solid #FF9A00;border-radius:4px;padding:13px 16px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;letter-spacing:0.15em;color:#FF9A00;flex-shrink:0;margin-top:2px">VERIFY</span>
+        <div><div style="font-size:14px;color:#ECECE6;font-weight:500">Confirm the receive address on the device screen, not the computer</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#A7ABB3;margin-top:3px">first 4 + last 4 characters, every time, forever</div></div>
+      </div>
+    </div>
+
+    <!-- Completion strip -->
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;background:#191B1F;border:1px solid #2C2F36;border-radius:4px;padding:16px 20px;flex-wrap:wrap">
+      <div>
+        <div style="font-weight:600;font-size:14px;color:#FBFBF7">Ceremony complete</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#6E727A;margin-top:3px">date ________ · signer model ________ · card stored at ________</div>
+      </div>
+      <span style="display:inline-flex;align-items:center;min-height:44px;padding:10px 24px;border-radius:2px;border:1.6px solid transparent;background:linear-gradient(#191B1F,#191B1F) padding-box,linear-gradient(90deg,#FF7A00,#FFD400) border-box;color:#FBFBF7;font-weight:600;font-size:13px">Continue to inheritance module</span>
+    </div>
+
+    <!-- Footer -->
+    <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid #2C2F36;padding-top:14px;margin-top:30px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:#6E727A">A Sovereign Academy property</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#8A9098">bitcoinsovereign.academy/m07 · print version: one-color black</span>
+    </div>
+
+  </div>
+
+  <div style="max-width:816px;width:100%;font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.7;color:#6E727A">Spec: graphite skin · orange→yellow signal on phase markers, VERIFY blocks, stop callout + one button only · mono for everything verifiable · checkbox ≥18px · ships with a one-color US Letter print twin (§9 grid) for offline ceremonies</div>
+
+</div>
+
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 900, &quot;height&quot;: 1400}, &quot;showPhase1Done&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Checklist&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const done = this.props.showPhase1Done ?? false;
+    return { demoChecked: done, demoUnchecked: !done };
+  }
+}
+</script>
+</body>
+</html>
