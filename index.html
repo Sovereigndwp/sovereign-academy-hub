@@ -460,15 +460,16 @@
       .section { padding: 4rem 0; }
     }
   
-/* ===== TSA parent brand bridge (PR2): neutral graphite + silver ===== */
+/* ===== TSA parent brand bridge (PR2; trimmed PR4) =====
+   PR4 removed 15 :root token aliases now provided identically by the PR3 alias
+   block in css/tsa-brand.css (--color-brand/-accent/-orange-deep/-orange-bright,
+   --brand-gradient, --gradient-orange, --color-bg/-surface/-panel/-surface-deepest,
+   --color-border/-border-strong, --color-text/-text-strong/-muted).
+   KEPT below: --glow-orange, --color-text-faint, and the cream remaps — these are
+   NOT covered by PR3. The component overrides that follow are also kept. */
 :root{
-  --color-brand:var(--tsa-silver); --color-accent:var(--tsa-silver);
-  --color-orange-deep:var(--tsa-silver); --color-orange-bright:var(--tsa-silver);
-  --brand-gradient:var(--tsa-fade); --gradient-orange:var(--tsa-fade);
   --glow-orange:0 0 22px rgba(199,204,209,0.16);
-  --color-bg:var(--tsa-bg); --color-surface:var(--tsa-surface); --color-panel:var(--tsa-elevated);
-  --color-surface-deepest:var(--tsa-deepest); --color-border:var(--tsa-border); --color-border-strong:var(--tsa-border-strong);
-  --color-text:var(--tsa-ink); --color-text-strong:var(--tsa-ink-strong); --color-muted:var(--tsa-muted); --color-text-faint:var(--tsa-faint);
+  --color-text-faint:var(--tsa-faint);
   --color-cream:var(--tsa-elevated); --color-cream-2:var(--tsa-surface); --color-cream-3:var(--tsa-surface);
   --color-ink-on-cream:var(--tsa-ink); --color-muted-on-cream:var(--tsa-muted);
 }
