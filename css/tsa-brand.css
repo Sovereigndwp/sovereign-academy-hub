@@ -15,40 +15,53 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
+/* PR3 token-adoption bridge: pull the shared source-of-truth tokens first, then
+   re-point the --tsa-* / --color-* names below at them. @import must precede all
+   non-@import rules, so these stay at the top. Load order: shared tokens -> this. */
+@import url('tsa-design-tokens.css');
+@import url('tsa-platform-variants.css');
+
 :root {
-  /* ---- Surfaces: dark graphite, neutral ---- */
-  --tsa-bg:        #121316;   /* page background, graphite-black */
-  --tsa-surface:   #191B1F;   /* alt sections, panels */
-  --tsa-elevated:  #212429;   /* cards */
-  --tsa-deepest:   #0C0D0F;   /* dramatic / CTA bands, footer */
-  --tsa-border:    #2C2F36;   /* default hairline */
-  --tsa-border-strong: #3C4047;
+  /* ---- Surfaces: dark graphite, neutral ----
+     PR3: re-pointed to the shared neutral scale (identical values, differently
+     named -> non-self-referential). */
+  --tsa-bg:        var(--n-bg);            /* was #121316 */
+  --tsa-surface:   var(--n-surface);       /* was #191B1F */
+  --tsa-elevated:  var(--n-elevated);      /* was #212429 */
+  --tsa-deepest:   var(--n-deepest);       /* was #0C0D0F */
+  --tsa-border:    var(--n-border);        /* was #2C2F36 */
+  --tsa-border-strong: var(--n-border-strong); /* was #3C4047 */
 
-  /* ---- Text: warm ivory / silver-gray ---- */
-  --tsa-ink:        #ECECE6;  /* body */
-  --tsa-ink-strong: #FBFBF7;  /* heading emphasis */
-  --tsa-muted:      #A7ABB3;  /* supporting copy */
-  --tsa-faint:      #6E727A;  /* captions, never body text */
+  /* ---- Text: warm ivory / silver-gray ---- (PR3: shared neutral scale) */
+  --tsa-ink:        var(--n-ink);          /* was #ECECE6 */
+  --tsa-ink-strong: var(--n-ink-strong);   /* was #FBFBF7 */
+  --tsa-muted:      var(--n-muted);         /* was #A7ABB3 */
+  --tsa-faint:      var(--n-faint);         /* was #6E727A */
 
-  /* ---- Accent: near-monochrome silver (no hue) ---- */
+  /* ---- Accent: near-monochrome silver (no hue) ----
+     KEPT LITERAL: the shared file uses the SAME names (--tsa-silver/-platinum/
+     -pewter/-fade), so re-pointing would be self-referential. No differently
+     named shared equivalent exists; values match the shared file exactly. */
   --tsa-silver:   #C7CCD1;    /* primary accent: rules, key lines, hover */
   --tsa-platinum: #E5E7E9;    /* bright accent emphasis */
   --tsa-pewter:   #8A9098;    /* muted steel, secondary */
 
-  /* ---- The metallic signature fade (parent) ---- */
+  /* ---- The metallic signature fade (parent) ---- (KEPT LITERAL: same-name in shared) */
   --tsa-fade:   linear-gradient(135deg, #8A9098 0%, #C7CCD1 50%, #ECECE6 100%);
   --tsa-fade-h: linear-gradient(90deg,  #8A9098 0%, #C7CCD1 50%, #ECECE6 100%);
 
-  /* ---- Child-brand fades (wayfinding accents ONLY) ---- */
+  /* ---- Child-brand fades (wayfinding accents ONLY) ---- (KEPT LITERAL: same-name in shared) */
   --bsa-fade: linear-gradient(135deg, #FF7A00 0%, #FF9A00 45%, #FFD400 100%);
   --fsa-fade: linear-gradient(135deg, #10B981 0%, #34D399 50%, #6EE7B7 100%);
   --bsa-solid: #FF9A00;   /* solid fallback for the orange word accent */
   --fsa-solid: #34D399;   /* solid fallback for the emerald word accent */
 
-  /* ---- Status (solid, rare) ---- */
-  --tsa-success: #34D399;
-  --tsa-warning: #F4B740;
-  --tsa-error:   #F87171;
+  /* ---- Status (solid, rare) ----
+     PR3: re-pointed to shared --success/--warning/--error (differently named,
+     identical values -> non-self-referential). */
+  --tsa-success: var(--success);   /* was #34D399 */
+  --tsa-warning: var(--warning);   /* was #F4B740 */
+  --tsa-error:   var(--error);     /* was #F87171 */
 
   /* ---- Typography ---- */
   --font-serif: 'Playfair Display', Georgia, serif;   /* h1, h2 */
@@ -233,3 +246,44 @@ a:hover { color: var(--tsa-platinum); }
 .tsa-skip-link:focus { top: 0; }
 
 @media print { body { background: #fff; color: #000; } .tsa-no-print { display: none !important; } }
+
+/* ============================================================================
+   PR3 · LEGACY --color-* ALIAS BLOCK
+   Maps the old semantic names (consumed by legacy pages + the inline homepage
+   bridge) onto the shared parent tokens, from ONE place. Because tsa-brand.css
+   loads AFTER brand.css / tokens.css, these override the old orange definitions
+   wherever tsa-brand.css is linked (currently only index.html + styleguide.html;
+   styleguide uses --tsa-* not --color-*, so this is a no-op there, and index.html
+   already applies the same mapping via its inline bridge -> visually identical).
+   Names below are NOT defined in the shared file, so none are self-referential.
+   The inline homepage bridge is intentionally LEFT in place for now.
+   ========================================================================== */
+:root {
+  /* accent + gradient -> parent silver / metallic fade (neutralize legacy orange) */
+  --color-brand:          var(--brand);
+  --color-accent:         var(--brand);
+  --color-orange:         var(--brand);
+  --color-orange-hot:     var(--brand);
+  --color-orange-bright:  var(--brand);
+  --color-orange-deep:    var(--brand);
+  --color-yellow:         var(--brand);
+  --color-gold:           var(--brand);
+  --brand-gradient:       var(--brand-fade);
+  --gradient-orange:      var(--brand-fade);
+
+  /* surfaces + text -> shared neutral scale */
+  --color-bg:              var(--bg);
+  --color-surface:         var(--surface);
+  --color-panel:           var(--elevated);
+  --color-surface-deepest: var(--deepest);
+  --color-border:          var(--border);
+  --color-border-strong:   var(--border-strong);
+  --color-text:            var(--ink);
+  --color-text-strong:     var(--ink-strong);
+  --color-muted:           var(--muted);
+
+  /* NOTE: cream/paper (--color-cream*, --color-ink-on-cream), graph/node
+     (--color-node-*, --color-line-*), and alert (--color-danger*/-success*/
+     -warning/-info) families are intentionally NOT aliased here — they are kept
+     on their existing definitions until the pages that use them migrate. */
+}
