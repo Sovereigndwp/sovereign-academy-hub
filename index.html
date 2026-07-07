@@ -218,13 +218,23 @@
     }
 
     .hero__title {
-      font-family: var(--font-sans);
+      font-family: var(--font-serif);
       font-size: clamp(2.4rem, 5.4vw, 4.6rem);
-      font-weight: 900; line-height: 1.02; letter-spacing: -0.02em;
+      font-weight: 700; line-height: 1.08; letter-spacing: -0.015em;
       color: var(--color-text-strong);
       margin-bottom: 1.4rem;
     }
     .hero__title em { font-style: italic; background: var(--brand-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent !important; color: transparent; }
+    /* Fade wayfinding words: child-brand gradient on the child's name, upright (not italic).
+       Tokens come from the already-linked css/tsa-brand.css. Solid color + @supports
+       fallback guarantee the word is never an invisible transparent rectangle. */
+    .fade-b, .fade-f { -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .fade-b { color: var(--bsa-solid); background-image: var(--bsa-fade); }   /* BSA word -> orange */
+    .fade-f { color: var(--fsa-solid); background-image: var(--fsa-fade); }   /* FSA word -> emerald */
+    @supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+      .fade-b { color: var(--bsa-solid); }
+      .fade-f { color: var(--fsa-solid); }
+    }
     .hero__title .grad {
       background: var(--brand-gradient);
       -webkit-background-clip: text; background-clip: text; color: transparent;
@@ -346,7 +356,7 @@
       font-weight: 900; letter-spacing: -0.015em; line-height: 1.05;
       color: var(--color-text-strong);
     }
-    .section-title em { font-style: italic; color: var(--color-accent); }
+    .section-title em { font-style: italic; color: var(--color-accent); background: var(--brand-gradient); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
     .section-sub {
       margin-top: 1rem; font-size: 1.1rem; line-height: 1.6;
       color: var(--color-muted); max-width: 620px;
@@ -425,7 +435,7 @@
     .principle { background: var(--color-cream); color: var(--color-ink-on-cream); border-top: 1px solid rgba(12,10,8,0.12); }
     .principle .section-tag, .principle .section-tag::before { color: var(--color-orange-deep); }
     .principle .section-title { color: var(--color-ink-on-cream); }
-    .principle .section-title em { color: var(--color-orange-deep); }
+    .principle .section-title em { color: var(--color-orange-deep); background: none; -webkit-text-fill-color: currentColor; }
     .principle .section-sub { color: var(--color-muted-on-cream); }
     .principle-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 2rem; margin-top: 2.5rem; }
     .principle-item h4 { font-family: var(--font-sans); font-weight: 800; font-size: 1.1rem; color: var(--color-ink-on-cream); margin-bottom: 0.5rem; }
