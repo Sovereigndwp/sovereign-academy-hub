@@ -31,6 +31,8 @@ redesign/
 
 # Logo working files (move to /assets/ when ready to ship)
 *.png
+# ...but the social-share image must ship with the site
+!og-image.png
 
 # Common scratch / temp files
 *.swp
