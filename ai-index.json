@@ -1,25 +1,25 @@
 {
   "site": "The Sovereign Academy",
   "url": "https://thesovereign.academy",
-  "description": "Central hub for financial sovereignty education connecting Bitcoin and financial literacy academies",
+  "description": "Financial education and training company: practical curriculum, institutional programs, facilitator training, and bilingual learning tools. Parent academy of Financially Sovereign Academy and Bitcoin Sovereign Academy.",
   "founder": "Dalia Platt",
   "founded": "2024",
   "type": "EducationalOrganization",
   "network": {
     "properties": [
       {
+        "name": "Financially Sovereign Academy",
+        "url": "https://financiallysovereign.academy",
+        "focus": "Practical financial education: budgeting, credit, debt, saving, investing; institutional and workforce programs",
+        "modules": 10,
+        "calculators": 15
+      },
+      {
         "name": "Bitcoin Sovereign Academy",
         "url": "https://bitcoinsovereign.academy",
         "focus": "Bitcoin education, self-custody, Lightning Network",
         "courses": 6,
         "demos": 44
-      },
-      {
-        "name": "Financially Sovereign Academy",
-        "url": "https://financiallysovereign.academy",
-        "focus": "Financial literacy, budgeting, investing, debt management",
-        "modules": 10,
-        "calculators": 15
       }
     ]
   },
@@ -57,8 +57,8 @@
     "Consistent publishing since 2024"
   ],
   "contact": {
-    "email": "dalia@thebitcoinadviser.com",
-    "website": "https://thebitcoinadviser.com",
+    "email": "dalia@thesovereign.academy",
+    "website": "https://thesovereign.academy",
     "twitter": "@BTCSovereignEdu",
     "newsletter": "https://sovereigndwp.substack.com/"
   }

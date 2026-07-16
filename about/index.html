@@ -3,33 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Institutional Programs | The Sovereign Academy</title>
-  <meta name="description" content="Financial education programs for employers, workforce organizations, schools, correctional and reentry programs, municipalities, and community partners — with facilitator training in English and Spanish.">
-  <link rel="canonical" href="https://thesovereign.academy/institutional/">
+  <title>About The Sovereign Academy | Financial Education and Training</title>
+  <meta name="description" content="The Sovereign Academy is a financial education and training company. We build practical curriculum, institutional programs, facilitator training, and bilingual learning tools.">
+  <link rel="canonical" href="https://thesovereign.academy/about/">
   <meta name="theme-color" content="#16181C">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Institutional Programs | The Sovereign Academy">
-  <meta property="og:description" content="Financial education programs for employers, workforce organizations, schools, correctional and reentry programs, municipalities, and community partners.">
-  <meta property="og:url" content="https://thesovereign.academy/institutional/">
+  <meta property="og:title" content="About The Sovereign Academy">
+  <meta property="og:description" content="A financial education and training company building practical curriculum, institutional programs, facilitator training, and bilingual learning tools.">
+  <meta property="og:url" content="https://thesovereign.academy/about/">
   <meta property="og:image" content="https://thesovereign.academy/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="The Sovereign Academy — practical financial education and training for individuals and organizations">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Institutional Programs | The Sovereign Academy">
-  <meta name="twitter:description" content="Financial education programs for employers, workforce organizations, schools, correctional and reentry programs, municipalities, and community partners.">
+  <meta name="twitter:title" content="About The Sovereign Academy">
+  <meta name="twitter:description" content="A financial education and training company building practical curriculum, institutional programs, facilitator training, and bilingual learning tools.">
   <meta name="twitter:image" content="https://thesovereign.academy/og-image.png">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Institutional Programs",
-    "url": "https://thesovereign.academy/institutional/",
-    "description": "Financial education programs for employers, workforce organizations, schools, correctional and reentry programs, municipalities, and community partners, with facilitator training in English and Spanish.",
-    "isPartOf": { "@type": "WebSite", "name": "The Sovereign Academy", "url": "https://thesovereign.academy" }
+    "@type": "AboutPage",
+    "name": "About The Sovereign Academy",
+    "url": "https://thesovereign.academy/about/",
+    "description": "The Sovereign Academy is a financial education and training company created to help people make stronger decisions about money, risk, and personal responsibility.",
+    "mainEntity": {
+      "@type": "EducationalOrganization",
+      "name": "The Sovereign Academy",
+      "url": "https://thesovereign.academy",
+      "founder": { "@type": "Person", "name": "Dalia Platt" }
+    }
   }
   </script>
 
@@ -44,12 +49,13 @@
   <link rel="stylesheet" href="/css/tsa-brand.css">
 
   <style>
+    /* Page scaffolding on top of tsa-brand.css */
     body { background: var(--tsa-bg); color: var(--tsa-ink); font-family: var(--font-sans); overflow-x: hidden; }
     a { color: var(--tsa-silver); text-decoration: none; }
 
     .container { max-width: var(--width-default); margin: 0 auto; padding: 0 2rem; }
 
-    /* ---------- Header (matches homepage/about) ---------- */
+    /* ---------- Header (matches homepage) ---------- */
     .header {
       position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
       background: rgba(18, 19, 22, 0.88);
@@ -156,19 +162,14 @@
       font-family: var(--font-serif); font-weight: 700;
       font-size: clamp(2.2rem, 4.6vw, 3.6rem); line-height: 1.08;
       letter-spacing: -0.015em; color: var(--tsa-ink-strong);
-      max-width: 760px; margin-bottom: 1.5rem;
+      max-width: 720px; margin-bottom: 1.5rem;
     }
     .page-hero h1 em {
       font-style: italic; color: var(--tsa-silver);
       background: var(--tsa-fade);
       -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
     }
-    .page-hero p { font-size: 1.15rem; line-height: 1.65; color: var(--tsa-muted); max-width: 700px; margin-bottom: 1rem; }
-    .hero-note {
-      font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em;
-      color: var(--tsa-muted); margin-top: 1.25rem;
-    }
-    .hero-note a { color: var(--tsa-ink); text-decoration: underline; text-underline-offset: 3px; }
+    .page-hero p { font-size: 1.15rem; line-height: 1.65; color: var(--tsa-muted); max-width: 680px; margin-bottom: 1rem; }
 
     /* ---------- Sections ---------- */
     .section { padding: 4.5rem 0; border-bottom: 1px solid var(--tsa-border); }
@@ -188,72 +189,40 @@
     }
     .section .lede { font-size: 1.08rem; line-height: 1.65; color: var(--tsa-muted); max-width: 680px; margin-bottom: 1rem; }
 
-    /* ---------- Academy program cards ---------- */
-    .acad-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.75rem; margin-top: 2.5rem;
-    }
-    .acad-card {
-      position: relative; display: flex; flex-direction: column;
-      padding: 2rem 1.85rem;
-      background: var(--tsa-elevated);
-      border: 1px solid var(--tsa-border);
+    .pill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .pill-item {
+      display: flex; align-items: flex-start; gap: 0.7rem;
+      padding: 1rem 1.2rem;
+      background: var(--tsa-elevated); border: 1px solid var(--tsa-border);
       border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-1);
-      transition: var(--transition-base);
+      font-size: 0.94rem; color: var(--tsa-ink); line-height: 1.5;
     }
-    .acad-card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-    }
-    .acad-card.fsa::before { background: var(--fsa-fade); }
-    .acad-card.bsa::before { background: var(--bsa-fade); }
-    .acad-card.fsa { border-color: rgba(52,211,153,0.3); }
-    .acad-card:hover { transform: translateY(-4px); }
-    .acad-card.fsa:hover { border-color: rgba(52,211,153,0.55); }
-    .acad-card.bsa:hover { border-color: rgba(255,154,0,0.45); }
-    .acad-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
-    .acad-glyph {
-      width: 46px; height: 46px; border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 900; font-size: 1.1rem;
-    }
-    .acad-glyph.fsa { background: var(--fsa-fade); color: #06231A; }
-    .acad-glyph.bsa { background: var(--bsa-fade); color: #1a1300; }
-    .acad-tag {
-      font-family: var(--font-mono); font-size: 8px; font-weight: 700;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      padding: 4px 9px; border-radius: var(--radius-pill);
-      border: 1px solid var(--tsa-border-strong); color: var(--tsa-muted);
-    }
-    .acad-tag.primary { background: rgba(52,211,153,0.12); color: #34D399; border-color: rgba(52,211,153,0.35); }
-    .acad-card h3 {
-      font-family: var(--font-serif); font-weight: 700; font-size: 1.35rem;
-      color: var(--tsa-ink-strong); letter-spacing: -0.01em;
-    }
-    .fade-f-word { color: var(--fsa-solid); background: var(--fsa-fade); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-    .fade-b-word { color: var(--bsa-solid); background: var(--bsa-fade); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-    .acad-sub { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tsa-muted); margin-top: 5px; }
-    .acad-desc { margin-top: 1rem; font-size: 0.96rem; line-height: 1.65; color: var(--tsa-muted); }
-    .seg-links { list-style: none; margin: 1.25rem 0 1.5rem; padding: 0; flex: 1; }
-    .seg-links li { border-bottom: 1px solid var(--tsa-border); }
-    .seg-links li:last-child { border-bottom: none; }
-    .seg-links a {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0.65rem 0.15rem;
-      font-size: 0.9rem; color: var(--tsa-ink);
-      transition: var(--transition-base);
-    }
-    .seg-links a::after { content: '→'; color: var(--tsa-faint); transition: var(--transition-base); }
-    .acad-card.fsa .seg-links a:hover { color: #6EE7B7; }
-    .acad-card.fsa .seg-links a:hover::after { color: #6EE7B7; }
-    .acad-card.bsa .seg-links a:hover { color: var(--bsa-solid); }
-    .acad-card.bsa .seg-links a:hover::after { color: var(--bsa-solid); }
+    .pill-item::before { content: '◆'; font-size: 8px; color: var(--tsa-silver); margin-top: 7px; flex-shrink: 0; }
 
+    .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .work-item { padding: 1.4rem 1.5rem; border: 1px solid var(--tsa-border); border-radius: var(--radius-lg); background: var(--tsa-elevated); }
+    .work-item h3 { font-family: var(--font-sans); font-size: 1rem; font-weight: 700; color: var(--tsa-ink-strong); margin-bottom: 0.4rem; }
+    .work-item p { font-size: 0.92rem; line-height: 1.6; color: var(--tsa-muted); }
+
+    .prose { max-width: 680px; }
+    .prose p { font-size: 1.02rem; line-height: 1.7; color: var(--tsa-ink); margin-bottom: 1.1rem; }
+    .prose p.muted { color: var(--tsa-muted); }
+
+    .founder-card {
+      margin-top: 1.5rem; padding: 2rem;
+      background: var(--tsa-elevated); border: 1px solid var(--tsa-border);
+      border-left: 3px solid var(--tsa-silver); border-radius: var(--radius-lg);
+      max-width: 760px;
+    }
+    .founder-card h3 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; color: var(--tsa-ink-strong); margin-bottom: 0.75rem; }
+    .founder-card p { font-size: 1rem; line-height: 1.7; color: var(--tsa-ink); margin-bottom: 0.9rem; }
+    .founder-card p:last-child { margin-bottom: 0; }
+
+    .cta-group { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-top: 2rem; }
     .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem;
-      font-weight: 600; font-size: 0.95rem;
-      padding: 0.9rem 1.8rem; border-radius: var(--radius-sm);
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-weight: 600; font-size: 0.98rem;
+      padding: 0.95rem 1.9rem; border-radius: var(--radius-sm);
       border: 1.6px solid transparent; min-height: 44px;
       transition: var(--transition-base); cursor: pointer;
     }
@@ -264,37 +233,9 @@
     .btn-primary:hover { transform: translateY(-1px); box-shadow: var(--shadow-2); }
     .btn-secondary { border: 1.5px solid var(--tsa-border-strong); color: var(--tsa-ink); }
     .btn-secondary:hover { border-color: var(--tsa-silver); color: var(--tsa-platinum); }
-    .acad-card .btn { width: 100%; }
-    .acad-card.fsa .btn-primary { background: linear-gradient(var(--tsa-elevated), var(--tsa-elevated)) padding-box, var(--fsa-fade) border-box; }
-    .acad-card.bsa .btn-primary { background: linear-gradient(var(--tsa-elevated), var(--tsa-elevated)) padding-box, var(--bsa-fade) border-box; }
     .section--alt .btn-primary { background: linear-gradient(var(--tsa-surface), var(--tsa-surface)) padding-box, var(--tsa-fade) border-box; }
 
-    /* ---------- How it works strip ---------- */
-    .steps {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem; margin-top: 2rem;
-    }
-    .step { padding: 1.5rem; border: 1px solid var(--tsa-border); border-radius: var(--radius-lg); background: var(--tsa-elevated); }
-    .step .num { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; color: var(--tsa-pewter); }
-    .step h4 { font-family: var(--font-sans); font-size: 1.02rem; font-weight: 700; margin: 0.6rem 0 0.4rem; color: var(--tsa-ink-strong); }
-    .step p { font-size: 0.92rem; line-height: 1.6; color: var(--tsa-muted); }
-
-    /* ---------- Consultation band ---------- */
-    .consult { text-align: center; background: var(--tsa-deepest); position: relative; overflow: hidden; }
-    .consult::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(199,204,209,0.07) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .consult > * { position: relative; }
-    .consult .section-tag { justify-content: center; }
-    .consult h2 { margin-left: auto; margin-right: auto; }
-    .consult .lede { margin: 0 auto 2rem; }
-    .consult .cta-group { justify-content: center; }
-    .consult .btn-primary { background: linear-gradient(var(--tsa-deepest), var(--tsa-deepest)) padding-box, var(--tsa-fade) border-box; }
-    .cta-group { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-top: 2rem; }
-
-    /* ---------- Footer (matches homepage/about) ---------- */
+    /* ---------- Footer (matches homepage) ---------- */
     .footer { padding: 3.5rem 0 2.5rem; background: var(--tsa-bg); }
     .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; align-items: start; }
     @media (max-width: 900px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
@@ -346,8 +287,8 @@
             <a href="https://bitcoinsovereign.academy">Bitcoin Sovereign Academy</a>
           </div>
         </div>
-        <a class="nav-link" href="/institutional/" aria-current="page">For Organizations</a>
-        <a class="nav-link" href="/about/">About The Academy</a>
+        <a class="nav-link" href="/#organizations">For Organizations</a>
+        <a class="nav-link" href="/about/" aria-current="page">About The Academy</a>
         <a class="nav-link" href="mailto:dalia@thesovereign.academy">Contact</a>
       </nav>
     </div>
@@ -359,123 +300,166 @@
       <div class="container">
         <div class="eyebrow-row">
           <span class="eyebrow-line"></span>
-          <span class="eyebrow-text">Institutional Programs</span>
+          <span class="eyebrow-text">About The Academy</span>
         </div>
-        <h1>Financial education programs for the <em>people you serve.</em></h1>
+        <h1>About <em>The Sovereign Academy.</em></h1>
         <p>
-          The Sovereign Academy works with employers, workforce organizations, schools,
-          correctional and reentry programs, municipalities, and community partners.
-          Choose the educational focus that fits your organization — practical financial
-          education, Bitcoin-specific education, or both.
+          The Sovereign Academy is a financial education and training company created to
+          help people make stronger decisions about money, risk, and personal responsibility.
         </p>
-        <p class="hero-note">
-          Programs typically begin with a <a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener noreferrer">free 45-minute strategy consultation</a>.
-          Delivery available in English and Spanish.
+        <p>
+          We build more than lessons. We create complete learning systems that can be used
+          directly by individuals or delivered through organizations that already serve them.
         </p>
       </div>
     </section>
 
-    <!-- Program tracks -->
-    <section class="section" id="tracks">
+    <!-- What We Build -->
+    <section class="section" id="what-we-build">
       <div class="container">
-        <div class="section-tag">Two Program Tracks</div>
-        <h2>Start with everyday finance, add Bitcoin when it fits.</h2>
-        <p class="lede">
-          Many organizations begin with financial education foundations and add Bitcoin-specific
-          content as a later phase. Others need Bitcoin education immediately. Both tracks share
-          the same approach: real decisions, practice activities, and facilitator support.
-        </p>
-
-        <div class="acad-grid">
-          <!-- FSA track (primary) -->
-          <article class="acad-card fsa">
-            <div class="acad-top">
-              <span class="acad-glyph fsa">$</span>
-              <span class="acad-tag primary">Primary track</span>
-            </div>
-            <h3><span class="fade-f-word">Financial</span> Education Programs</h3>
-            <div class="acad-sub">via Financially Sovereign Academy</div>
-            <p class="acad-desc">
-              Practical financial education for everyday life — budgeting, saving, banking,
-              credit, debt, taxes, investing, and long-term planning. Programs can be adapted
-              for workforce, reentry, school, employer, and community settings, with
-              participant lessons and facilitator guides in English and Spanish.
-            </p>
-            <ul class="seg-links">
-              <li><a href="https://financiallysovereign.academy/institutional/corporations">Corporations &amp; Employers</a></li>
-              <li><a href="https://financiallysovereign.academy/institutional/correctional">Correctional &amp; Reentry Programs</a></li>
-              <li><a href="https://financiallysovereign.academy/institutional/education">Schools &amp; Universities</a></li>
-              <li><a href="https://financiallysovereign.academy/institutional/cities">Cities &amp; Municipalities</a></li>
-              <li><a href="https://financiallysovereign.academy/institutional/wealth-advisors">Wealth Advisors &amp; RIAs</a></li>
-            </ul>
-            <a href="https://financiallysovereign.academy/institutional/" class="btn btn-primary">Explore Financial Education Programs</a>
-          </article>
-
-          <!-- BSA track -->
-          <article class="acad-card bsa">
-            <div class="acad-top">
-              <span class="acad-glyph bsa">₿</span>
-              <span class="acad-tag">Specialized track</span>
-            </div>
-            <h3><span class="fade-b-word">Bitcoin</span> Education Programs</h3>
-            <div class="acad-sub">via Bitcoin Sovereign Academy</div>
-            <p class="acad-desc">
-              Specialized education for organizations engaging with Bitcoin — fundamentals,
-              custody, security, policy literacy, and curriculum integration. Bilingual
-              materials built for professionals and institutions that need Bitcoin-specific
-              depth rather than general financial content.
-            </p>
-            <ul class="seg-links">
-              <li><a href="https://bitcoinsovereign.academy/institutional/corporations">Corporations &amp; Employers</a></li>
-              <li><a href="https://bitcoinsovereign.academy/institutional/wealth-advisors">Wealth Advisors &amp; RIAs</a></li>
-              <li><a href="https://bitcoinsovereign.academy/institutional/correctional">Correctional &amp; Reentry Programs</a></li>
-              <li><a href="https://bitcoinsovereign.academy/institutional/education">Schools &amp; Universities</a></li>
-              <li><a href="https://bitcoinsovereign.academy/institutional/cities">Cities &amp; Municipalities</a></li>
-              <li><a href="https://bitcoinsovereign.academy/institutional/real-estate-developers">Real Estate Developers</a></li>
-            </ul>
-            <a href="https://bitcoinsovereign.academy/institutional/" class="btn btn-primary">Explore Bitcoin Education Programs</a>
-          </article>
+        <div class="section-tag">What We Build</div>
+        <h2>Complete learning systems, not just content.</h2>
+        <div class="pill-grid">
+          <div class="pill-item">Public financial education, free to use</div>
+          <div class="pill-item">Structured courses and learning paths</div>
+          <div class="pill-item">Institutional financial literacy programs</div>
+          <div class="pill-item">Facilitator and implementation guides</div>
+          <div class="pill-item">Train-the-trainer programs</div>
+          <div class="pill-item">Assessments and practice activities</div>
+          <div class="pill-item">Interactive learning tools</div>
+          <div class="pill-item">English and Spanish curriculum</div>
+          <div class="pill-item">Bitcoin-specific education</div>
         </div>
       </div>
     </section>
 
-    <!-- How programs work -->
-    <section class="section section--alt" id="how">
+    <!-- Who We Serve -->
+    <section class="section section--alt" id="who-we-serve">
       <div class="container">
-        <div class="section-tag">How Programs Work</div>
-        <h2>From first conversation to consistent delivery.</h2>
-        <div class="steps">
-          <div class="step">
-            <span class="num">01</span>
-            <h4>Select or Adapt a Program</h4>
-            <p>Begin with an existing financial education program or identify the needs of a specific audience.</p>
+        <div class="section-tag">Who We Serve</div>
+        <h2>Individuals, and the organizations that serve them.</h2>
+        <div class="pill-grid">
+          <div class="pill-item">Individuals and families</div>
+          <div class="pill-item">Employers and workforce organizations</div>
+          <div class="pill-item">Skilled-trade and occupational training providers</div>
+          <div class="pill-item">Correctional and reentry programs</div>
+          <div class="pill-item">Schools and youth programs</div>
+          <div class="pill-item">Municipal and community organizations</div>
+          <div class="pill-item">Nonprofits</div>
+          <div class="pill-item">Financial professionals seeking Bitcoin education</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work -->
+    <section class="section" id="how-we-work">
+      <div class="container">
+        <div class="section-tag">How We Work</div>
+        <h2>Principles that shape every program.</h2>
+        <div class="work-grid">
+          <div class="work-item">
+            <h3>Practice before theory</h3>
+            <p>Learners work through real decisions — spending, borrowing, saving, protecting — instead of abstract lectures.</p>
           </div>
-          <div class="step">
-            <span class="num">02</span>
-            <h4>Prepare the Facilitators</h4>
-            <p>Give instructors the context, materials, and guidance needed to deliver the program well.</p>
+          <div class="work-item">
+            <h3>Clear language</h3>
+            <p>Plain explanations without talking down to learners. Jargon is defined or removed.</p>
           </div>
-          <div class="step">
-            <span class="num">03</span>
-            <h4>Deliver and Improve</h4>
-            <p>Use structured lessons, practice activities, and feedback to support consistent delivery and future improvement.</p>
+          <div class="work-item">
+            <h3>Materials adapted to the setting</h3>
+            <p>A classroom, a job site, a reentry program, and a kitchen table are different rooms. The materials respect that.</p>
+          </div>
+          <div class="work-item">
+            <h3>Instructor support, not just participant content</h3>
+            <p>Facilitator guides, delivery notes, and preparation come with the curriculum, not as an afterthought.</p>
+          </div>
+          <div class="work-item">
+            <h3>Privacy-respecting tools</h3>
+            <p>Learning tools that don't harvest personal data or require accounts to start learning.</p>
+          </div>
+          <div class="work-item">
+            <h3>Education, not sales</h3>
+            <p>Financial education without selling financial products — and a careful distinction between education and individualized financial, legal, or tax advice.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Consultation -->
-    <section class="section consult" id="consult">
+    <!-- Train the Trainer -->
+    <section class="section section--alt" id="train-the-trainer">
       <div class="container">
-        <div class="section-tag">Not Sure Which Track Fits?</div>
-        <h2>Talk it through before you decide.</h2>
+        <div class="section-tag">Train the Trainer</div>
+        <h2>Strong curriculum is not enough if instructors are unprepared to deliver it.</h2>
+        <div class="prose">
+          <p>
+            The Sovereign Academy creates facilitator guides, instructor preparation,
+            delivery notes, scenario prompts, discussion questions, and implementation
+            standards. This helps partner organizations teach the material with
+            consistency while still adapting it to the people in the room.
+          </p>
+        </div>
+        <div class="cta-group">
+          <a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Discuss an Organizational Program</a>
+          <a href="/#organizations" class="btn btn-secondary">See How Programs Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outreach and Specialized Populations -->
+    <section class="section" id="outreach">
+      <div class="container">
+        <div class="section-tag">Outreach and Specialized Populations</div>
+        <h2>Designed for the actual conditions in which people learn.</h2>
+        <div class="prose">
+          <p class="muted">
+            Many financial education programs assume stable internet access, conventional
+            employment, strong reading skills, access to mainstream banking, and freedom
+            to act immediately. Those assumptions do not fit every learner.
+          </p>
+          <p>
+            The Sovereign Academy designs programs for the actual conditions in which
+            people learn. This may include paper-first delivery, limited internet access,
+            bilingual instruction, low-risk practice, reentry constraints, variable income,
+            unfamiliarity with financial institutions, or the needs of first-time facilitators.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder -->
+    <section class="section section--alt" id="founder">
+      <div class="container">
+        <div class="section-tag">Founder</div>
+        <h2>Built and run by an educator.</h2>
+        <div class="founder-card">
+          <h3>Dalia Platt</h3>
+          <p>
+            The Sovereign Academy was founded by Dalia Platt, an educator and curriculum
+            developer who has spent six years creating practical financial and Bitcoin
+            education in English and Spanish.
+          </p>
+          <p>
+            Her work has included public education, structured curricula, interactive
+            learning tools, facilitator resources, institutional programs, and training
+            designed for communities often overlooked by conventional financial education.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="section" id="next">
+      <div class="container">
+        <div class="section-tag">Ready When You Are</div>
+        <h2>Choose the next step that fits you.</h2>
         <p class="lede">
-          A 45-minute strategy conversation helps identify the right starting point,
-          sequence, and materials for your organization and the people it serves.
+          Build your own financial skills, explore Bitcoin-specific education, or bring a
+          structured program to your organization.
         </p>
         <div class="cta-group">
-          <a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Schedule a Strategy Call</a>
-          <a href="/about/" class="btn btn-secondary">Learn About The Academy</a>
+          <a href="https://financiallysovereign.academy" class="btn btn-primary">Start with Financial Education</a>
+          <a href="/#organizations" class="btn btn-secondary">Bring a Program to Your Organization</a>
+          <a href="https://bitcoinsovereign.academy" class="nav-link">Explore Bitcoin Education →</a>
         </div>
       </div>
     </section>

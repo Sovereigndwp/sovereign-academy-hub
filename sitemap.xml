@@ -3,9 +3,21 @@
   <!-- Hub -->
   <url>
     <loc>https://thesovereign.academy/</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thesovereign.academy/about/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thesovereign.academy/institutional/</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thesovereign.academy/llms.txt</loc>

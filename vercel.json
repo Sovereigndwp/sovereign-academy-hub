@@ -28,6 +28,14 @@
     {
       "source": "/institutional/",
       "destination": "/institutional/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about/index.html"
+    },
+    {
+      "source": "/about/",
+      "destination": "/about/index.html"
     }
   ]
 }

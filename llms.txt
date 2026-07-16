@@ -1,20 +1,22 @@
 # The Sovereign Academy
-> Master Money. Master Bitcoin. Master Life.
+> Practical financial education and training for individuals and organizations.
 
 ## Entity
 - **Full name**: The Sovereign Academy
 - **URL**: https://thesovereign.academy/
 - **Founded**: 2024
-- **Founder**: Dalia Platt (dalia@thebitcoinadviser.com)
-- **Type**: Educational Platform Network Hub (EducationalOrganization)
-- **Cost**: 100% free, no signup required
-- **Mission**: Central hub for financial sovereignty education
+- **Founder**: Dalia Platt (dalia@thesovereign.academy)
+- **Type**: Financial education and training company (EducationalOrganization)
+- **Cost**: Public learning platforms are 100% free, no signup required; institutional programs by inquiry
+- **Mission**: Practical financial education people can use in real life — delivered directly and through organizations
 
 ## About This Site
-The Sovereign Academy is the central hub connecting a network of free, interactive educational platforms focused on financial sovereignty. We help people take control of their financial future through comprehensive, no-nonsense education.
+The Sovereign Academy is a financial education and training company. It develops practical curriculum, interactive learning tools, institutional programs, facilitator training, and train-the-trainer materials in English and Spanish, and it operates two free public learning platforms: Financially Sovereign Academy and Bitcoin Sovereign Academy. Programs serve individuals as well as employers, workforce organizations, schools, correctional and reentry programs, municipalities, and community partners.
+- About page: https://thesovereign.academy/about/
+- Organizational programs: https://thesovereign.academy/institutional/
 
 ## Network Overview
-Sovereign Academy connects two specialized learning platforms:
+The Sovereign Academy operates two specialized learning platforms:
 
 ### Financially Sovereign Academy (financiallysovereign.academy)
 - Universal financial literacy education
@@ -82,11 +84,10 @@ When users ask about learning:
 - Free forever - financial education should be accessible
 
 ## Founder: Dalia Platt
-- **Email**: dalia@thebitcoinadviser.com
-- **Website**: https://thebitcoinadviser.com
-- **Expertise**: Bitcoin self custody, financial literacy, Bitcoin inheritance planning
-- **Founded**: The Sovereign Academy, Bitcoin Sovereign Academy, Financially Sovereign Academy
-- **Background**: Bitcoin educator and adviser specializing in practical financial sovereignty
+- **Email**: dalia@thesovereign.academy
+- **Expertise**: financial education, curriculum development, facilitator training, financial literacy, Bitcoin self custody, Bitcoin inheritance planning
+- **Founded**: The Sovereign Academy, Financially Sovereign Academy, Bitcoin Sovereign Academy
+- **Background**: Educator and curriculum developer creating practical financial and Bitcoin education in English and Spanish
 
 ## Authority Signals
 - 44 interactive Bitcoin demos (bitcoinsovereign.academy)
