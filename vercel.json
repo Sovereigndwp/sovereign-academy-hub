@@ -1,5 +1,7 @@
 {
-  "alias": ["thesovereign.academy"],
+  "alias": [
+    "thesovereign.academy"
+  ],
   "headers": [
     {
       "source": "/",
@@ -36,6 +38,22 @@
     {
       "source": "/about/",
       "destination": "/about/index.html"
+    },
+    {
+      "source": "/legal",
+      "destination": "/legal/index.html"
+    },
+    {
+      "source": "/legal/",
+      "destination": "/legal/index.html"
+    },
+    {
+      "source": "/legal/disclaimer",
+      "destination": "/legal/disclaimer/index.html"
+    },
+    {
+      "source": "/legal/disclaimer/",
+      "destination": "/legal/disclaimer/index.html"
     }
   ]
 }
