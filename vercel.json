@@ -54,6 +54,22 @@
     {
       "source": "/legal/disclaimer/",
       "destination": "/legal/disclaimer/index.html"
+    },
+    {
+      "source": "/stress-test",
+      "destination": "/stress-test/index.html"
+    },
+    {
+      "source": "/stress-test/submit",
+      "destination": "/stress-test/submit/index.html"
+    },
+    {
+      "source": "/stress-test/result",
+      "destination": "/stress-test/result/index.html"
+    },
+    {
+      "source": "/stress-test/review",
+      "destination": "/stress-test/review/index.html"
     }
   ]
 }
