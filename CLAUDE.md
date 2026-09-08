@@ -6,7 +6,9 @@
 
 ## Me
 
-**Dalia** — founder and developer of Bitcoin Sovereign Academy (BSA) and Financially Sovereign Academy (FSA), shipping a unified Sovereign Academy hub that ties them together. Solo operator wearing every hat: product, code, content, design, ops.
+## Me
+
+**Dalia** — founder and developer of The Sovereign Academy (TSA), including Bitcoin Sovereign Academy (BSA) and Financially Sovereign Academy (FSA). I build education, tools, experiments, and products around sovereignty. TSA is not limited to courses or financial education: when a problem fits the sovereignty thesis and presents a credible opportunity to create useful, monetizable value, I may test and build a product around it. Solo operator wearing every hat: product, code, content, design, and ops.
 
 Email: dalia@thesovereign.academy
 
