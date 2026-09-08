@@ -1,49 +1,73 @@
 {
   "site": "The Sovereign Academy",
   "url": "https://thesovereign.academy",
-  "description": "Financial education and training company: practical curriculum, institutional programs, facilitator training, and bilingual learning tools. Parent academy of Financially Sovereign Academy and Bitcoin Sovereign Academy.",
+  "tagline": "Understand more. Depend less.",
+  "description": "The Sovereign Academy is a parent education and product organization focused on personal sovereignty: the knowledge and practical ability to make important decisions with more understanding, more control, and less dependence. Its current work includes financial education (Financially Sovereign Academy) and Bitcoin education (Bitcoin Sovereign Academy).",
+  "positioning": {
+    "parent_brand": "The Sovereign Academy is a parent education and product organization focused on personal sovereignty. Its current work includes financial education and Bitcoin education.",
+    "organizing_question": "How can people understand, protect, and exercise more control over important parts of their lives?",
+    "current_domains": [
+      "financial sovereignty",
+      "Bitcoin sovereignty"
+    ],
+    "exploration_areas": [
+      "education",
+      "digital security and privacy",
+      "identity",
+      "technology"
+    ],
+    "exploration_areas_note": "Areas of exploration, not launched products. Describe them as such."
+  },
   "founder": "Dalia Platt",
   "founded": "2024",
   "type": "EducationalOrganization",
-  "network": {
+  "academies": {
     "properties": [
       {
         "name": "Financially Sovereign Academy",
         "url": "https://financiallysovereign.academy",
-        "focus": "Practical financial education: budgeting, credit, debt, saving, investing; institutional and workforce programs",
+        "focus": "Practical education for understanding and navigating money: cash flow, credit, debt, saving, investing; organizational and workforce programs",
         "modules": 10,
-        "calculators": 15
+        "calculators": 15,
+        "domain": "Financial sovereignty"
       },
       {
         "name": "Bitcoin Sovereign Academy",
         "url": "https://bitcoinsovereign.academy",
-        "focus": "Bitcoin education, self-custody, Lightning Network",
+        "focus": "Education for understanding, owning, protecting, and passing on Bitcoin: fundamentals, self-custody, security, inheritance, Lightning Network",
         "courses": 6,
-        "demos": 44
+        "demos": 44,
+        "domain": "Bitcoin sovereignty"
       }
     ]
   },
+  "pages": {
+    "about": "https://thesovereign.academy/about/",
+    "organizational_programs": "https://thesovereign.academy/institutional/",
+    "llms": "https://thesovereign.academy/llms.txt"
+  },
   "primary_topics": [
+    "personal sovereignty",
     "financial sovereignty",
     "Bitcoin education",
     "financial literacy",
     "self-custody",
+    "Bitcoin inheritance",
     "money management",
     "personal finance",
-    "cryptocurrency education",
     "Lightning Network"
   ],
   "learning_paths": [
     {
-      "name": "Financial Literacy First",
-      "description": "Start with traditional finance fundamentals, then explore Bitcoin",
+      "name": "Financial sovereignty",
+      "description": "Practical money decisions: cash flow, credit, debt, saving, investing",
       "url": "https://financiallysovereign.academy/assessment.html",
       "duration": "4-6 hours",
       "level": "Beginner"
     },
     {
-      "name": "Bitcoin Deep Dive",
-      "description": "Comprehensive Bitcoin education from basics to sovereignty",
+      "name": "Bitcoin sovereignty",
+      "description": "Bitcoin from fundamentals to self-custody, security, and inheritance",
       "url": "https://bitcoinsovereign.academy/start/",
       "duration": "8-15 hours",
       "level": "All levels"

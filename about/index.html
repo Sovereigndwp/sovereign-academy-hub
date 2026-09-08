@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About The Sovereign Academy | Financial Education and Training</title>
-  <meta name="description" content="The Sovereign Academy is a financial education and training company. We build practical curriculum, institutional programs, facilitator training, and bilingual learning tools.">
+  <title>About The Sovereign Academy | What sovereignty means here</title>
+  <meta name="description" content="The Sovereign Academy is a parent education and product organization focused on personal sovereignty. Its current work includes financial education (Financially Sovereign Academy) and Bitcoin education (Bitcoin Sovereign Academy).">
   <link rel="canonical" href="https://thesovereign.academy/about/">
   <meta name="theme-color" content="#16181C">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="About The Sovereign Academy">
-  <meta property="og:description" content="A financial education and training company building practical curriculum, institutional programs, facilitator training, and bilingual learning tools.">
+  <meta property="og:description" content="A parent education and product organization focused on personal sovereignty. Current work includes financial education and Bitcoin education.">
   <meta property="og:url" content="https://thesovereign.academy/about/">
   <meta property="og:image" content="https://thesovereign.academy/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="The Sovereign Academy — practical financial education and training for individuals and organizations">
+  <meta property="og:image:alt" content="The Sovereign Academy — education and tools for personal sovereignty">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="About The Sovereign Academy">
-  <meta name="twitter:description" content="A financial education and training company building practical curriculum, institutional programs, facilitator training, and bilingual learning tools.">
+  <meta name="twitter:description" content="A parent education and product organization focused on personal sovereignty. Current work includes financial education and Bitcoin education.">
   <meta name="twitter:image" content="https://thesovereign.academy/og-image.png">
 
   <script type="application/ld+json">
@@ -28,9 +27,10 @@
     "@type": "AboutPage",
     "name": "About The Sovereign Academy",
     "url": "https://thesovereign.academy/about/",
-    "description": "The Sovereign Academy is a financial education and training company created to help people make stronger decisions about money, risk, and personal responsibility.",
+    "description": "A parent education and product organization focused on personal sovereignty: the knowledge and practical ability to make important decisions with more understanding, more control, and less dependence. Its current work includes financial education and Bitcoin education.",
     "mainEntity": {
       "@type": "EducationalOrganization",
+      "@id": "https://thesovereign.academy/#organization",
       "name": "The Sovereign Academy",
       "url": "https://thesovereign.academy",
       "founder": { "@type": "Person", "name": "Dalia Platt" }
@@ -39,13 +39,10 @@
   </script>
 
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=JetBrains+Mono:wght@400;500;700&display=swap">
-
-  <!-- Shared parent design system -->
   <link rel="stylesheet" href="/css/tsa-brand.css">
 
   <style>
@@ -223,7 +220,7 @@
       display: inline-flex; align-items: center; gap: 0.4rem;
       font-weight: 600; font-size: 0.98rem;
       padding: 0.95rem 1.9rem; border-radius: var(--radius-sm);
-      border: 1.6px solid transparent; min-height: 44px;
+      border: 1.6px solid transparent; min-height: 44px; text-align: center;
       transition: var(--transition-base); cursor: pointer;
     }
     .btn-primary {
@@ -237,7 +234,7 @@
 
     /* ---------- Footer (matches homepage) ---------- */
     .footer { padding: 3.5rem 0 2.5rem; background: var(--tsa-bg); }
-    .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; align-items: start; }
+    .footer-inner { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; align-items: start; }
     @media (max-width: 900px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 560px) { .footer-inner { grid-template-columns: 1fr; } }
     .footer-brand { font-family: var(--font-serif); font-weight: 700; color: var(--tsa-ink-strong); font-size: 1rem; }
@@ -255,179 +252,165 @@
 
     .skip-link { position: absolute; top: -40px; left: 0; background: var(--tsa-silver); color: var(--tsa-deepest); padding: 8px 12px; z-index: 1100; font-weight: 600; }
     .skip-link:focus { top: 0; }
+    .academy-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
+    .academy-item { padding: 1.5rem; border: 1px solid var(--tsa-border); border-radius: var(--radius-lg); background: var(--tsa-elevated); }
+    .academy-item .domain { font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--tsa-muted); margin-bottom: 0.6rem; }
+    .academy-item h3 { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 700; color: var(--tsa-ink-strong); margin-bottom: 0.5rem; }
+    .academy-item p { font-size: 0.95rem; line-height: 1.6; color: var(--tsa-muted); margin-bottom: 0.9rem; }
+    .academy-item a.text-link { color: var(--tsa-ink); font-weight: 600; font-size: 0.92rem; border-bottom: 1px solid var(--tsa-border-strong); }
+    .academy-item a.text-link:hover { color: var(--tsa-platinum); border-color: var(--tsa-silver); }
+    .fade-f, .fade-b { font-weight: 700; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Header -->
   <header class="header" id="header">
     <div class="header-content">
       <a href="/" class="logo" aria-label="The Sovereign Academy home">
         <span class="logo-mark">S</span>
-        <span class="logo-text">The Sovereign Academy<span>Financial education · training</span></span>
+        <span class="logo-text">The Sovereign Academy<span>Understand more &middot; depend less</span></span>
       </a>
       <button class="nav-burger" id="navBurger" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">&#9776;</button>
       <nav class="header-nav" id="primaryNav" aria-label="Primary">
-        <div class="nav-item">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="menu-programs">Programs <span class="caret" aria-hidden="true">&#9660;</span></button>
-          <div class="nav-menu" id="menu-programs">
-            <a href="https://financiallysovereign.academy">Financial Education</a>
-            <a href="https://financiallysovereign.academy/institutional/corporations">Workforce and Employer Training</a>
-            <a href="https://financiallysovereign.academy/institutional/correctional">Correctional and Reentry</a>
-            <a href="https://financiallysovereign.academy/institutional/education">Schools and Youth</a>
-            <a href="https://financiallysovereign.academy/institutional/cities">Community and Municipal Programs</a>
-            <a href="/#organizations">Train the Trainer <span class="menu-note">Program in development &middot; inquire</span></a>
-          </div>
-        </div>
-        <div class="nav-item">
-          <button class="nav-toggle" aria-expanded="false" aria-controls="menu-platforms">Learning Platforms <span class="caret" aria-hidden="true">&#9660;</span></button>
-          <div class="nav-menu" id="menu-platforms">
-            <a href="https://financiallysovereign.academy">Financially Sovereign Academy</a>
-            <a href="https://bitcoinsovereign.academy">Bitcoin Sovereign Academy</a>
-          </div>
-        </div>
-        <a class="nav-link" href="/#organizations">For Organizations</a>
-        <a class="nav-link" href="/about/" aria-current="page">About The Academy</a>
+        <a class="nav-link" href="/#work">Current work</a>
+        <a class="nav-link" href="/about/" aria-current="page">About</a>
+        <a class="nav-link" href="/institutional/">For organizations</a>
         <a class="nav-link" href="mailto:dalia@thesovereign.academy">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- Hero -->
+
     <section class="page-hero">
       <div class="container">
         <div class="eyebrow-row">
           <span class="eyebrow-line"></span>
-          <span class="eyebrow-text">About The Academy</span>
+          <span class="eyebrow-text">About</span>
         </div>
-        <h1>About <em>The Sovereign Academy.</em></h1>
+        <h1>The parent of a family of <em>sovereignty education.</em></h1>
         <p>
-          The Sovereign Academy is a financial education and training company created to
-          help people make stronger decisions about money, risk, and personal responsibility.
-        </p>
-        <p>
-          We build more than lessons. We create complete learning systems that can be used
-          directly by individuals or delivered through organizations that already serve them.
+          The Sovereign Academy is a parent education and product organization focused on
+          personal sovereignty. Its current work includes financial education and Bitcoin
+          education, with room for other sovereignty domains as they develop.
         </p>
       </div>
     </section>
 
-    <!-- What We Build -->
-    <section class="section" id="what-we-build">
+    <section class="section" id="sovereignty">
       <div class="container">
-        <div class="section-tag">What We Build</div>
-        <h2>Complete learning systems, not just content.</h2>
-        <div class="pill-grid">
-          <div class="pill-item">Public financial education, free to use</div>
-          <div class="pill-item">Structured courses and learning paths</div>
-          <div class="pill-item">Institutional financial literacy programs</div>
-          <div class="pill-item">Facilitator and implementation guides</div>
-          <div class="pill-item">Train-the-trainer programs</div>
-          <div class="pill-item">Assessments and practice activities</div>
-          <div class="pill-item">Interactive learning tools</div>
-          <div class="pill-item">English and Spanish curriculum</div>
-          <div class="pill-item">Bitcoin-specific education</div>
+        <div class="section-tag">What sovereignty means here</div>
+        <h2>The developed ability to govern your own decisions.</h2>
+        <div class="prose">
+          <p>
+            Sovereignty, as we use the word, is having the knowledge and the practical ability
+            to make important decisions for yourself: to see a situation clearly, recognize the
+            incentives and pressures acting on it, judge the available choices, act on what you
+            can control, and learn honestly from the result.
+          </p>
+          <p>
+            It is not isolation, total independence, or refusing to rely on anyone. People remain
+            sovereign when they cooperate, delegate, and seek expertise, as long as they do so
+            with understanding, on known terms, and with a way to review or exit. Knowing what to
+            delegate, and to whom, is part of the skill.
+          </p>
+          <p class="muted">
+            Sovereignty is also not a permanent status. It is graduated and domain-specific. You can
+            be sovereign over your budget and dependent in your custody arrangements. It can be
+            built, and it can be eroded. That is why an academy for it makes sense.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Who We Serve -->
-    <section class="section section--alt" id="who-we-serve">
+    <section class="section section--alt" id="current-work">
       <div class="container">
-        <div class="section-tag">Who We Serve</div>
-        <h2>Individuals, and the organizations that serve them.</h2>
-        <div class="pill-grid">
-          <div class="pill-item">Individuals and families</div>
-          <div class="pill-item">Employers and workforce organizations</div>
-          <div class="pill-item">Skilled-trade and occupational training providers</div>
-          <div class="pill-item">Correctional and reentry programs</div>
-          <div class="pill-item">Schools and youth programs</div>
-          <div class="pill-item">Municipal and community organizations</div>
-          <div class="pill-item">Nonprofits</div>
-          <div class="pill-item">Financial professionals seeking Bitcoin education</div>
+        <div class="section-tag">Current work</div>
+        <h2>Two live academies. Each answers the question in one domain.</h2>
+        <div class="academy-list">
+          <div class="academy-item">
+            <div class="domain">Financial sovereignty</div>
+            <h3><span class="fade-f">Financially</span> Sovereign Academy</h3>
+            <p>Practical education for understanding and navigating money: cash flow, credit, debt, saving, taxes, insurance, and the decisions behind them. Free public modules and tools, plus programs adapted for organizations, in English and Spanish.</p>
+            <a class="text-link" href="https://financiallysovereign.academy">financiallysovereign.academy &rarr;</a>
+          </div>
+          <div class="academy-item">
+            <div class="domain">Bitcoin sovereignty</div>
+            <h3><span class="fade-b">Bitcoin</span> Sovereign Academy</h3>
+            <p>Education for understanding, owning, protecting, and passing on Bitcoin: how it works, self-custody, wallet security, recovery, inheritance, privacy, and the tradeoffs of holding your own keys.</p>
+            <a class="text-link" href="https://bitcoinsovereign.academy">bitcoinsovereign.academy &rarr;</a>
+          </div>
+        </div>
+        <div class="prose" style="margin-top:2rem">
+          <p class="muted">
+            Money and Bitcoin are where the work lives today. Education, digital security and
+            privacy, identity, and technology are areas of exploration under the same umbrella,
+            not launched products. Nothing is announced here before it exists.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- How We Work -->
     <section class="section" id="how-we-work">
       <div class="container">
         <div class="section-tag">How We Work</div>
-        <h2>Principles that shape every program.</h2>
+        <h2>Principles that shape everything under the umbrella.</h2>
         <div class="work-grid">
           <div class="work-item">
+            <h3>Truthfulness first</h3>
+            <p>Material facts, numbers, and comparisons are supported and dated, or clearly marked as illustrative or uncertain. Missing evidence is surfaced, never hidden behind confident language.</p>
+          </div>
+          <div class="work-item">
+            <h3>Inform rather than convince</h3>
+            <p>We develop the learner's capacity to reach and explain their own conclusions. Tradeoffs are stated plainly, including the costs of what we teach.</p>
+          </div>
+          <div class="work-item">
             <h3>Practice before theory</h3>
-            <p>Learners work through real decisions — spending, borrowing, saving, protecting — instead of abstract lectures.</p>
+            <p>Learners work through real decisions instead of abstract lectures. Understanding is shown by doing, not by finishing.</p>
           </div>
           <div class="work-item">
             <h3>Clear language</h3>
-            <p>Plain explanations without talking down to learners. Jargon is defined or removed.</p>
+            <p>Plain explanations without talking down. Jargon is defined or removed.</p>
           </div>
           <div class="work-item">
             <h3>Materials adapted to the setting</h3>
             <p>A classroom, a job site, a reentry program, and a kitchen table are different rooms. The materials respect that.</p>
           </div>
           <div class="work-item">
-            <h3>Instructor support, not just participant content</h3>
-            <p>Facilitator guides, delivery notes, and preparation come with the curriculum, not as an afterthought.</p>
-          </div>
-          <div class="work-item">
-            <h3>Privacy-respecting tools</h3>
-            <p>Learning tools that don't harvest personal data or require accounts to start learning.</p>
-          </div>
-          <div class="work-item">
             <h3>Education, not sales</h3>
-            <p>Financial education without selling financial products — and a careful distinction between education and individualized financial, legal, or tax advice.</p>
+            <p>No financial products to sell, no accounts required to start, no harvesting of personal data. Education is kept distinct from individualized financial, legal, or tax advice.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Train the Trainer -->
-    <section class="section section--alt" id="train-the-trainer">
+    <section class="section section--alt" id="organizations">
       <div class="container">
-        <div class="section-tag">Train the Trainer</div>
-        <h2>Strong curriculum is not enough if instructors are unprepared to deliver it.</h2>
+        <div class="section-tag">Working with organizations</div>
+        <h2>Some of the work reaches people through the organizations that already serve them.</h2>
         <div class="prose">
           <p>
-            The Sovereign Academy creates facilitator guides, instructor preparation,
-            delivery notes, scenario prompts, discussion questions, and implementation
-            standards. This helps partner organizations teach the material with
-            consistency while still adapting it to the people in the room.
+            Employers, workforce organizations, schools, correctional and reentry programs,
+            municipalities, and community partners use structured programs, facilitator guides,
+            and train-the-trainer preparation built on the same principles. Those programs are
+            designed for the actual conditions in which people learn: paper-first delivery where
+            needed, limited internet access, bilingual instruction, low-risk practice, and
+            first-time facilitators.
+          </p>
+          <p class="muted">
+            Today these are financial education programs, delivered through Financially Sovereign Academy.
           </p>
         </div>
         <div class="cta-group">
-          <a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Discuss an Organizational Program</a>
-          <a href="/#organizations" class="btn btn-secondary">See How Programs Work</a>
+          <a href="/institutional/" class="btn btn-primary">See programs for organizations</a>
+          <a href="https://meetings.hubspot.com/dalia-platt" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Book a conversation</a>
         </div>
       </div>
     </section>
 
-    <!-- Outreach and Specialized Populations -->
-    <section class="section" id="outreach">
-      <div class="container">
-        <div class="section-tag">Outreach and Specialized Populations</div>
-        <h2>Designed for the actual conditions in which people learn.</h2>
-        <div class="prose">
-          <p class="muted">
-            Many financial education programs assume stable internet access, conventional
-            employment, strong reading skills, access to mainstream banking, and freedom
-            to act immediately. Those assumptions do not fit every learner.
-          </p>
-          <p>
-            The Sovereign Academy designs programs for the actual conditions in which
-            people learn. This may include paper-first delivery, limited internet access,
-            bilingual instruction, low-risk practice, reentry constraints, variable income,
-            unfamiliarity with financial institutions, or the needs of first-time facilitators.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Founder -->
-    <section class="section section--alt" id="founder">
+    <section class="section" id="founder">
       <div class="container">
         <div class="section-tag">Founder</div>
         <h2>Built and run by an educator.</h2>
@@ -447,25 +430,20 @@
       </div>
     </section>
 
-    <!-- Closing CTA -->
-    <section class="section" id="next">
+    <section class="section section--alt" id="next">
       <div class="container">
-        <div class="section-tag">Ready When You Are</div>
-        <h2>Choose the next step that fits you.</h2>
-        <p class="lede">
-          Build your own financial skills, explore Bitcoin-specific education, or bring a
-          structured program to your organization.
-        </p>
+        <div class="section-tag">Start where your question lives</div>
+        <h2>Pick the academy that fits the decision in front of you.</h2>
         <div class="cta-group">
-          <a href="https://financiallysovereign.academy" class="btn btn-primary">Start with Financial Education</a>
-          <a href="/#organizations" class="btn btn-secondary">Bring a Program to Your Organization</a>
-          <a href="https://bitcoinsovereign.academy" class="nav-link">Explore Bitcoin Education →</a>
+          <a href="https://financiallysovereign.academy" class="btn btn-primary">Financially Sovereign Academy</a>
+          <a href="https://bitcoinsovereign.academy" class="btn btn-primary">Bitcoin Sovereign Academy</a>
+          <a href="/institutional/" class="btn btn-secondary">For organizations</a>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
@@ -475,33 +453,24 @@
             <span>thesovereign.academy</span>
           </div>
           <p class="footer-desc">
-            The Sovereign Academy develops practical financial education, institutional
-            programs, and facilitator training in English and Spanish.
+            Education, tools, and practical resources around personal sovereignty.
+            Built and run by Dalia Platt.
           </p>
         </div>
-        <nav class="footer-col" aria-label="The Academy">
-          <h5>The Academy</h5>
-          <ul>
-            <li><a href="/about/">About The Academy</a></li>
-            <li><a href="/#organizations">For Organizations</a></li>
-            <li><a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener noreferrer">Book a Consultation</a></li>
-            <li><a href="mailto:dalia@thesovereign.academy">Contact</a></li>
-          </ul>
-        </nav>
-        <nav class="footer-col" aria-label="Learning Platforms">
-          <h5>Learning Platforms</h5>
+        <nav class="footer-col" aria-label="Academies">
+          <h5>Academies</h5>
           <ul>
             <li><a href="https://financiallysovereign.academy">Financially Sovereign Academy</a></li>
             <li><a href="https://bitcoinsovereign.academy">Bitcoin Sovereign Academy</a></li>
           </ul>
         </nav>
-        <nav class="footer-col" aria-label="Programs">
-          <h5>Programs</h5>
+        <nav class="footer-col" aria-label="The Academy">
+          <h5>The Academy</h5>
           <ul>
-            <li><a href="https://financiallysovereign.academy/institutional/corporations">Workforce and Employer</a></li>
-            <li><a href="https://financiallysovereign.academy/institutional/correctional">Correctional and Reentry</a></li>
-            <li><a href="https://financiallysovereign.academy/institutional/education">Schools and Youth</a></li>
-            <li><a href="https://financiallysovereign.academy/institutional/cities">Community Programs</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/institutional/">For organizations</a></li>
+            <li><a href="https://meetings.hubspot.com/dalia-platt" target="_blank" rel="noopener noreferrer">Book a conversation</a></li>
+            <li><a href="mailto:dalia@thesovereign.academy">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -509,37 +478,18 @@
         The Sovereign Academy is not affiliated with the separately operated organization named "Sovereign Academy."
       </p>
       <p class="footer-note">
-        © 2026 The Sovereign Academy LLC · Educational content only · Not individualized financial, investment, legal, or tax advice ·
+        &copy; 2026 The Sovereign Academy LLC &middot; Educational content only &middot; Not individualized financial, investment, legal, or tax advice &middot;
         <a href="https://thesovereign.academy/legal/disclaimer/">Disclaimer &amp; Limitations</a>
       </p>
     </div>
   </footer>
 
   <script>
-    // Dropdown menus
-    const toggles = document.querySelectorAll('.nav-toggle');
-    const closeAllMenus = (except) => {
-      toggles.forEach(t => {
-        if (t !== except) {
-          t.setAttribute('aria-expanded', 'false');
-          document.getElementById(t.getAttribute('aria-controls')).classList.remove('open');
-        }
-      });
-    };
-    toggles.forEach(t => {
-      t.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const menu = document.getElementById(t.getAttribute('aria-controls'));
-        const isOpen = t.getAttribute('aria-expanded') === 'true';
-        closeAllMenus(t);
-        t.setAttribute('aria-expanded', String(!isOpen));
-        menu.classList.toggle('open', !isOpen);
-      });
-    });
-    document.addEventListener('click', () => closeAllMenus());
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAllMenus(); });
+    const header = document.getElementById('header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
-    // Mobile menu
     const burger = document.getElementById('navBurger');
     const nav = document.getElementById('primaryNav');
     burger.addEventListener('click', (e) => {
@@ -547,6 +497,16 @@
       const open = nav.classList.toggle('open');
       burger.setAttribute('aria-expanded', String(open));
       burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    }));
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && e.target !== burger) {
+        nav.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
     });
   </script>
 </body>

@@ -6,8 +6,6 @@
 
 ## Me
 
-## Me
-
 **Dalia** — founder and developer of The Sovereign Academy (TSA), including Bitcoin Sovereign Academy (BSA) and Financially Sovereign Academy (FSA). I build education, tools, experiments, and products around sovereignty. TSA is not limited to courses or financial education: when a problem fits the sovereignty thesis and presents a credible opportunity to create useful, monetizable value, I may test and build a product around it. Solo operator wearing every hat: product, code, content, design, and ops.
 
 Email: dalia@thesovereign.academy
@@ -20,9 +18,9 @@ Self-described focus right now: **monetization** and **automation**. The `automa
 
 | Codename | What | Domain |
 |------|------|--------|
-| **Sovereign Academy hub** | Unified discovery page that routes learners to FSA or BSA. Single-page HTML, this repo. | `sovereignacademy.com` (planned — not yet purchased) |
+| **Sovereign Academy hub** | Parent brand and public home for The Sovereign Academy. FSA and BSA are current child properties; future work may extend into other sovereignty domains without being treated as launched products until they exist. | `thesovereign.academy` |
 | **BSA** | Bitcoin Sovereign Academy — bitcoin mastery, technical deep-dives, interactive demos, Claude tutor. Primary roadmap lives in BSA's own `TASKS.md` (B1-B6 bets). | `bitcoinsovereign.academy` |
-| **FSA** | Financially Sovereign Academy — universal financial literacy, 10-module curriculum, ends with a CTA into BSA. | TBD (existing domain) |
+| **FSA** | Financially Sovereign Academy — practical financial education and tools. | `financiallysovereign.academy` |
 | **Outreach + social automation** | `automation/` directory — outreach DB, social templates, visual assets, monetization system. | n/a |
 
 ## Terms (BSA shorthand decoded)
@@ -72,4 +70,3 @@ Self-described focus right now: **monetization** and **automation**. The `automa
 ## Open questions for me
 
 - Who else is involved (collaborators, contractors, advisors)? "Monetization and automation" came back where I asked about people — likely solo, but flag if I'm wrong.
-- Hub domain not yet bought — `sovereignacademy.com` vs alternative still open (see `IMPLEMENTATION_OPTIONS.md`).

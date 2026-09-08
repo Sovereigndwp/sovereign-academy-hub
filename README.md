@@ -50,16 +50,12 @@ Update the links in `index.html` (lines 331 and 369):
 <a href="https://YOUR-BSA-DOMAIN.com" class="cta-btn">
 ```
 
-## Domain Options
+## Domains
 
-See `IMPLEMENTATION_OPTIONS.md` for full analysis.
-
-**Recommended:** Option 4 (Hub + Separate Domains)
-- Hub: `sovereignacademy.com`
-- FSA: Keep existing domain
-- BSA: Keep existing domain (`bitcoinsovereign.academy`)
-
-**Cost:** ~$12/year for hub domain
+Settled. Each property has its own domain:
+- TSA hub (this repo): `thesovereign.academy` — live on Vercel
+- FSA: `financiallysovereign.academy`
+- BSA: `bitcoinsovereign.academy`
 
 ## Cross-Linking
 
@@ -67,7 +63,7 @@ After deploying hub, add nav links to both academies:
 
 ### In FSA (`financially-sovereign-academy/index.html`):
 ```html
-<a href="https://sovereignacademy.com" 
+<a href="https://thesovereign.academy" 
    style="position: fixed; top: 1rem; left: 1rem; 
           color: #10b981; text-decoration: none; z-index: 9999;">
   ← Sovereign Academy
@@ -76,7 +72,7 @@ After deploying hub, add nav links to both academies:
 
 ### In BSA (`bitcoin-sovereign-academy/index.html`):
 ```html
-<a href="https://sovereignacademy.com"
+<a href="https://thesovereign.academy"
    style="position: fixed; top: 1rem; left: 1rem; 
           color: #f7931a; text-decoration: none; z-index: 9999;">
   ← Sovereign Academy
@@ -112,11 +108,8 @@ python3 -m http.server 8000
 
 ## Next Steps
 
-1. Choose domain strategy (see `IMPLEMENTATION_OPTIONS.md`)
-2. Buy domain (if Option 4: `sovereignacademy.com`)
-3. Deploy hub (1-click with Vercel)
-4. Add cross-links to both academies
-5. Update FSA Module 10 with Bitcoin discovery CTA
+1. Add cross-links to both academies (back to `thesovereign.academy`)
+2. Update FSA Module 10 with Bitcoin discovery CTA
 
 **Total time: 1 hour**
 

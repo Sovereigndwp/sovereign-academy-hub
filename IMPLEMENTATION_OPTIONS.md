@@ -1,4 +1,44 @@
-# Sovereign Academy Hub - Implementation Options
+# Hub Implementation Options — Decision Record
+
+> **SUPERSEDED — historical decision context only.**
+>
+> The canonical TSA domain is **https://thesovereign.academy** (live, deployed from this repo).
+> FSA is `financiallysovereign.academy`; BSA is `bitcoinsovereign.academy`. The domain-selection
+> options below are retained only as a record of the reasoning that led there. **Do not act on any
+> instruction in this document.**
+>
+> Three corrections applied to the original text, so nothing stale can be acted on by mistake:
+> 1. **Candidate domain names are redacted** to `[candidate hub domain]`. Several `.com` candidates
+>    were weighed here; none were acquired and none are TSA's. The literal strings are removed so
+>    they cannot be copied into copy, metadata, schema, or DNS. The original strings remain in git
+>    history (`git show master:IMPLEMENTATION_OPTIONS.md` before this commit).
+> 2. **FSA's domain spelling corrected** to `financiallysovereign.academy` — the original used a
+>    hyphenated variant that was never a real domain.
+> 3. **The "Domain Name Brainstorm" section is removed.** It was purely a shopping list of
+>    unacquired domains with a registrar link — entirely actionable, entirely stale.
+>
+> One brand note preserved for the record: the original framed the vision as one unified brand named
+> "Sovereign Academy". Canonical memory later resolved that **"Sovereign Academy" without "The" is a
+> separately operated company**, and that the correct parent name is **The Sovereign Academy**.
+
+---
+
+## Outcome (what was actually decided and shipped)
+
+Option 4 — hub plus separate domains — with The Sovereign Academy as the parent brand:
+
+| Property | Domain | Repo |
+|------|------|------|
+| **TSA** — parent hub | `thesovereign.academy` (live, Vercel) | this repo |
+| **FSA** — Financially Sovereign Academy | `financiallysovereign.academy` | `financially-sovereign-academy` |
+| **BSA** — Bitcoin Sovereign Academy | `bitcoinsovereign.academy` | `bitcoin-sovereign-academy` |
+
+No migration of FSA or BSA content was required, and each child kept its own brand and roadmap.
+Still open: cross-links from FSA and BSA back to the hub (see `README.md`).
+
+---
+
+# Original analysis (historical)
 
 ## The Vision
 
@@ -13,7 +53,7 @@
 
 ### Domain Structure
 ```
-sovereignacademy.com (or .academy)
+[candidate hub domain] (or .academy)
 ├── /                          → Hub homepage (choose your path)
 ├── /financial/                → FSA content
 └── /bitcoin/                  → BSA content
@@ -31,7 +71,7 @@ sovereignacademy.com (or .academy)
 - ❌ Need to restructure existing repos slightly
 
 ### Implementation
-1. Buy domain: `sovereignacademy.com`
+1. Buy domain: `[candidate hub domain]`
 2. Deploy hub homepage to root
 3. Deploy FSA to `/financial/` subdirectory
 4. Deploy BSA to `/bitcoin/` subdirectory
@@ -45,9 +85,9 @@ sovereignacademy.com (or .academy)
 
 ### Domain Structure
 ```
-sovereignacademy.com           → Hub homepage
-financial.sovereignacademy.com → FSA
-bitcoin.sovereignacademy.com   → BSA
+[candidate hub domain]           → Hub homepage
+[candidate hub domain, financial subdomain] → FSA
+[candidate hub domain, bitcoin subdomain]   → BSA
 ```
 
 ### Pros
@@ -61,7 +101,7 @@ bitcoin.sovereignacademy.com   → BSA
 - ❌ Split domain authority
 
 ### Implementation
-1. Buy domain: `sovereignacademy.com`
+1. Buy domain: `[candidate hub domain]`
 2. Set up DNS for subdomains
 3. Deploy hub to root
 4. Deploy FSA to subdomain
@@ -75,7 +115,7 @@ bitcoin.sovereignacademy.com   → BSA
 
 ### Domain Structure
 ```
-financially-sovereign.academy  → FSA
+financiallysovereign.academy  → FSA
 bitcoinsovereign.academy       → BSA
 (no hub homepage)
 ```
@@ -104,8 +144,8 @@ bitcoinsovereign.academy       → BSA
 
 ### Domain Structure
 ```
-sovereignacademy.com           → Hub homepage (discovery page)
-financially-sovereign.academy  → FSA (redirect from hub)
+[candidate hub domain]           → Hub homepage (discovery page)
+financiallysovereign.academy  → FSA (redirect from hub)
 bitcoinsovereign.academy       → BSA (redirect from hub)
 ```
 
@@ -119,7 +159,7 @@ bitcoinsovereign.academy       → BSA (redirect from hub)
 - ❌ Need one additional domain for hub
 
 ### Implementation
-1. Buy domain: `sovereignacademy.com` (or use existing domain)
+1. Buy domain: `[candidate hub domain]` (or use existing domain)
 2. Deploy hub homepage (single static page)
 3. Link to existing FSA and BSA domains
 4. Add "Back to Sovereign Academy" link in both academies
@@ -151,9 +191,9 @@ bitcoinsovereign.academy       → BSA (redirect from hub)
 ### What You Need
 
 #### Domain Options (pick one):
-- `sovereignacademy.com` (ideal)
-- `sovereign.academy` (short, premium)
-- Use existing `bitcoinsovereign.academy` as hub (redirect `/` to hub)
+*Candidate list redacted — see the banner. The options weighed were: a new `.com`, a short premium
+`.academy`, or reusing the existing BSA domain as the hub with a redirect. Resolved as
+`thesovereign.academy`.*
 
 #### Implementation Steps:
 1. **Deploy hub to new domain** (or BSA root)
@@ -164,7 +204,7 @@ bitcoinsovereign.academy       → BSA (redirect from hub)
 2. **Add cross-links in both academies**
    ```html
    <!-- Add to nav bar in FSA and BSA -->
-   <a href="https://sovereignacademy.com">
+   <a href="https://[candidate hub domain]">
      ← All Sovereign Academies
    </a>
    ```
@@ -203,7 +243,7 @@ Add to both FSA and BSA:
 ```html
 <nav style="position: fixed; top: 0; left: 0; right: 0; 
      background: rgba(0,0,0,0.9); padding: 1rem; z-index: 9999;">
-  <a href="https://sovereignacademy.com" 
+  <a href="https://[candidate hub domain]" 
      style="color: #10b981; text-decoration: none;">
     ← Sovereign Academy Home
   </a>
@@ -235,19 +275,7 @@ Users can toggle between academies without going back to hub.
 
 ## Domain Name Brainstorm
 
-If buying new domain:
-
-**Top Picks:**
-- `sovereignacademy.com` ⭐ (ideal, clear)
-- `sovereign.academy` ⭐⭐ (premium, short)
-- `learn-sovereign.com` ⭐ (available, clear)
-
-**Alternatives:**
-- `mastersovereign.com`
-- `sovereignlearning.com`
-- `thesovereignacademy.com`
-
-Check availability: https://namecheap.com
+*Removed — a list of unacquired candidate domains and a registrar link. The domain question is settled: `thesovereign.academy`.*
 
 ---
 
@@ -255,7 +283,7 @@ Check availability: https://namecheap.com
 
 **Recommended Path:**
 1. Use **Option 4** (hub + separate domains)
-2. Deploy hub to `sovereignacademy.com` (or similar)
+2. Deploy hub to `[candidate hub domain]` (or similar)
 3. Add simple nav links between all 3 sites
 4. Takes ~1 hour, zero migration risk
 
