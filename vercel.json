@@ -54,6 +54,22 @@
     {
       "source": "/legal/disclaimer/",
       "destination": "/legal/disclaimer/index.html"
+    },
+    {
+      "source": "/assignment-studio",
+      "destination": "/assignment-studio/index.html"
+    },
+    {
+      "source": "/assignment-studio/",
+      "destination": "/assignment-studio/index.html"
+    },
+    {
+      "source": "/assignment-studio/studio",
+      "destination": "/assignment-studio/studio/index.html"
+    },
+    {
+      "source": "/assignment-studio/studio/",
+      "destination": "/assignment-studio/studio/index.html"
     }
   ]
 }
