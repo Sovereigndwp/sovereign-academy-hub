@@ -38,3 +38,8 @@ redesign/
 *.swp
 *.tmp
 *~
+
+# ESA — local scratch. The review screen rendered to a file for eyeballing; regenerate it rather
+# than committing one, and never let node_modules from the DOM test land in the repo.
+esa/preview-review-screen.html
+esa/node_modules/
