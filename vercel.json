@@ -54,6 +54,14 @@
     {
       "source": "/legal/disclaimer/",
       "destination": "/legal/disclaimer/index.html"
+    },
+    {
+      "source": "/esa",
+      "destination": "/esa/index.html"
+    },
+    {
+      "source": "/esa/",
+      "destination": "/esa/index.html"
     }
   ]
 }
