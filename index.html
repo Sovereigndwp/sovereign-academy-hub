@@ -243,8 +243,11 @@
     .prose p:last-child { margin-bottom: 0; }
 
     /* ---------- Academy cards (child color = wayfinding only) ---------- */
-    .academies { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
-    @media (max-width: 760px) { .academies { grid-template-columns: 1fr; } }
+    /* Three equal columns, collapsing straight to one. Never 2+1 -- a lone
+       card on a second row would read as the junior academy, and the three
+       have equal institutional standing. */
+    .academies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    @media (max-width: 980px) { .academies { grid-template-columns: 1fr; } }
     .academy {
       display: flex; flex-direction: column;
       padding: 2rem; background: var(--tsa-elevated);
@@ -261,6 +264,7 @@
     }
     .academy--fsa .academy-glyph { background: var(--fsa-fade); }
     .academy--bsa .academy-glyph { background: var(--bsa-fade); }
+    .academy--esa .academy-glyph { background: var(--esa-fade); color: #06122E; }
     .academy-domain {
       font-family: var(--font-mono); font-size: 10px; font-weight: 700;
       letter-spacing: 0.22em; text-transform: uppercase; color: var(--tsa-muted);
@@ -269,12 +273,43 @@
       font-family: var(--font-serif); font-size: 1.5rem; font-weight: 700;
       line-height: 1.15; color: var(--tsa-ink-strong); margin-bottom: 0.7rem;
     }
-    .academy h3 .fade-f, .academy h3 .fade-b { font-weight: 700; }
+    .academy h3 .fade-f, .academy h3 .fade-b, .academy h3 .fade-e { font-weight: 700; }
     .academy p { font-size: 1rem; line-height: 1.6; color: var(--tsa-muted); flex: 1; margin-bottom: 1.5rem; }
     .academy .url { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; color: var(--tsa-faint); margin-bottom: 1.25rem; }
     .academy .btn { align-self: flex-start; }
     .academy--fsa .btn-primary { background: linear-gradient(var(--tsa-elevated), var(--tsa-elevated)) padding-box, var(--fsa-fade) border-box; }
     .academy--bsa .btn-primary { background: linear-gradient(var(--tsa-elevated), var(--tsa-elevated)) padding-box, var(--bsa-fade) border-box; }
+    .academy--esa .btn-primary { background: linear-gradient(var(--tsa-elevated), var(--tsa-elevated)) padding-box, var(--esa-fade) border-box; }
+
+    /* ---------- The movement every academy shares ----------
+       Deliberately TSA silver, not a child colour: this belongs to the
+       institution, not to any one academy. */
+    .movement {
+      list-style: none; margin: 2.25rem 0 1.5rem; padding: 0;
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; position: relative;
+    }
+    .movement::before {
+      content: ''; position: absolute; left: 0; right: 0; top: 7px; height: 1px;
+      background: var(--tsa-fade-h); opacity: 0.5;
+    }
+    .movement li { position: relative; padding-top: 1.5rem; }
+    .movement li::before {
+      content: ''; position: absolute; top: 2px; left: 0; width: 11px; height: 11px;
+      border-radius: 50%; background: var(--tsa-bg); border: 2px solid var(--tsa-silver);
+    }
+    .section--alt .movement li::before { background: var(--tsa-surface); }
+    .movement-step {
+      display: block; font-family: var(--font-sans); font-weight: 700; font-size: 1.02rem;
+      color: var(--tsa-ink-strong); margin-bottom: 0.3rem;
+    }
+    .movement-note { display: block; font-size: 0.92rem; line-height: 1.55; color: var(--tsa-muted); }
+    @media (max-width: 760px) {
+      .movement { grid-template-columns: 1fr; gap: 0; }
+      .movement::before { left: 5px; right: auto; top: 8px; bottom: 8px; width: 1px; height: auto; background: var(--tsa-fade); }
+      .movement li { padding: 0 0 1.35rem 1.9rem; }
+      .movement li:last-child { padding-bottom: 0; }
+      .movement li::before { top: 5px; }
+    }
 
     /* ---------- Principles ---------- */
     .principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 2rem; }
@@ -375,9 +410,9 @@
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="container">
         <div class="section-tag">Current work</div>
-        <h2 id="work-title">Two academies. <em>One question.</em></h2>
+        <h2 id="work-title">Three academies. <em>One question.</em></h2>
         <div class="prose">
-          <p class="muted">Each is free, open, and built to be used. Start where your question lives.</p>
+          <p class="muted">Each works in a different domain. Each is free, open, and built to be used. Start where your question lives.</p>
         </div>
 
         <div class="academies">
@@ -402,6 +437,21 @@
             <div class="url">bitcoinsovereign.academy</div>
             <a href="https://bitcoinsovereign.academy" class="btn btn-primary">Go to Bitcoin Sovereign Academy</a>
           </article>
+
+          <article class="academy academy--esa">
+            <div class="academy-head">
+              <!-- PLACEHOLDER: the ESA academy mark is not designed yet. FSA uses the
+                   dollar sign and BSA the Bitcoin sign, both real symbols carrying
+                   meaning. U+25B3 is a stand-in chosen for shape alone and needs an
+                   owner decision before this ships. -->
+              <span class="academy-glyph" aria-hidden="true">△</span>
+              <span class="academy-domain">Educational sovereignty</span>
+            </div>
+            <h3><span class="fade-e">Education</span> Sovereign Academy</h3>
+            <p>Tools and research that help teachers and parents understand what educational evidence may be showing, and decide what is worth doing next.</p>
+            <div class="url">thesovereign.academy/esa</div>
+            <a href="/esa/" class="btn btn-primary">Go to Education Sovereign Academy</a>
+          </article>
         </div>
       </div>
     </section>
@@ -410,7 +460,7 @@
     <section class="section section--alt" id="sovereignty" aria-labelledby="sov-title">
       <div class="container">
         <div class="section-tag">The larger question</div>
-        <h2 id="sov-title">Money and Bitcoin are where the work lives today. <em>Sovereignty is why.</em></h2>
+        <h2 id="sov-title">Different domains. <em>The same underlying question.</em></h2>
         <div class="prose">
           <p>
             What do people need to understand to make important decisions for themselves?
@@ -422,10 +472,43 @@
             It is not isolation, and it is not doing everything alone. It includes knowing what
             to delegate, to whom, and on what terms.
           </p>
+          <p>
+            The Sovereign Academy works wherever someone has to understand a system or a situation
+            well enough to decide for themselves what to do about it. Money, Bitcoin and education
+            are where that work lives today. They are current domains, not the definition of the
+            institution.
+          </p>
+          <p>
+            From the outside the three look unrelated. A household deciding how to carry its debt,
+            a family deciding how to hold and pass on Bitcoin, a teacher deciding what a piece of
+            student work is telling her. Different evidence, different stakes, and the same movement
+            underneath.
+          </p>
+        </div>
+
+        <ol class="movement" aria-label="The movement shared by every academy">
+          <li>
+            <span class="movement-step">See clearly</span>
+            <span class="movement-note">Start from what is actually in front of you, not from what you assume is there.</span>
+          </li>
+          <li>
+            <span class="movement-step">Understand</span>
+            <span class="movement-note">Work out what it may mean, and how much confidence the evidence supports.</span>
+          </li>
+          <li>
+            <span class="movement-step">Decide</span>
+            <span class="movement-note">Judge what matters here and what can be left alone.</span>
+          </li>
+          <li>
+            <span class="movement-step">Act</span>
+            <span class="movement-note">Do the smallest thing that genuinely helps, then see what it changed.</span>
+          </li>
+        </ol>
+
+        <div class="prose">
           <p class="muted">
-            That question does not stop at money. Education, digital security and privacy, identity,
-            and technology are areas we are exploring under the same umbrella. Nothing is announced
-            here before it exists.
+            Other areas sit under the same question: digital security and privacy, identity,
+            technology. Nothing is announced here before it exists.
           </p>
         </div>
       </div>
@@ -498,6 +581,7 @@
           <ul>
             <li><a href="https://financiallysovereign.academy">Financially Sovereign Academy</a></li>
             <li><a href="https://bitcoinsovereign.academy">Bitcoin Sovereign Academy</a></li>
+            <li><a href="/esa/">Education Sovereign Academy</a></li>
           </ul>
         </nav>
         <nav class="footer-col" aria-label="The Academy">

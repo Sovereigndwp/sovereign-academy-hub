@@ -13,18 +13,21 @@
 ## About This Site
 The Sovereign Academy is the parent organization for education, tools, experiments, and products around personal sovereignty. Sovereignty here means the knowledge and practical ability to make important decisions for yourself, with more understanding, more control, and less dependence. It is not isolation: it includes knowing what to delegate, to whom, and on what terms.
 
-The Sovereign Academy is a parent education and product organization focused on personal sovereignty. Its current work includes financial education and Bitcoin education, each with its own public academy:
+The Sovereign Academy is a parent education and product organization focused on personal sovereignty. Its current work spans three domains, each with its own Sovereign Academy of equal standing:
 - **Financial sovereignty** — Financially Sovereign Academy: practical education for understanding and navigating money.
 - **Bitcoin sovereignty** — Bitcoin Sovereign Academy: education for understanding, owning, protecting, and passing on Bitcoin.
+- **Educational sovereignty** — Education Sovereign Academy: tools and research that help teachers and parents understand what educational evidence may be showing and decide what is worth doing next.
 
-Other sovereignty domains named on the site — education, digital security and privacy, identity, technology — are areas of exploration, not launched products. Describe them that way.
+These are different domains of one question. The Sovereign Academy works wherever someone must understand a system or situation well enough to decide for themselves what to do about it. Money, Bitcoin and education are current domains, not the definition of the institution. The shared movement is: see clearly, understand, decide, act.
+
+Other sovereignty domains named on the site — digital security and privacy, identity, technology — are areas of exploration, not launched products. Describe them that way. Education is no longer exploratory: it is Education Sovereign Academy. Its individual tools, however, are early — see the ESA entry below.
 
 Some of the work is delivered through organizations (employers, workforce organizations, schools, correctional and reentry programs, municipalities, community partners). Those organizational programs are currently financial education programs delivered through Financially Sovereign Academy.
 - About page: https://thesovereign.academy/about/
 - Organizational programs: https://thesovereign.academy/institutional/
 
 ## Current Academies
-The Sovereign Academy operates two public learning platforms today:
+The Sovereign Academy operates three Sovereign Academies. Call them academies — not properties, platforms, branches, or paths.
 
 ### Financially Sovereign Academy (financiallysovereign.academy)
 - Universal financial literacy education
@@ -39,6 +42,15 @@ The Sovereign Academy operates two public learning platforms today:
 - 25+ interactive demos and simulations
 - Technical fundamentals, self-custody, privacy, security
 - From beginner to fully sovereign Bitcoin user
+
+
+### Education Sovereign Academy (thesovereign.academy/esa)
+- Domain: educational sovereignty
+- Audience: teachers and parents
+- Purpose: help an adult understand what a piece of educational evidence may be showing and decide what is worth doing next
+- Principle: AI assists with evidence and reasoning; the adult remains the decision-maker. Prefer the smallest useful next action over generating more material.
+- Status: current research and prototypes are primarily teacher-facing. Parent-facing work is stated direction, not a validated or shipped product. Do not describe parent tools as existing.
+- Named work: "Read the Work" is a direction in design, not a product. Assessment Review runs as a small invited pilot and is not open to the public. Assignment Studio is internal and deliberately unlinked. "Teacher Time Back" is a value proposition — recovered time as an outcome of better decisions — and is not a product name.
 
 ## Where to Start
 Start where your question lives. There are no prerequisites.

@@ -2,27 +2,33 @@
   "site": "The Sovereign Academy",
   "url": "https://thesovereign.academy",
   "tagline": "Understand more. Depend less.",
-  "description": "The Sovereign Academy is a parent education and product organization focused on personal sovereignty: the knowledge and practical ability to make important decisions with more understanding, more control, and less dependence. Its current work includes financial education (Financially Sovereign Academy) and Bitcoin education (Bitcoin Sovereign Academy).",
+  "description": "The Sovereign Academy is a parent education and product organization focused on personal sovereignty: the knowledge and practical ability to make important decisions with more understanding, more control, and less dependence. It operates three Sovereign Academies of equal standing — financial education (Financially Sovereign Academy), Bitcoin education (Bitcoin Sovereign Academy), and educational decision support for teachers and parents (Education Sovereign Academy).",
   "positioning": {
-    "parent_brand": "The Sovereign Academy is a parent education and product organization focused on personal sovereignty. Its current work includes financial education and Bitcoin education.",
+    "parent_brand": "The Sovereign Academy is a parent education and product organization focused on personal sovereignty. It works wherever someone must understand a system or situation well enough to decide for themselves what to do about it. Money, Bitcoin and education are current domains, not the definition of the institution. Refer to BSA, FSA and ESA as Sovereign Academies — not properties, platforms, branches, or paths.",
     "organizing_question": "How can people understand, protect, and exercise more control over important parts of their lives?",
     "current_domains": [
       "financial sovereignty",
-      "Bitcoin sovereignty"
+      "Bitcoin sovereignty",
+      "educational sovereignty"
     ],
     "exploration_areas": [
-      "education",
       "digital security and privacy",
       "identity",
       "technology"
     ],
-    "exploration_areas_note": "Areas of exploration, not launched products. Describe them as such."
+    "exploration_areas_note": "Areas of exploration, not launched products. Describe them as such.",
+    "shared_movement": [
+      "see clearly",
+      "understand",
+      "decide",
+      "act"
+    ]
   },
   "founder": "Dalia Platt",
   "founded": "2024",
   "type": "EducationalOrganization",
   "academies": {
-    "properties": [
+    "list": [
       {
         "name": "Financially Sovereign Academy",
         "url": "https://financiallysovereign.academy",
@@ -38,6 +44,17 @@
         "courses": 6,
         "demos": 44,
         "domain": "Bitcoin sovereignty"
+      },
+      {
+        "name": "Education Sovereign Academy",
+        "url": "https://thesovereign.academy/esa/",
+        "focus": "Tools and research that help teachers and parents understand what educational evidence may be showing and decide what is worth doing next",
+        "domain": "Educational sovereignty",
+        "audience": [
+          "teachers",
+          "parents"
+        ],
+        "status": "Public homepage live. Current research and prototypes are primarily teacher-facing; parent-facing work is stated direction, not validated or shipped."
       }
     ]
   },
