@@ -53,8 +53,17 @@
   /* ---- Child-brand fades (wayfinding accents ONLY) ---- (KEPT LITERAL: same-name in shared) */
   --bsa-fade: linear-gradient(135deg, #FF7A00 0%, #FF9A00 45%, #FFD400 100%);
   --fsa-fade: linear-gradient(135deg, #10B981 0%, #34D399 50%, #6EE7B7 100%);
+  --esa-fade: linear-gradient(135deg, #3B5BDB 0%, #2F6FED 45%, #7DD3FC 100%);
   --bsa-solid: #FF9A00;   /* solid fallback for the orange word accent */
   --fsa-solid: #34D399;   /* solid fallback for the emerald word accent */
+  --esa-solid: #58A6F5;   /* solid fallback for the blue word accent */
+  /* ESA raw stops, so a page can build the -h / -v variant without a literal
+     hex. Same three-stop logic as BSA and FSA; only the angle changes. */
+  --esa-indigo: #3B5BDB;
+  --esa-blue:   #2F6FED;
+  --esa-sky:    #7DD3FC;
+  --esa-fade-h: linear-gradient(90deg,  #3B5BDB 0%, #2F6FED 45%, #7DD3FC 100%);
+  --esa-fade-v: linear-gradient(180deg, #3B5BDB 0%, #2F6FED 45%, #7DD3FC 100%);
 
   /* ---- Status (solid, rare) ----
      PR3: re-pointed to shared --success/--warning/--error (differently named,
@@ -180,6 +189,13 @@ a:hover { color: var(--tsa-platinum); }
   background: var(--bsa-fade); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .fade-f { font-weight: 700; color: var(--fsa-solid);
   background: var(--fsa-fade); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.fade-e { font-weight: 700; color: var(--esa-solid);
+  background: var(--esa-fade); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .fade-b { color: var(--bsa-solid); -webkit-text-fill-color: currentColor; }
+  .fade-f { color: var(--fsa-solid); -webkit-text-fill-color: currentColor; }
+  .fade-e { color: var(--esa-solid); -webkit-text-fill-color: currentColor; }
+}
 
 /* ============================================================
    Buttons: silver gradient OUTLINE, ivory text, never hue-filled.
