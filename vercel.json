@@ -62,6 +62,14 @@
     {
       "source": "/esa/",
       "destination": "/esa/index.html"
+    },
+    {
+      "source": "/simulacro",
+      "destination": "/simulacro/index.html"
+    },
+    {
+      "source": "/simulacro/",
+      "destination": "/simulacro/index.html"
     }
   ]
 }
