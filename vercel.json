@@ -62,14 +62,18 @@
     {
       "source": "/esa/",
       "destination": "/esa/index.html"
-    },
+    }
+  ],
+  "redirects": [
     {
       "source": "/simulacro",
-      "destination": "/simulacro/index.html"
+      "destination": "https://bitcoinsovereign.academy/simulacro",
+      "permanent": true
     },
     {
-      "source": "/simulacro/",
-      "destination": "/simulacro/index.html"
+      "source": "/simulacro/:path*",
+      "destination": "https://bitcoinsovereign.academy/simulacro/:path*",
+      "permanent": true
     }
   ]
 }
